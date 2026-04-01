@@ -31,7 +31,6 @@ describe("ContatoPage", () => {
     render(<ContatoPage />);
     for (let i = 0; i < 5; i++) {
       expect(screen.getByText(`contato.channels.${i}.title`)).toBeInTheDocument();
-      expect(screen.getByText(`contato.channels.${i}.value`)).toBeInTheDocument();
       expect(screen.getByText(`contato.channels.${i}.description`)).toBeInTheDocument();
       expect(screen.getByText(`contato.channels.${i}.response`)).toBeInTheDocument();
     }

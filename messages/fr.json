@@ -55,10 +55,9 @@
       "3": "Les groupes Facebook",
       "4": "Les discussions sur le palier",
       "5": "Les forums de quartier",
-      "6": "Les applis de réclamation",
-      "7": "Les rumeurs de couloir",
-      "8": "Les affiches sur les poteaux",
-      "9": "Les plaintes isolées"
+      "6": "Les rumeurs de couloir",
+      "7": "Les affiches sur les poteaux",
+      "8": "Les plaintes isolées"
     },
     "act2Title1": "Tout ce qui compte pour votre communauté",
     "act2Title2": "se perd dans le bruit.",
@@ -180,31 +179,31 @@
     "channels": {
       "0": {
         "title": "Email général",
-        "value": "contato@infra.app",
+        "value": "{emailGeneral}",
         "description": "Pour les questions générales, suggestions et partenariats.",
         "response": "Nous répondons sous 2 jours ouvrés."
       },
       "1": {
         "title": "Vie privée et données personnelles",
-        "value": "privacidade@infra.app",
+        "value": "{emailPrivacy}",
         "description": "Pour exercer vos droits en matière de protection des données : accès, rectification, suppression ou portabilité des données.",
         "response": "Nous répondons sous 15 jours ouvrés conformément à la loi."
       },
       "2": {
         "title": "Délégué à la protection des données (DPO)",
-        "value": "dpo@infra.app",
+        "value": "{emailDpo}",
         "description": "Canal direct vers notre Délégué à la protection des données, conformément aux réglementations en vigueur.",
         "response": "Nous répondons sous 15 jours ouvrés."
       },
       "3": {
         "title": "Juridique",
-        "value": "legal@infra.app",
+        "value": "{emailLegal}",
         "description": "Pour les questions juridiques, mises en demeure et affaires réglementaires.",
         "response": "Nous répondons sous 5 jours ouvrés."
       },
       "4": {
         "title": "Signalements et sécurité",
-        "value": "seguranca@infra.app",
+        "value": "{emailSecurity}",
         "description": "Pour signaler des failles de sécurité, des abus sur la plateforme ou du contenu qui enfreint nos Conditions d'utilisation.",
         "response": "Nous répondons sous 24 heures."
       }
@@ -371,7 +370,7 @@
     "lastUpdated": "Dernière mise à jour : {date}",
     "lastUpdatedDate": "March 15, 2026",
     "backToTop": "Retour en haut",
-    "intro": "Bienvenue sur {appName}. Les présentes Conditions d'utilisation régissent l'accès et l'utilisation de la plateforme {appName}, exploitée par {appName} Tecnologia Ltda., immatriculée sous le CNPJ No. [to be defined], dont le siège social est situé à [to be defined] (la « Société », « nous » ou « notre »).",
+    "intro": "Bienvenue sur {appName}. Les présentes Conditions d'utilisation régissent l'accès et l'utilisation de la plateforme {appName}, exploitée par {companyName}, immatriculée sous le CNPJ No. {tbd}, dont le siège social est situé à {tbd} (la « Société », « nous » ou « notre »).",
     "sidebarTitle": "Table des matières",
     "sections": {
       "0": {
@@ -499,11 +498,11 @@
         "summary": "Comment nous joindre pour les questions juridiques.",
         "contentLength": "1",
         "content": {
-          "0": "Si vous avez des questions concernant les présentes Conditions d'utilisation, veuillez nous contacter via notre page Contact ou par email à legal@infra.app."
+          "0": "Si vous avez des questions concernant les présentes Conditions d'utilisation, veuillez nous contacter via notre page Contact ou par email à {emailLegal}."
         }
       }
     },
-    "footer": "© {year} {appName} Tecnologia Ltda. Tous droits réservés."
+    "footer": "© {year} {companyName} Tous droits réservés."
   },
   "privacidade": {
     "pageTitle": "Politique de confidentialité",
@@ -513,7 +512,7 @@
     "lastUpdated": "Dernière mise à jour : {date}",
     "lastUpdatedDate": "March 15, 2026",
     "backToTop": "Retour en haut",
-    "introParagraph": "La présente Politique de confidentialité décrit comment {appName} Tecnologia Ltda., immatriculée sous le CNPJ No. [to be defined], dont le siège social est situé à [to be defined] (« {appName} », « Société », « nous » ou « notre »), traite les données personnelles des utilisateurs de la plateforme {appName}.",
+    "introParagraph": "La présente Politique de confidentialité décrit comment {companyName}, immatriculée sous le CNPJ No. {tbd}, dont le siège social est situé à {tbd} (« {appName} », « Société », « nous » ou « notre »), traite les données personnelles des utilisateurs de la plateforme {appName}.",
     "sections": {
       "0": {
         "title": "1. Introduction",
@@ -594,7 +593,7 @@
         "content": {
           "0": "Conformément à la Loi générale brésilienne sur la protection des données (LGPD), vous disposez des droits suivants concernant vos données personnelles :",
           "1": "• Confirmation de l'existence d'un traitement de données\n• Accès aux données personnelles\n• Rectification de données incomplètes, inexactes ou obsolètes\n• Anonymisation, blocage ou suppression de données inutiles ou excessives\n• Portabilité des données vers un autre fournisseur\n• Suppression des données traitées sur la base du consentement\n• Information sur le partage de données avec des tiers\n• Information sur la possibilité de ne pas donner son consentement et ses conséquences\n• Révocation du consentement",
-          "2": "Pour exercer vos droits, contactez-nous via la page Contact ou par email à privacidade@infra.app. Nous répondrons à votre demande sous 15 jours ouvrés."
+          "2": "Pour exercer vos droits, contactez-nous via la page Contact ou par email à {emailPrivacy}. Nous répondrons à votre demande sous 15 jours ouvrés."
         }
       },
       "8": {
@@ -638,7 +637,7 @@
         "summary": "Nous avons un Délégué à la protection des données que vous pouvez contacter.",
         "contentLength": "1",
         "content": {
-          "0": "Conformément à la Loi générale brésilienne sur la protection des données (LGPD), {appName} a désigné un Délégué à la protection des données (DPO), joignable à dpo@infra.app pour toute question relative à la protection des données personnelles."
+          "0": "Conformément à la Loi générale brésilienne sur la protection des données (LGPD), {appName} a désigné un Délégué à la protection des données (DPO), joignable à {emailDpo} pour toute question relative à la protection des données personnelles."
         }
       },
       "13": {
@@ -647,11 +646,11 @@
         "contentLength": "2",
         "content": {
           "0": "Pour toute question relative à la présente Politique de confidentialité, veuillez contacter :",
-          "1": "{appName} Tecnologia Ltda.\nEmail : privacidade@infra.app\nDélégué à la protection des données (DPO) : dpo@infra.app\nPage de contact : /contato"
+          "1": "{companyName}\nEmail : {emailPrivacy}\nDélégué à la protection des données (DPO) : {emailDpo}\nPage de contact : /contact"
         }
       }
     },
-    "footer": "© {year} {appName} Tecnologia Ltda. Tous droits réservés."
+    "footer": "© {year} {companyName} Tous droits réservés."
   },
   "comoFunciona": {
     "back": "Retour",

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { APP_NAME, APP_YEAR } from "@/config/app-config";
+import { CONTACT } from "@/config/contact";
 import { ROUTES } from "@/config/routes";
 
 const fadeUp = (delay = 0) => ({
@@ -14,6 +15,15 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.6, delay, ease: [0.23, 1, 0.32, 1] as const },
 });
 
+const legalParams = {
+  appName: APP_NAME,
+  companyName: CONTACT.COMPANY_NAME,
+  emailLegal: CONTACT.EMAIL_LEGAL,
+  emailPrivacy: CONTACT.EMAIL_PRIVACY,
+  emailDpo: CONTACT.EMAIL_DPO,
+  tbd: CONTACT.CNPJ,
+};
+
 export default function TermosPage() {
   const t = useTranslations("termos");
 
@@ -22,7 +32,7 @@ export default function TermosPage() {
     summary: t(`sections.${i}.summary`),
     content: Array.from(
       { length: Number(t(`sections.${i}.contentLength`)) },
-      (_, j) => t(`sections.${i}.content.${j}`, { appName: APP_NAME })
+      (_, j) => t(`sections.${i}.content.${j}`, legalParams)
     ),
   }));
   const [openSections, setOpenSections] = useState<Set<number>>(new Set());
@@ -226,7 +236,7 @@ export default function TermosPage() {
                 className="text-[15px] leading-relaxed mb-16"
                 style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
               >
-                {t("intro", { appName: APP_NAME })}
+                {t("intro", legalParams)}
               </motion.p>
 
               {sections.map((section, i) => {
@@ -368,7 +378,7 @@ export default function TermosPage() {
                 className="text-[13px]"
                 style={{ color: `rgba(var(--text-rgb),var(--text-faint))` }}
               >
-                {t("footer", { year: APP_YEAR, appName: APP_NAME })}
+                {t("footer", { year: APP_YEAR, ...legalParams })}
               </p>
             </div>
           </div>

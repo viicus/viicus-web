@@ -23,19 +23,19 @@ describe("HowItWorks", () => {
     expect(scrollSection).toBeInTheDocument();
   });
 
-  it("renders 10 rotator items with suffix text", () => {
+  it("renders 9 rotator items with suffix text", () => {
     const { container } = render(<HowItWorks />);
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 9; i++) {
       expect(container.textContent).toContain(`howItWorks.rotatorItems.${i}`);
     }
     const suffixes = screen.getAllByText("howItWorks.rotatorSuffix");
-    expect(suffixes).toHaveLength(10);
+    expect(suffixes).toHaveLength(9);
   });
 
   it("renders rotator section with correct height", () => {
     const { container } = render(<HowItWorks />);
-    // 10 + 1 = 11 * 80vh = 880vh
-    const rotatorSection = container.querySelector('[style*="height: 880vh"]');
+    // 9 + 1 = 10 * 80vh = 800vh
+    const rotatorSection = container.querySelector('[style*="height: 800vh"]');
     expect(rotatorSection).toBeInTheDocument();
   });
 

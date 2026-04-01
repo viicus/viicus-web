@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { APP_NAME } from "@/config/app-config";
+import { CONTACT } from "@/config/contact";
 import { ROUTES } from "@/config/routes";
 
 const fadeUp = (delay = 0) => ({
@@ -53,11 +54,11 @@ const CHANNEL_ICONS = [
 ];
 
 const CHANNEL_HREFS = [
-  "mailto:contato@infra.app",
-  "mailto:privacidade@infra.app",
-  "mailto:dpo@infra.app",
-  "mailto:legal@infra.app",
-  "mailto:seguranca@infra.app",
+  `mailto:${CONTACT.EMAIL_GENERAL}`,
+  `mailto:${CONTACT.EMAIL_PRIVACY}`,
+  `mailto:${CONTACT.EMAIL_DPO}`,
+  `mailto:${CONTACT.EMAIL_LEGAL}`,
+  `mailto:${CONTACT.EMAIL_SECURITY}`,
 ];
 
 const inputStyle: React.CSSProperties = {
@@ -208,7 +209,7 @@ export default function ContatoPage() {
                         className="text-[13px] font-semibold"
                         style={{ color: "var(--accent)" }}
                       >
-                        {t(`channels.${i}.value`)}
+                        {[CONTACT.EMAIL_GENERAL, CONTACT.EMAIL_PRIVACY, CONTACT.EMAIL_DPO, CONTACT.EMAIL_LEGAL, CONTACT.EMAIL_SECURITY][i]}
                       </span>
                     </div>
 
@@ -483,10 +484,10 @@ export default function ContatoPage() {
                 </p>
                 <div className="mt-4 flex flex-wrap gap-4">
                   {[
-                    { number: "190", label: t("emergency190") },
-                    { number: "192", label: t("emergency192") },
-                    { number: "193", label: t("emergency193") },
-                    { number: "180", label: t("emergency180") },
+                    { number: CONTACT.EMERGENCY_POLICE, label: t("emergency190") },
+                    { number: CONTACT.EMERGENCY_SAMU, label: t("emergency192") },
+                    { number: CONTACT.EMERGENCY_FIRE, label: t("emergency193") },
+                    { number: CONTACT.EMERGENCY_WOMEN, label: t("emergency180") },
                   ].map((emergency) => (
                     <div key={emergency.number} className="flex items-center gap-2">
                       <span
@@ -520,13 +521,13 @@ export default function ContatoPage() {
               className="text-[14px] leading-[1.8]"
               style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
             >
-              {t("addressLine1", { appName: APP_NAME })}
+              {CONTACT.COMPANY_NAME}
               <br />
-              {t("addressLine2")}
+              CNPJ: {CONTACT.CNPJ}
               <br />
-              {t("addressLine3")}
+              {CONTACT.ADDRESS}
               <br />
-              {t("addressLine4")}
+              {CONTACT.CITY}
             </p>
           </motion.div>
 

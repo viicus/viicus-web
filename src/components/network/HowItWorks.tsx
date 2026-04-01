@@ -99,7 +99,7 @@ function StorySlide({
 }
 
 /* ── Scroll-driven text rotator: sticky section ── */
-const ROTATOR_COUNT = 10;
+const ROTATOR_COUNT = 9;
 
 function RotatorSlide({
   index,

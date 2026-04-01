@@ -55,10 +55,9 @@
       "3": "Facebook-Gruppen",
       "4": "Gespräche an der Haustür",
       "5": "Nachbarschaftsforen",
-      "6": "Beschwerde-Apps",
-      "7": "Flurgerüchte",
-      "8": "Zettel an Laternen",
-      "9": "Einzelne Beschwerden"
+      "6": "Flurgerüchte",
+      "7": "Zettel an Laternen",
+      "8": "Einzelne Beschwerden"
     },
     "act2Title1": "Alles, was für Ihre Gemeinschaft wichtig ist,",
     "act2Title2": "geht im Lärm unter.",
@@ -180,31 +179,31 @@
     "channels": {
       "0": {
         "title": "Allgemeine E-Mail",
-        "value": "contato@infra.app",
+        "value": "{emailGeneral}",
         "description": "Für allgemeine Fragen, Vorschläge und Partnerschaften.",
         "response": "Wir antworten innerhalb von 2 Werktagen."
       },
       "1": {
         "title": "Datenschutz und personenbezogene Daten",
-        "value": "privacidade@infra.app",
+        "value": "{emailPrivacy}",
         "description": "Zur Ausübung Ihrer Rechte gemäß Datenschutzgesetz: Auskunft, Berichtigung, Löschung oder Datenübertragbarkeit.",
         "response": "Wir antworten innerhalb von 15 Werktagen gemäß gesetzlicher Vorschrift."
       },
       "2": {
         "title": "Datenschutzbeauftragter (DPO)",
-        "value": "dpo@infra.app",
+        "value": "{emailDpo}",
         "description": "Direkter Kanal zu unserem Datenschutzbeauftragten, gemäß den Datenschutzvorschriften.",
         "response": "Wir antworten innerhalb von 15 Werktagen."
       },
       "3": {
         "title": "Rechtsabteilung",
-        "value": "legal@infra.app",
+        "value": "{emailLegal}",
         "description": "Für rechtliche Angelegenheiten, förmliche Mitteilungen und regulatorische Fragen.",
         "response": "Wir antworten innerhalb von 5 Werktagen."
       },
       "4": {
         "title": "Meldungen und Sicherheit",
-        "value": "seguranca@infra.app",
+        "value": "{emailSecurity}",
         "description": "Zur Meldung von Sicherheitslücken, Plattformmissbrauch oder Inhalten, die gegen unsere Nutzungsbedingungen verstoßen.",
         "response": "Wir antworten innerhalb von 24 Stunden."
       }
@@ -371,7 +370,7 @@
     "lastUpdated": "Zuletzt aktualisiert: {date}",
     "lastUpdatedDate": "15. März 2026",
     "backToTop": "Zurück nach oben",
-    "intro": "Willkommen bei {appName}. Diese Nutzungsbedingungen regeln den Zugang zu und die Nutzung der Plattform {appName}, betrieben von {appName} Tecnologia Ltda., eingetragen unter CNPJ Nr. [noch festzulegen], mit Sitz in [noch festzulegen] (das \u201eUnternehmen\u201c, \u201ewir\u201c oder \u201eunser\u201c).",
+    "intro": "Willkommen bei {appName}. Diese Nutzungsbedingungen regeln den Zugang zu und die Nutzung der Plattform {appName}, betrieben von {companyName}, eingetragen unter CNPJ Nr. {tbd}, mit Sitz in {tbd} (das \u201eUnternehmen\u201c, \u201ewir\u201c oder \u201eunser\u201c).",
     "sidebarTitle": "Inhaltsverzeichnis",
     "sections": {
       "0": {
@@ -499,11 +498,11 @@
         "summary": "So erreichen Sie uns bei rechtlichen Fragen.",
         "contentLength": "1",
         "content": {
-          "0": "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, kontaktieren Sie uns bitte über unsere Kontaktseite oder per E-Mail an legal@infra.app."
+          "0": "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, kontaktieren Sie uns bitte über unsere Kontaktseite oder per E-Mail an {emailLegal}."
         }
       }
     },
-    "footer": "© {year} {appName} Tecnologia Ltda. Alle Rechte vorbehalten."
+    "footer": "© {year} {companyName} Alle Rechte vorbehalten."
   },
   "privacidade": {
     "pageTitle": "Datenschutzrichtlinie",
@@ -513,7 +512,7 @@
     "lastUpdated": "Zuletzt aktualisiert: {date}",
     "lastUpdatedDate": "15. März 2026",
     "backToTop": "Zurück nach oben",
-    "introParagraph": "Diese Datenschutzrichtlinie beschreibt, wie {appName} Tecnologia Ltda., eingetragen unter CNPJ Nr. [noch festzulegen], mit Sitz in [noch festzulegen] (\u201e{appName}\u201c, \u201eUnternehmen\u201c, \u201ewir\u201c oder \u201eunser\u201c), die personenbezogenen Daten der Nutzer der Plattform {appName} verarbeitet.",
+    "introParagraph": "Diese Datenschutzrichtlinie beschreibt, wie {companyName}, eingetragen unter CNPJ Nr. {tbd}, mit Sitz in {tbd} (\u201e{appName}\u201c, \u201eUnternehmen\u201c, \u201ewir\u201c oder \u201eunser\u201c), die personenbezogenen Daten der Nutzer der Plattform {appName} verarbeitet.",
     "sections": {
       "0": {
         "title": "1. Einleitung",
@@ -594,7 +593,7 @@
         "content": {
           "0": "In Übereinstimmung mit dem brasilianischen Datenschutzgesetz (LGPD) haben Sie folgende Rechte bezüglich Ihrer personenbezogenen Daten:",
           "1": "• Bestätigung der Existenz einer Datenverarbeitung\n• Zugang zu personenbezogenen Daten\n• Berichtigung unvollständiger, ungenauer oder veralteter Daten\n• Anonymisierung, Sperrung oder Löschung unnötiger oder übermäßiger Daten\n• Datenübertragbarkeit zu einem anderen Anbieter\n• Löschung einwilligungsbasiert verarbeiteter Daten\n• Auskunft über die Datenweitergabe an Dritte\n• Auskunft über die Möglichkeit, die Einwilligung nicht zu erteilen, und deren Folgen\n• Widerruf der Einwilligung",
-          "2": "Um Ihre Rechte auszuüben, kontaktieren Sie uns über die Kontaktseite oder per E-Mail an privacidade@infra.app. Wir werden Ihre Anfrage innerhalb von 15 Werktagen beantworten."
+          "2": "Um Ihre Rechte auszuüben, kontaktieren Sie uns über die Kontaktseite oder per E-Mail an {emailPrivacy}. Wir werden Ihre Anfrage innerhalb von 15 Werktagen beantworten."
         }
       },
       "8": {
@@ -638,7 +637,7 @@
         "summary": "Wir haben einen Datenschutzbeauftragten, den Sie kontaktieren können.",
         "contentLength": "1",
         "content": {
-          "0": "In Übereinstimmung mit dem brasilianischen Datenschutzgesetz (LGPD) hat {appName} einen Datenschutzbeauftragten (DPO) ernannt, der unter dpo@infra.app für Angelegenheiten des Schutzes personenbezogener Daten kontaktiert werden kann."
+          "0": "In Übereinstimmung mit dem brasilianischen Datenschutzgesetz (LGPD) hat {appName} einen Datenschutzbeauftragten (DPO) ernannt, der unter {emailDpo} für Angelegenheiten des Schutzes personenbezogener Daten kontaktiert werden kann."
         }
       },
       "13": {
@@ -647,11 +646,11 @@
         "contentLength": "2",
         "content": {
           "0": "Für Angelegenheiten im Zusammenhang mit dieser Datenschutzrichtlinie kontaktieren Sie bitte:",
-          "1": "{appName} Tecnologia Ltda.\nE-Mail: privacidade@infra.app\nDatenschutzbeauftragter (DPO): dpo@infra.app\nKontaktseite: /contato"
+          "1": "{companyName}\nE-Mail: {emailPrivacy}\nDatenschutzbeauftragter (DPO): {emailDpo}\nKontaktseite: /contact"
         }
       }
     },
-    "footer": "© {year} {appName} Tecnologia Ltda. Alle Rechte vorbehalten."
+    "footer": "© {year} {companyName} Alle Rechte vorbehalten."
   },
   "comoFunciona": {
     "back": "Zurück",

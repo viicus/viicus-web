@@ -55,10 +55,9 @@
       "3": "Los grupos de Facebook",
       "4": "Las charlas de portería",
       "5": "Los foros del barrio",
-      "6": "Las apps de quejas",
-      "7": "Los chismes de pasillo",
-      "8": "Los volantes en los postes",
-      "9": "Las quejas aisladas"
+      "6": "Los chismes de pasillo",
+      "7": "Los volantes en los postes",
+      "8": "Las quejas aisladas"
     },
     "act2Title1": "Todo lo que importa a tu comunidad",
     "act2Title2": "se pierde en el ruido.",
@@ -180,31 +179,31 @@
     "channels": {
       "0": {
         "title": "Correo general",
-        "value": "contato@infra.app",
+        "value": "{emailGeneral}",
         "description": "Para preguntas generales, sugerencias y alianzas.",
         "response": "Respondemos en un plazo de 2 días hábiles."
       },
       "1": {
         "title": "Privacidad y datos personales",
-        "value": "privacidade@infra.app",
+        "value": "{emailPrivacy}",
         "description": "Para ejercer tus derechos bajo la ley de protección de datos: acceso, corrección, eliminación o portabilidad de datos.",
         "response": "Respondemos en un plazo de 15 días hábiles conforme a la ley."
       },
       "2": {
         "title": "Oficial de Protección de Datos (DPO)",
-        "value": "dpo@infra.app",
+        "value": "{emailDpo}",
         "description": "Canal directo con nuestro Oficial de Protección de Datos, conforme a las regulaciones de protección de datos.",
         "response": "Respondemos en un plazo de 15 días hábiles."
       },
       "3": {
         "title": "Legal",
-        "value": "legal@infra.app",
+        "value": "{emailLegal}",
         "description": "Para asuntos legales, notificaciones formales y temas regulatorios.",
         "response": "Respondemos en un plazo de 5 días hábiles."
       },
       "4": {
         "title": "Reportes y seguridad",
-        "value": "seguranca@infra.app",
+        "value": "{emailSecurity}",
         "description": "Para reportar vulnerabilidades de seguridad, abuso de la plataforma o contenido que viole nuestros Términos de Servicio.",
         "response": "Respondemos en un plazo de 24 horas."
       }
@@ -371,7 +370,7 @@
     "lastUpdated": "Última actualización: {date}",
     "lastUpdatedDate": "15 de marzo de 2026",
     "backToTop": "Volver arriba",
-    "intro": "Bienvenido a {appName}. Estos Términos de Uso regulan el acceso y uso de la plataforma {appName}, operada por {appName} Tecnologia Ltda., registrada bajo CNPJ No. [a definir], con sede en [a definir] (la \"Empresa\", \"nosotros\" o \"nuestro\").",
+    "intro": "Bienvenido a {appName}. Estos Términos de Uso regulan el acceso y uso de la plataforma {appName}, operada por {companyName}, registrada bajo CNPJ No. {tbd}, con sede en {tbd} (la \"Empresa\", \"nosotros\" o \"nuestro\").",
     "sidebarTitle": "Tabla de Contenidos",
     "sections": {
       "0": {
@@ -499,11 +498,11 @@
         "summary": "Cómo contactarnos para consultas legales.",
         "contentLength": "1",
         "content": {
-          "0": "Si tienes alguna pregunta sobre estos Términos de Uso, contáctanos a través de nuestra página de Contacto o por correo electrónico a legal@infra.app."
+          "0": "Si tienes alguna pregunta sobre estos Términos de Uso, contáctanos a través de nuestra página de Contacto o por correo electrónico a {emailLegal}."
         }
       }
     },
-    "footer": "© {year} {appName} Tecnologia Ltda. Todos los derechos reservados."
+    "footer": "© {year} {companyName} Todos los derechos reservados."
   },
   "privacidade": {
     "pageTitle": "Política de Privacidad",
@@ -513,7 +512,7 @@
     "lastUpdated": "Última actualización: {date}",
     "lastUpdatedDate": "15 de marzo de 2026",
     "backToTop": "Volver arriba",
-    "introParagraph": "Esta Política de Privacidad describe cómo {appName} Tecnologia Ltda., registrada bajo CNPJ No. [a definir], con sede en [a definir] (\u201c{appName}\u201d, \u201cEmpresa\u201d, \u201cnosotros\u201d o \u201cnuestro\u201d), procesa los datos personales de los usuarios de la plataforma {appName}.",
+    "introParagraph": "Esta Política de Privacidad describe cómo {companyName}, registrada bajo CNPJ No. {tbd}, con sede en {tbd} (\u201c{appName}\u201d, \u201cEmpresa\u201d, \u201cnosotros\u201d o \u201cnuestro\u201d), procesa los datos personales de los usuarios de la plataforma {appName}.",
     "sections": {
       "0": {
         "title": "1. Introducción",
@@ -594,7 +593,7 @@
         "content": {
           "0": "En cumplimiento con la Ley General de Protección de Datos de Brasil (LGPD), tienes los siguientes derechos respecto a tus datos personales:",
           "1": "\u2022 Confirmación de la existencia de tratamiento de datos\n\u2022 Acceso a los datos personales\n\u2022 Corrección de datos incompletos, inexactos o desactualizados\n\u2022 Anonimización, bloqueo o eliminación de datos innecesarios o excesivos\n\u2022 Portabilidad de datos a otro proveedor\n\u2022 Eliminación de datos tratados con base en el consentimiento\n\u2022 Información sobre la compartición de datos con terceros\n\u2022 Información sobre la posibilidad de no otorgar el consentimiento y sus consecuencias\n\u2022 Revocación del consentimiento",
-          "2": "Para ejercer tus derechos, contáctanos a través de la página de Contacto o por correo electrónico a privacidade@infra.app. Responderemos a tu solicitud en un plazo de 15 días hábiles."
+          "2": "Para ejercer tus derechos, contáctanos a través de la página de Contacto o por correo electrónico a {emailPrivacy}. Responderemos a tu solicitud en un plazo de 15 días hábiles."
         }
       },
       "8": {
@@ -638,7 +637,7 @@
         "summary": "Tenemos un Oficial de Protección de Datos que puedes contactar.",
         "contentLength": "1",
         "content": {
-          "0": "En cumplimiento con la Ley General de Protección de Datos de Brasil (LGPD), {appName} ha designado un Oficial de Protección de Datos (DPO), quien puede ser contactado en dpo@infra.app para asuntos relacionados con la protección de datos personales."
+          "0": "En cumplimiento con la Ley General de Protección de Datos de Brasil (LGPD), {appName} ha designado un Oficial de Protección de Datos (DPO), quien puede ser contactado en {emailDpo} para asuntos relacionados con la protección de datos personales."
         }
       },
       "13": {
@@ -647,11 +646,11 @@
         "contentLength": "2",
         "content": {
           "0": "Para asuntos relacionados con esta Política de Privacidad, contáctanos:",
-          "1": "{appName} Tecnologia Ltda.\nCorreo: privacidade@infra.app\nOficial de Protección de Datos (DPO): dpo@infra.app\nPágina de contacto: /contato"
+          "1": "{companyName}\nCorreo: {emailPrivacy}\nOficial de Protección de Datos (DPO): {emailDpo}\nPágina de contacto: /contact"
         }
       }
     },
-    "footer": "\u00a9 {year} {appName} Tecnologia Ltda. Todos los derechos reservados."
+    "footer": "\u00a9 {year} {companyName} Todos los derechos reservados."
   },
   "comoFunciona": {
     "back": "Volver",

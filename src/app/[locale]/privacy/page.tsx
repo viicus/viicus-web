@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { APP_NAME, APP_YEAR } from "@/config/app-config";
+import { CONTACT } from "@/config/contact";
 import { ROUTES } from "@/config/routes";
 
 const fadeUp = (delay = 0) => ({
@@ -16,6 +17,15 @@ const fadeUp = (delay = 0) => ({
 
 const SECTION_COUNT = 14;
 
+const legalParams = {
+  appName: APP_NAME,
+  companyName: CONTACT.COMPANY_NAME,
+  emailLegal: CONTACT.EMAIL_LEGAL,
+  emailPrivacy: CONTACT.EMAIL_PRIVACY,
+  emailDpo: CONTACT.EMAIL_DPO,
+  tbd: CONTACT.CNPJ,
+};
+
 export default function PrivacidadePage() {
   const t = useTranslations("privacidade");
 
@@ -24,7 +34,7 @@ export default function PrivacidadePage() {
     summary: t(`sections.${i}.summary`),
     content: Array.from(
       { length: Number(t(`sections.${i}.contentLength`)) },
-      (_, j) => t(`sections.${i}.content.${j}`, { appName: APP_NAME })
+      (_, j) => t(`sections.${i}.content.${j}`, legalParams)
     ),
   }));
   const [openSections, setOpenSections] = useState<Set<number>>(new Set());
@@ -217,7 +227,7 @@ export default function PrivacidadePage() {
                 className="text-[15px] leading-relaxed mb-16"
                 style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
               >
-                {t("introParagraph", { appName: APP_NAME })}
+                {t("introParagraph", legalParams)}
               </motion.p>
 
               {sections.map((section, i) => {
@@ -354,7 +364,7 @@ export default function PrivacidadePage() {
                 className="text-[13px]"
                 style={{ color: `rgba(var(--text-rgb),var(--text-faint))` }}
               >
-                {t("footer", { year: APP_YEAR, appName: APP_NAME })}
+                {t("footer", { year: APP_YEAR, ...legalParams })}
               </p>
             </div>
           </div>
