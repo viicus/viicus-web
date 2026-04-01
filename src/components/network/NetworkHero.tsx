@@ -125,7 +125,7 @@ export default function NetworkHero({ personCount = 75 }: { personCount?: number
             {t("ctaPrimary")}
             <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
           </motion.button>
-          <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
+          <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
             <Link
               href={ROUTES.HOW_IT_WORKS}
               className="block rounded-full px-7 py-3.5 text-sm font-medium cursor-pointer transition-all duration-300 w-full sm:w-auto text-center"

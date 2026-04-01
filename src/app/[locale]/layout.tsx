@@ -5,7 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { APP_NAME, APP_TAGLINE } from "@/config/app-config";
+import { APP_NAME } from "@/config/app-config";
 import Navigation from "@/components/Navigation";
 import "../globals.css";
 
@@ -31,7 +31,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "hero" });
 
-  const title = `${APP_NAME} — ${APP_TAGLINE}`;
+  const title = `${APP_NAME} — ${t("tagline")}`;
   const description = t("subtitle");
   const url = "https://viicus.com";
 
