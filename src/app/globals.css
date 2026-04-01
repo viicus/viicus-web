@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+/* ===== Light theme (default) ===== */
+:root {
+  --background: #f5f2ed;
+  --foreground: #1a1a1a;
+
+  /* Hero / Canvas */
+  --hero-bg: #f5f2ed;
+  --hero-bg-rgb: 245,242,237;
+  --person-color: #059669;
+  --person-rgb: 5,150,105;
+  --grid-color: rgba(0,0,0,0.05);
+  --text-rgb: 26,26,26;
+  --card-bg-rgb: 255,255,255;
+  --popup-bg-rgb: 255,255,255;
+  --shadow-alpha: 0.1;
+  --highlight-rgb: 0,0,0;
+
+  /* Accent */
+  --accent: #059669;
+  --accent-rgb: 5,150,105;
+  --accent-light: #10b981;
+  --accent-glow: rgba(5,150,105,0.2);
+
+  /* UI text opacities */
+  --text-strong: 0.9;
+  --text-medium: 0.55;
+  --text-muted: 0.4;
+  --text-faint: 0.25;
+  --border-subtle: rgba(0,0,0,0.08);
+  --border-hover: rgba(0,0,0,0.2);
+  --btn-ghost-bg: rgba(0,0,0,0.03);
+  --btn-ghost-hover: rgba(0,0,0,0.06);
+  --divider: rgba(0,0,0,0.08);
+}
+
+/* ===== Dark theme (activated via .dark class on <html>) ===== */
+:root.dark {
+  --background: #0a0a0f;
+  --foreground: #ffffff;
+
+  --hero-bg: #0a0a0f;
+  --hero-bg-rgb: 10,10,15;
+  --person-color: #7dd3a8;
+  --person-rgb: 125,211,168;
+  --grid-color: rgba(255,255,255,0.018);
+  --text-rgb: 255,255,255;
+  --card-bg-rgb: 18,18,28;
+  --popup-bg-rgb: 14,14,22;
+  --shadow-alpha: 0.3;
+  --highlight-rgb: 255,255,255;
+
+  --accent: #10b981;
+  --accent-rgb: 16,185,129;
+  --accent-light: #34d399;
+  --accent-glow: rgba(16,185,129,0.3);
+
+  --text-strong: 0.9;
+  --text-medium: 0.5;
+  --text-muted: 0.35;
+  --text-faint: 0.2;
+  --border-subtle: rgba(255,255,255,0.08);
+  --border-hover: rgba(255,255,255,0.2);
+  --btn-ghost-bg: rgba(255,255,255,0.02);
+  --btn-ghost-hover: rgba(255,255,255,0.05);
+  --divider: rgba(255,255,255,0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+}
+
+/* ── Gradient text utility ── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--foreground) 30%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-accent {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Section transition gradients ── */
+.section-fade-in {
+  position: relative;
+}
+.section-fade-in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to bottom, var(--background), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section-fade-out::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, var(--hero-bg), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Noise texture overlay ── */
+.noise-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* ── Hover micro-interactions ── */
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 40px var(--accent-glow);
+}
+
+/* Perspective camera */
+.map-perspective {
+  perspective: 800px;
+  perspective-origin: 50% 20%;
+}
+
+/* 3D map plane — cards live inside here */
+.map-inner {
+  position: absolute;
+  left: -70%;
+  right: -70%;
+  top: -220%;
+  height: 520%;
+  transform-style: preserve-3d;
+}
+
+/* Map transform is driven by JS — no CSS animation needed */
+
+/* Pin pulse — ripple effect */
+@keyframes pin-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pin-pulse-inner {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-pin-pulse {
+  animation: pin-pulse 2s ease-out infinite;
+}
+
+.animate-pin-pulse-inner {
+  animation: pin-pulse-inner 2s ease-out 0.3s infinite;
+}

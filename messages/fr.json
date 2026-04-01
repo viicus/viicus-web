@@ -1,0 +1,871 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "howItWorks": "Comment ça marche",
+    "features": "Ce qui se passe",
+    "verification": "Vérification",
+    "download": "Télécharger l'app",
+    "language": "Langue"
+  },
+  "hero": {
+    "badge": "Activez votre ville",
+    "titleLine1": "Chaque voix",
+    "titleLine2Accent": "se connecte",
+    "titleLine2Rest": "au changement",
+    "subtitle": "Signalez. Votez. Confirmez. Regardez votre quartier se transformer grâce à la force de l'action collective.",
+    "ctaPrimary": "Télécharger l'app",
+    "ctaSecondary": "Comment ça marche",
+    "tagline": "Ta ville. Ta voix."
+  },
+  "howItWorks": {
+    "sectionLabel": "Cette semaine, dans votre quartier :",
+    "stories": {
+      "0": {
+        "main": "Brocante de vinyles sur la place samedi.",
+        "detail": "Ce disque que vous cherchez depuis des mois y était, à moitié prix. Mais l'info ne vous parvient jamais."
+      },
+      "1": {
+        "main": "Quelqu'un a trouvé une carte d'identité sur le trottoir.",
+        "detail": "A essayé de la rendre. Ne savait pas à qui. L'a laissée au comptoir d'un commerce. Le propriétaire ne l'a jamais su."
+      },
+      "2": {
+        "main": "Votre voisin s'est fait cambrioler.",
+        "detail": "Vous l'avez appris un jour plus tard. Vous étiez en danger."
+      },
+      "3": {
+        "main": "La page Instagram a publié le cambriolage.",
+        "detail": "Trois jours plus tard. Pas de localisation précise, pas de détails utiles. Mélangé avec des pubs et des mèmes. Ceux qui avaient besoin de l'alerte étaient déjà passés au même endroit."
+      },
+      "4": {
+        "main": "Embouteillage de 4 heures sur l'avenue principale.",
+        "detail": "C'était un accident grave. Si vous l'aviez su, vous auriez pris un autre chemin. L'info est arrivée trop tard."
+      },
+      "5": {
+        "main": "Fuite d'eau dans la rue depuis des jours.",
+        "detail": "Le quartier pensait que la réparation serait rapide. Mais personne n'a prévenu les autorités."
+      }
+    },
+    "smokeText": "Les groupes de quartier",
+    "shatterText": "ne marchent pas.",
+    "rotatorSuffix": "ne marchent pas.",
+    "rotatorItems": {
+      "0": "Les groupes de quartier",
+      "1": "Les pages Instagram",
+      "2": "Les groupes WhatsApp",
+      "3": "Les groupes Facebook",
+      "4": "Les discussions sur le palier",
+      "5": "Les forums de quartier",
+      "6": "Les applis de réclamation",
+      "7": "Les rumeurs de couloir",
+      "8": "Les affiches sur les poteaux",
+      "9": "Les plaintes isolées"
+    },
+    "act2Title1": "Tout ce qui compte pour votre communauté",
+    "act2Title2": "se perd dans le bruit.",
+    "act2Body1": "Des délits sans trace. Des événements sans public.",
+    "act2Body1b": "Des appels à l'aide sans réponse. Des informations sans destination.",
+    "act2Body2": "Ce n'est pas que les gens s'en moquent.",
+    "act2Body3": "Il n'y a simplement aucun endroit",
+    "act2Body3Accent": "conçu pour ça.",
+    "act3Intro": "Jusqu'à maintenant.",
+    "act3Body1": "Un réseau social qui existe pour une seule raison :",
+    "act3Body1Bold": "vous connecter avec les gens d'à côté.",
+    "act3Body2": "Sur les choses qui comptent vraiment pour vous.",
+    "learnMore": "En savoir plus"
+  },
+  "features": {
+    "sectionLabel": "Ce qui se passe ici",
+    "title": "Tout ce que votre communauté",
+    "titleAccent": "a besoin de dire.",
+    "subtitle": "Pas un réseau social de likes et de selfies. Ici, des choses réelles se passent entre des personnes réelles.",
+    "events": {
+      "0": {
+        "tag": "Sécurité",
+        "text": "Cambriolage sur la rue Augusta",
+        "body": "30 voisins ont confirmé en quelques minutes. Toute la rue était au courant."
+      },
+      "1": {
+        "tag": "Événements",
+        "text": "Marché bio au parc samedi",
+        "body": "Le producteur annonce, la communauté vient."
+      },
+      "2": {
+        "tag": "Infrastructure",
+        "text": "Énorme nid-de-poule rue Flores",
+        "body": "20 confirmations. Ce n'est pas une plainte — c'est une preuve."
+      },
+      "3": {
+        "tag": "Vie quotidienne",
+        "text": "Quelqu'un connaît un électricien dans le coin ?",
+        "body": "Des recommandations de gens qui marchent sur le même trottoir."
+      },
+      "4": {
+        "tag": "Commerce local",
+        "text": "Nouvelle boulangerie avec du pain artisanal",
+        "body": "Vos voisins recommandent, le commerce local prospère."
+      }
+    },
+    "punchline1": "Un réseau social n'a pas besoin de parler",
+    "punchline1Faint": "du monde entier.",
+    "punchline2": "Parfois, il suffit de parler",
+    "punchline2Accent": "ta rue, ton quartier, ta ville. Ce qui t'entoure.",
+    "learnMore": "En savoir plus"
+  },
+  "community": {
+    "sectionLabel": "Vérification collective",
+    "title1": "Une personne publie.",
+    "title2": "La communauté confirme.",
+    "body": "Tout ce qui se passe autour de vous, dans votre quartier, dans votre ville — vous le saurez. Chaque publication est validée par des gens qui y vivent. Ce n'est pas un like — c'est une vraie confirmation. Quand de nombreux voisins disent que c'est pertinent,",
+    "bodyBold": "on ne peut pas l'ignorer.",
+    "principles": {
+      "0": {
+        "value": "Moins de désinformation.",
+        "sub": "La communauté vérifie. Sans confirmation, les publications perdent en visibilité."
+      },
+      "1": {
+        "value": "Pas de bruit.",
+        "sub": "Seul ce qui se passe autour de vous apparaît pour vous."
+      },
+      "2": {
+        "value": "Pas de boîte noire.",
+        "sub": "Qui a publié, qui a confirmé. Tout est visible."
+      }
+    },
+    "feedTitle1": "Pendant que vous lisez ceci,",
+    "feedTitle2": "dans votre quartier :",
+    "feedHeader": "En ce moment",
+    "feedLocation": "São Paulo, SP",
+    "feedItems": {
+      "0": { "text": "Tentative de vol rue Haddock Lobo", "where": "Jardins, SP", "time": "maintenant" },
+      "1": { "text": "Concert gratuit au parc Ibirapuera aujourd'hui 18h", "where": "Vila Mariana, SP", "time": "12 min" },
+      "2": { "text": "Chien perdu — golden, collier bleu", "where": "Pinheiros, SP", "time": "25 min" },
+      "3": { "text": "Feu de circulation en panne au carrefour Faria Lima", "where": "Itaim Bibi, SP", "time": "38 min" },
+      "4": { "text": "Portefeuille trouvé près de la station Consolação", "where": "Consolação, SP", "time": "1h" },
+      "5": { "text": "Épicerie -40 % aujourd'hui jusqu'à 20h", "where": "Perdizes, SP", "time": "1h" },
+      "6": { "text": "Quelqu'un connaît un pédiatre dans le coin ?", "where": "Moema, SP", "time": "2h" }
+    },
+    "stats": {
+      "0": { "value": "40+", "label": "voisins confirment chaque alerte" },
+      "1": { "value": "<5min", "label": "pour que l'info arrive" },
+      "2": { "value": "100%", "label": "de transparence sur chaque publication" }
+    },
+    "closing1": "De votre pâté de maisons à toute la ville. Sécurité, culture, solidarité, infrastructure, commerce local. Tout ce qui se passe autour de vous.",
+    "closing2": "Vous ne serez plus jamais le dernier informé.",
+    "learnMore": "En savoir plus"
+  },
+  "ctaFooter": {
+    "narrative1": "Les réseaux sociaux vous connectent au monde.",
+    "narrative2": "Mais qui vous connecte",
+    "narrative2Bold": "à votre quartier ?",
+    "narrative3": "{appName} n'est pas pour tout le monde.",
+    "narrative3Bold": "C'est pour ceux qui se soucient de l'endroit où ils vivent.",
+    "narrative4": "Nous ouvrons communauté par communauté. Quartier par quartier.",
+    "narrative5": "Ton quartier n'a pas encore commencé ?",
+    "narrative5Accent": "Inaugure-le. Sois le premier.",
+    "ctaLabel": "Activez votre zone",
+    "ctaTitle": "Votre quartier n'est pas encore actif ?",
+    "ctaBody": "Téléchargez l'app et soyez celui qui active votre communauté.",
+    "ctaButton": "Télécharger l'app",
+    "ctaNote": "Disponible sur iOS et Android.",
+    "footerTerms": "Conditions",
+    "footerPrivacy": "Confidentialité",
+    "footerContact": "Contact"
+  },
+  "contato": {
+    "breadcrumbHome": "Accueil",
+    "breadcrumbCurrent": "Contact",
+    "sectionLabel": "Nous contacter",
+    "title": "Contact",
+    "subtitle": "Choisissez le canal le plus adapté à votre demande. Chaque canal a un délai de réponse spécifique.",
+    "channels": {
+      "0": {
+        "title": "Email général",
+        "value": "contato@infra.app",
+        "description": "Pour les questions générales, suggestions et partenariats.",
+        "response": "Nous répondons sous 2 jours ouvrés."
+      },
+      "1": {
+        "title": "Vie privée et données personnelles",
+        "value": "privacidade@infra.app",
+        "description": "Pour exercer vos droits en matière de protection des données : accès, rectification, suppression ou portabilité des données.",
+        "response": "Nous répondons sous 15 jours ouvrés conformément à la loi."
+      },
+      "2": {
+        "title": "Délégué à la protection des données (DPO)",
+        "value": "dpo@infra.app",
+        "description": "Canal direct vers notre Délégué à la protection des données, conformément aux réglementations en vigueur.",
+        "response": "Nous répondons sous 15 jours ouvrés."
+      },
+      "3": {
+        "title": "Juridique",
+        "value": "legal@infra.app",
+        "description": "Pour les questions juridiques, mises en demeure et affaires réglementaires.",
+        "response": "Nous répondons sous 5 jours ouvrés."
+      },
+      "4": {
+        "title": "Signalements et sécurité",
+        "value": "seguranca@infra.app",
+        "description": "Pour signaler des failles de sécurité, des abus sur la plateforme ou du contenu qui enfreint nos Conditions d'utilisation.",
+        "response": "Nous répondons sous 24 heures."
+      }
+    },
+    "formTitle": "Formulaire de contact",
+    "formSubtitle": "Vous préférez envoyer votre message directement ? Remplissez le formulaire ci-dessous.",
+    "subjectLabel": "Objet",
+    "subjectPlaceholder": "Sélectionnez un objet",
+    "subjectOptions": {
+      "0": "Question générale",
+      "1": "Vie privée et données personnelles",
+      "2": "Question juridique",
+      "3": "Signalement ou sécurité",
+      "4": "Presse",
+      "5": "Partenariats"
+    },
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom complet",
+    "emailLabel": "Email",
+    "emailPlaceholder": "votre@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Décrivez comment nous pouvons vous aider...",
+    "submitButton": "Envoyer le message",
+    "successTitle": "Message envoyé !",
+    "successMessage": "Merci de nous avoir contactés. Nous vous répondrons bientôt à l'adresse email fournie.",
+    "emergencyTitle": "Situations d'urgence",
+    "emergencyBody": "{appName} n'est pas un service d'urgence. En cas de danger pour la vie ou la sécurité, contactez directement les services compétents :",
+    "emergency190": "Police",
+    "emergency192": "SAMU",
+    "emergency193": "Pompiers",
+    "emergency180": "Violences faites aux femmes",
+    "addressTitle": "Siège social",
+    "addressLine1": "{appName} Tecnologia Ltda.",
+    "addressLine2": "CNPJ: [to be defined]",
+    "addressLine3": "[Address to be defined]",
+    "addressLine4": "São Paulo — SP, Brazil",
+    "seeAlso": "Voir aussi :",
+    "linkTerms": "Conditions d'utilisation",
+    "linkPrivacy": "Confidentialité",
+    "backToTop": "Retour en haut"
+  },
+  "canvas": {
+    "typeLabels": {
+      "0": "SIGNALEMENT",
+      "1": "ALERTE",
+      "2": "DEMANDE"
+    },
+    "titles": {
+      "0": {
+        "0": "Nid-de-poule rue Augusta",
+        "1": "Lampadaire en panne",
+        "2": "Inondation avenue Paulista",
+        "3": "Trottoir endommagé",
+        "4": "Fuite d'eau signalée",
+        "5": "Fissure sur la chaussée",
+        "6": "Panneau manquant sur l'avenue",
+        "7": "Tas d'ordures au coin de la rue"
+      },
+      "1": {
+        "0": "Bruit excessif — Centre-ville",
+        "1": "Coupure de courant détectée",
+        "2": "Odeur de gaz signalée",
+        "3": "Passage piéton dangereux",
+        "4": "Arbre menaçant de tomber",
+        "5": "Bouche d'égout bouchée",
+        "6": "Construction non autorisée",
+        "7": "Bouche d'incendie cassée"
+      },
+      "2": {
+        "0": "Réparation de banc sur la place",
+        "1": "Passage piéton effacé",
+        "2": "Demande d'abri d'arrêt de bus",
+        "3": "Ralentisseur demandé",
+        "4": "Extension de piste cyclable",
+        "5": "Entretien de l'aire de jeux",
+        "6": "Nettoyage de rue nécessaire",
+        "7": "Demande de wifi public"
+      }
+    },
+    "actions": {
+      "0": {
+        "0": { "0": "Communauté notifiée", "1": "Mairie informée — équipe voirie envoyée" },
+        "1": { "0": "Communauté notifiée", "1": "Équipe éclairage public envoyée" },
+        "2": { "0": "Communauté notifiée", "1": "Protection civile en surveillance — mairie informée" },
+        "3": { "0": "Communauté notifiée", "1": "Mairie informée — réparation planifiée" },
+        "4": { "0": "Communauté notifiée", "1": "Compagnie des eaux contactée — équipe en route" },
+        "5": { "0": "Communauté notifiée", "1": "Mairie informée — maintenance envoyée" },
+        "6": { "0": "Communauté notifiée", "1": "Service de circulation notifié — signalisation en cours" },
+        "7": { "0": "Communauté notifiée", "1": "Mairie informée — collecte planifiée" }
+      },
+      "1": {
+        "0": { "0": "Communauté notifiée", "1": "Police notifiée" },
+        "1": { "0": "Communauté notifiée", "1": "Compagnie d'électricité contactée — délai de réparation communiqué" },
+        "2": { "0": "Communauté notifiée", "1": "Pompiers envoyés — zone sécurisée" },
+        "3": { "0": "Communauté notifiée", "1": "Service de circulation notifié — inspection sur place" },
+        "4": { "0": "Communauté notifiée", "1": "Protection civile envoyée — zone fermée" },
+        "5": { "0": "Communauté notifiée", "1": "Mairie informée — nettoyage d'urgence envoyé" },
+        "6": { "0": "Communauté notifiée", "1": "Mairie informée — inspection envoyée" },
+        "7": { "0": "Communauté notifiée", "1": "Pompiers envoyés — réparation d'urgence" }
+      },
+      "2": {
+        "0": { "0": "Communauté notifiée", "1": "Mairie informée — maintenance planifiée" },
+        "1": { "0": "Communauté notifiée", "1": "Service de circulation notifié — repeinture planifiée" },
+        "2": { "0": "Communauté notifiée", "1": "Mairie informée — projet à l'étude" },
+        "3": { "0": "Communauté notifiée", "1": "Service de circulation notifié — étude de trafic lancée" },
+        "4": { "0": "Communauté notifiée", "1": "Mairie informée — projet en cours" },
+        "5": { "0": "Communauté notifiée", "1": "Mairie informée — équipe de maintenance envoyée" },
+        "6": { "0": "Communauté notifiée", "1": "Mairie informée — nettoyage planifié" },
+        "7": { "0": "Communauté notifiée", "1": "Mairie informée — faisabilité à l'étude" }
+      }
+    },
+    "dismissReasons": {
+      "0": {
+        "0": { "0": "Événement classé", "1": "Information non vérifiée — visibilité réduite" },
+        "1": { "0": "Événement classé", "1": "Déjà résolu — l'équipe a confirmé la réparation sur place" },
+        "2": { "0": "Événement classé", "1": "Déjà résolu — problème non constaté sur place" },
+        "3": { "0": "Événement classé", "1": "Doublon — déjà signalé par un autre citoyen" },
+        "4": { "0": "Événement classé", "1": "Non pertinent — maintenance déjà planifiée" },
+        "5": { "0": "Événement classé", "1": "Déjà résolu — réparation effectuée précédemment" },
+        "6": { "0": "Événement classé", "1": "Information inexacte — localisation incorrecte" },
+        "7": { "0": "Événement classé", "1": "Non pertinent — collecte régulière déjà planifiée" }
+      },
+      "1": {
+        "0": { "0": "Événement classé", "1": "Fausse alerte — aucun incident sur place" },
+        "1": { "0": "Événement classé", "1": "Déjà normalisé — courant rétabli" },
+        "2": { "0": "Événement classé", "1": "Fausse alerte — l'inspection n'a révélé aucun risque" },
+        "3": { "0": "Événement classé", "1": "Non pertinent — signalisation existante en place" },
+        "4": { "0": "Événement classé", "1": "Risque non confirmé — arbre évalué et sûr" },
+        "5": { "0": "Événement classé", "1": "Déjà résolu — drainage débouché" },
+        "6": { "0": "Événement classé", "1": "Non pertinent — construction autorisée et signalée" },
+        "7": { "0": "Événement classé", "1": "Doublon — incident déjà enregistré" }
+      },
+      "2": {
+        "0": { "0": "Événement classé", "1": "Hors périmètre — responsabilité de la propriété privée" },
+        "1": { "0": "Événement classé", "1": "Non approuvé — budget indisponible" },
+        "2": { "0": "Événement classé", "1": "Doublon — demande déjà à l'étude" },
+        "3": { "0": "Événement classé", "1": "Non réalisable — restriction technique identifiée" },
+        "4": { "0": "Événement classé", "1": "Non approuvé — étude d'impact négative" },
+        "5": { "0": "Événement classé", "1": "Non pertinent — maintenance récente effectuée" },
+        "6": { "0": "Événement classé", "1": "Déjà planifié — service prévu ce mois-ci" },
+        "7": { "0": "Événement classé", "1": "Non réalisable — infrastructure incompatible" }
+      }
+    },
+    "recentlyReported": "Récemment signalé",
+    "confirmed": "CONFIRMÉ",
+    "dismissed": "CLASSÉ",
+    "votes": "votes",
+    "communityNotified": "Communauté notifiée",
+    "authoritiesNotified": "Autorités notifiées",
+    "eventDismissed": "Événement classé",
+    "infoNotVerified": "Information non vérifiée",
+    "paused": "En pause",
+    "collecting": "Collecte en cours..."
+  },
+  "common": {
+    "back": "Retour",
+    "backToHome": "Retour à l'accueil",
+    "scrollToExplore": "Faites défiler pour explorer"
+  },
+  "termos": {
+    "pageTitle": "Conditions d'utilisation",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbCurrent": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour : {date}",
+    "lastUpdatedDate": "March 15, 2026",
+    "backToTop": "Retour en haut",
+    "intro": "Bienvenue sur {appName}. Les présentes Conditions d'utilisation régissent l'accès et l'utilisation de la plateforme {appName}, exploitée par {appName} Tecnologia Ltda., immatriculée sous le CNPJ No. [to be defined], dont le siège social est situé à [to be defined] (la « Société », « nous » ou « notre »).",
+    "sidebarTitle": "Table des matières",
+    "sections": {
+      "0": {
+        "title": "1. Acceptation des conditions",
+        "summary": "En utilisant la plateforme, vous acceptez ces conditions.",
+        "contentLength": "2",
+        "content": {
+          "0": "En accédant ou en utilisant la plateforme {appName} (la « Plateforme »), y compris l'application mobile et le site web, vous acceptez de vous conformer aux présentes Conditions d'utilisation (les « Conditions ») et d'être lié par celles-ci. Si vous n'acceptez pas une partie de ces Conditions, vous ne devez pas utiliser la Plateforme.",
+          "1": "Nous nous réservons le droit de mettre à jour ou de modifier ces Conditions à tout moment. Les modifications importantes seront communiquées via la Plateforme ou par email. Votre utilisation continue de la Plateforme après toute modification constitue une acceptation des Conditions révisées."
+        }
+      },
+      "1": {
+        "title": "2. Description du service",
+        "summary": "Ce qu'est le service et ce qu'il n'est pas (pas un service d'urgence).",
+        "contentLength": "2",
+        "content": {
+          "0": "{appName} est une plateforme de communication hyperlocale qui permet aux utilisateurs de partager, vérifier et accéder à des informations pertinentes pour la communauté dans laquelle ils résident. La Plateforme comprend, sans s'y limiter, des fonctionnalités de publication d'alertes, d'événements, de recommandations, de demandes d'aide et de signalements d'infrastructure.",
+          "1": "{appName} n'est pas un service d'urgence. En cas de danger pour la vie ou la sécurité, veuillez contacter directement les services d'urgence compétents."
+        }
+      },
+      "2": {
+        "title": "3. Inscription et compte",
+        "summary": "Vos informations doivent être exactes et votre compte est sous votre responsabilité.",
+        "contentLength": "4",
+        "content": {
+          "0": "Pour utiliser certaines fonctionnalités de la Plateforme, vous devez créer un compte. En vous inscrivant, vous déclarez et garantissez que :",
+          "1": "(a) Toutes les informations fournies sont vraies, exactes et complètes ;\n(b) Vous avez au moins 18 ans ou avez obtenu l'autorisation d'un représentant légal ;\n(c) L'adresse fournie correspond à votre lieu de résidence effectif ;\n(d) Vous êtes responsable de la sécurité de votre compte et de votre mot de passe.",
+          "2": "Chaque compte est lié à une adresse de résidence vérifiée. {appName} peut demander un justificatif de domicile à tout moment pour garantir l'intégrité du système de géolocalisation.",
+          "3": "Vous êtes seul responsable de toutes les activités effectuées via votre compte. Vous devez nous notifier immédiatement dès que vous avez connaissance de toute utilisation non autorisée."
+        }
+      },
+      "3": {
+        "title": "4. Utilisation acceptable et conduite",
+        "summary": "Ce que vous pouvez et ne pouvez pas faire sur la plateforme.",
+        "contentLength": "3",
+        "content": {
+          "0": "En utilisant la Plateforme, vous vous engagez à :",
+          "1": "(a) Ne pas publier de contenu faux, trompeur, diffamatoire, calomnieux, menaçant, obscène ou portant atteinte aux droits d'autrui ;\n(b) Ne pas utiliser la Plateforme à des fins illégales ou non autorisées ;\n(c) Ne pas créer de faux comptes, de comptes multiples ou de comptes liés à des adresses où vous ne résidez pas ;\n(d) Ne pas utiliser de systèmes automatisés (bots, scrapers) pour accéder à la Plateforme ;\n(e) Ne pas tenter de manipuler le système de vérification collective ;\n(f) Ne pas harceler, intimider ou nuire aux autres utilisateurs ;\n(g) Respecter la vie privée d'autrui en ne divulguant pas d'informations personnelles sans consentement.",
+          "2": "{appName} se réserve le droit de supprimer du contenu, de suspendre ou de résilier des comptes qui enfreignent ces Conditions, à tout moment et sans préavis."
+        }
+      },
+      "4": {
+        "title": "5. Contenu des utilisateurs",
+        "summary": "Vous êtes propriétaire de ce que vous publiez, mais vous nous accordez une licence pour l'afficher.",
+        "contentLength": "3",
+        "content": {
+          "0": "En publiant du contenu sur la Plateforme (« Contenu utilisateur »), vous :",
+          "1": "(a) Déclarez que vous êtes l'auteur ou que vous possédez les droits nécessaires à la publication ;\n(b) Accordez à {appName} une licence non exclusive, mondiale, gratuite, sous-licenciable et transférable pour utiliser, reproduire, modifier, adapter, publier et afficher le Contenu utilisateur dans le cadre de l'exploitation de la Plateforme ;\n(c) Reconnaissez que le contenu publié peut être consulté par d'autres utilisateurs de la région ;\n(d) Comprenez que {appName} n'assume aucune responsabilité quant au Contenu utilisateur et ne garantit pas sa véracité, son exactitude ou son exhaustivité.",
+          "2": "Le système de vérification collective est un mécanisme de validation communautaire. Il indique le degré de confirmation par d'autres utilisateurs mais ne constitue pas une garantie absolue de véracité."
+        }
+      },
+      "5": {
+        "title": "6. Système de vérification",
+        "summary": "Le système aide, mais ne garantit pas une exactitude absolue.",
+        "contentLength": "3",
+        "content": {
+          "0": "{appName} utilise un système de vérification collective par lequel les utilisateurs peuvent confirmer ou contester les informations publiées. Ce système :",
+          "1": "(a) Vise à renforcer la fiabilité des informations partagées ;\n(b) Ne remplace pas la vérification par les sources officielles ou les autorités compétentes ;\n(c) Est fondé sur des confirmations volontaires d'utilisateurs inscrits ;\n(d) Peut employer des critères algorithmiques pour déterminer la portée et la pertinence des publications en fonction du nombre et de la qualité des vérifications reçues.",
+          "2": "{appName} ne garantit pas que toutes les informations vérifiées par la communauté sont exactes. Vous devez exercer votre propre jugement lorsque vous vous fiez aux informations de la Plateforme."
+        }
+      },
+      "6": {
+        "title": "7. Propriété intellectuelle",
+        "summary": "La marque et le code nous appartiennent.",
+        "contentLength": "2",
+        "content": {
+          "0": "La Plateforme, y compris sa conception, son code source, ses marques, logos, textes et tous les autres éléments, est protégée par les lois sur la propriété intellectuelle et appartient à {appName} ou à ses concédants de licence.",
+          "1": "Rien dans les présentes Conditions ne vous confère de droit sur la propriété intellectuelle de {appName}, à l'exception du droit limité d'utiliser la Plateforme tel que prévu dans les présentes."
+        }
+      },
+      "7": {
+        "title": "8. Exclusion de garanties",
+        "summary": "La plateforme est fournie en l'état.",
+        "contentLength": "2",
+        "content": {
+          "0": "La Plateforme est fournie « en l'état » et « selon disponibilité », sans garantie d'aucune sorte, expresse ou implicite, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier et de non-contrefaçon.",
+          "1": "{appName} ne garantit pas que : (a) la Plateforme sera ininterrompue, sécurisée ou exempte d'erreurs ; (b) les résultats obtenus via la Plateforme seront exacts ou fiables ; (c) les informations publiées par les utilisateurs seront véridiques, complètes ou à jour."
+        }
+      },
+      "8": {
+        "title": "9. Limitation de responsabilité",
+        "summary": "Nous ne sommes pas responsables des dommages indirects.",
+        "contentLength": "2",
+        "content": {
+          "0": "Dans les limites autorisées par la loi applicable, {appName}, ses dirigeants, employés, partenaires et agents ne pourront être tenus responsables de tout dommage direct, indirect, accessoire, spécial, consécutif ou punitif, y compris la perte de bénéfices, de données, d'usage ou d'autres pertes immatérielles, résultant de :",
+          "1": "(a) L'utilisation ou l'impossibilité d'utiliser la Plateforme ;\n(b) Le contenu publié par des tiers sur la Plateforme ;\n(c) L'accès non autorisé à des informations personnelles ;\n(d) Les décisions prises sur la base d'informations de la Plateforme ;\n(e) Toute autre question relative à la Plateforme."
+        }
+      },
+      "9": {
+        "title": "10. Indemnisation",
+        "summary": "Vous nous indemnisez si votre utilisation de la plateforme cause des problèmes.",
+        "contentLength": "1",
+        "content": {
+          "0": "Vous acceptez d'indemniser et de dégager de toute responsabilité {appName}, ses dirigeants, employés, partenaires et agents de et contre toute réclamation, demande, perte, responsabilité et dépense (y compris les honoraires d'avocats) découlant de : (a) votre utilisation de la Plateforme ; (b) votre violation des présentes Conditions ; (c) votre violation des droits de tout tiers ; (d) tout Contenu utilisateur publié par vous."
+        }
+      },
+      "10": {
+        "title": "11. Résiliation",
+        "summary": "Vous pouvez partir à tout moment. Nous pouvons également résilier votre compte.",
+        "contentLength": "2",
+        "content": {
+          "0": "Vous pouvez résilier votre compte à tout moment via les paramètres de la Plateforme. {appName} peut suspendre ou résilier votre compte et votre accès à la Plateforme, en tout ou en partie, à tout moment, pour quelque raison que ce soit, y compris en cas de violation des présentes Conditions.",
+          "1": "À la résiliation, votre droit d'utiliser la Plateforme cesse immédiatement. Les dispositions relatives à la propriété intellectuelle, à l'exclusion de garanties, à la limitation de responsabilité et à l'indemnisation survivent à la résiliation."
+        }
+      },
+      "11": {
+        "title": "12. Droit applicable et juridiction",
+        "summary": "Le droit brésilien s'applique.",
+        "contentLength": "1",
+        "content": {
+          "0": "Les présentes Conditions sont régies par les lois de la République fédérative du Brésil. Tout litige découlant des présentes Conditions sera soumis aux tribunaux de la juridiction du siège social de {appName}, avec renonciation expresse à tout autre for, même privilégié."
+        }
+      },
+      "12": {
+        "title": "13. Dispositions générales",
+        "summary": "Si une clause est invalidée, les dispositions restantes restent en vigueur.",
+        "contentLength": "2",
+        "content": {
+          "0": "Si une disposition des présentes Conditions est jugée invalide ou inapplicable, les dispositions restantes conservent leur plein effet. Le fait pour {appName} de ne pas exercer ou faire valoir un droit ou une disposition des présentes Conditions ne constitue pas une renonciation à ce droit ou à cette disposition.",
+          "1": "Les présentes Conditions constituent l'intégralité de l'accord entre vous et {appName} concernant l'utilisation de la Plateforme et remplacent tous les accords antérieurs."
+        }
+      },
+      "13": {
+        "title": "14. Contact",
+        "summary": "Comment nous joindre pour les questions juridiques.",
+        "contentLength": "1",
+        "content": {
+          "0": "Si vous avez des questions concernant les présentes Conditions d'utilisation, veuillez nous contacter via notre page Contact ou par email à legal@infra.app."
+        }
+      }
+    },
+    "footer": "© {year} {appName} Tecnologia Ltda. Tous droits réservés."
+  },
+  "privacidade": {
+    "pageTitle": "Politique de confidentialité",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbCurrent": "Politique de confidentialité",
+    "heroLabel": "Juridique",
+    "lastUpdated": "Dernière mise à jour : {date}",
+    "lastUpdatedDate": "March 15, 2026",
+    "backToTop": "Retour en haut",
+    "introParagraph": "La présente Politique de confidentialité décrit comment {appName} Tecnologia Ltda., immatriculée sous le CNPJ No. [to be defined], dont le siège social est situé à [to be defined] (« {appName} », « Société », « nous » ou « notre »), traite les données personnelles des utilisateurs de la plateforme {appName}.",
+    "sections": {
+      "0": {
+        "title": "1. Introduction",
+        "summary": "Cette politique explique comment nous traitons vos données personnelles.",
+        "contentLength": "3",
+        "content": {
+          "0": "Votre vie privée est fondamentale pour {appName}. La présente Politique de confidentialité (« Politique ») décrit comment nous collectons, utilisons, stockons, partageons et protégeons vos informations personnelles lorsque vous utilisez notre plateforme, y compris l'application mobile et le site web (« Plateforme »).",
+          "1": "Cette Politique est conforme à la Loi générale brésilienne sur la protection des données (LGPD) (Loi n° 13 709/2018), au Cadre des droits civils d'Internet au Brésil (Loi n° 12 965/2014) et aux autres réglementations applicables.",
+          "2": "En utilisant la Plateforme, vous confirmez avoir lu, compris et accepté les pratiques décrites dans la présente Politique."
+        }
+      },
+      "1": {
+        "title": "2. Données personnelles que nous collectons",
+        "summary": "Nous collectons des données que vous fournissez, des données collectées automatiquement et des données de tiers.",
+        "contentLength": "4",
+        "content": {
+          "0": "Nous collectons différentes catégories de données personnelles, comme décrit ci-dessous :",
+          "1": "2.1. Données fournies par vous :\n• Nom complet et nom d'affichage\n• Adresse email\n• Numéro de téléphone\n• Adresse de résidence (pour la vérification de géolocalisation)\n• Photo de profil (facultative)\n• Contenu que vous publiez, y compris texte, images et vérifications",
+          "2": "2.2. Données collectées automatiquement :\n• Adresse IP et informations de connexion\n• Type d'appareil, système d'exploitation et navigateur\n• Données de géolocalisation (avec votre consentement explicite)\n• Données d'utilisation de la Plateforme (pages consultées, fonctionnalités utilisées, durée de session)\n• Identifiants de l'appareil\n• Cookies et technologies similaires",
+          "3": "2.3. Données de tiers :\n• Informations provenant de services d'authentification, si vous choisissez la connexion sociale (Google, Apple)\n• Données de vérification d'adresse via des partenaires de validation"
+        }
+      },
+      "2": {
+        "title": "3. Finalités du traitement des données",
+        "summary": "Nous utilisons vos données pour exploiter la plateforme et améliorer votre expérience.",
+        "contentLength": "2",
+        "content": {
+          "0": "Nous utilisons vos données personnelles aux fins suivantes :",
+          "1": "• Créer et gérer votre compte sur la Plateforme\n• Vérifier votre adresse de résidence pour garantir l'intégrité du système hyperlocal\n• Afficher du contenu pertinent en fonction de votre localisation\n• Exploiter le système de vérification collective\n• Envoyer des notifications sur les activités pertinentes dans votre zone\n• Améliorer et personnaliser l'expérience de la Plateforme\n• Assurer la sécurité de la Plateforme et prévenir la fraude\n• Se conformer aux obligations légales et réglementaires\n• Générer des données statistiques et analytiques agrégées et anonymisées\n• Communiquer les mises à jour, les changements de la Plateforme et les informations pertinentes"
+        }
+      },
+      "3": {
+        "title": "4. Base juridique du traitement des données",
+        "summary": "Tout traitement des données est fondé sur la Loi générale brésilienne sur la protection des données (LGPD).",
+        "contentLength": "2",
+        "content": {
+          "0": "Le traitement de vos données personnelles repose sur les bases juridiques suivantes prévues par la Loi générale brésilienne sur la protection des données (LGPD) :",
+          "1": "• Consentement (Art. 7, I) : pour la collecte de données de géolocalisation et l'envoi de communications optionnelles\n• Exécution du contrat (Art. 7, V) : pour la fourniture des services de la Plateforme\n• Intérêt légitime (Art. 7, IX) : pour l'amélioration de la Plateforme, la sécurité et la prévention de la fraude\n• Obligation légale (Art. 7, II) : pour répondre aux exigences légales et réglementaires\n• Protection du crédit et exercice régulier des droits (Art. 7, VI et X) : le cas échéant"
+        }
+      },
+      "4": {
+        "title": "5. Partage des données",
+        "summary": "Nous ne vendons pas vos données. Nous les partageons uniquement lorsque c'est nécessaire.",
+        "contentLength": "6",
+        "content": {
+          "0": "Nous ne vendons pas vos données personnelles. Nous pouvons partager des informations dans les circonstances suivantes :",
+          "1": "5.1. Avec d'autres utilisateurs : votre nom d'affichage, votre photo de profil et le contenu publié sont visibles par les autres utilisateurs de votre zone, selon les paramètres de la Plateforme.",
+          "2": "5.2. Avec des prestataires de services : nous partageons des données avec des tiers qui nous aident à exploiter la Plateforme (hébergement, analyses, vérification d'adresse, envoi de notifications), dans le cadre de contrats garantissant la protection des données.",
+          "3": "5.3. Par obligation légale : nous pouvons divulguer des données lorsque la loi, une décision de justice ou une procédure judiciaire l'exige.",
+          "4": "5.4. En cas de réorganisation d'entreprise : en cas de fusion, acquisition ou cession d'actifs, les données peuvent être transférées, avec maintien des garanties de la présente Politique.",
+          "5": "5.5. Données agrégées et anonymisées : nous pouvons partager des données statistiques qui n'identifient pas individuellement les utilisateurs."
+        }
+      },
+      "5": {
+        "title": "6. Stockage et sécurité",
+        "summary": "Vos données sont stockées sur des serveurs sécurisés et chiffrés.",
+        "contentLength": "4",
+        "content": {
+          "0": "Vos données personnelles sont stockées sur des serveurs sécurisés situés au Brésil et/ou dans des centres de données garantissant des niveaux de protection adéquats, conformément à la Loi générale brésilienne sur la protection des données (LGPD).",
+          "1": "Nous adoptons des mesures techniques et organisationnelles appropriées pour protéger vos données contre l'accès non autorisé, l'altération, la divulgation ou la destruction, notamment :",
+          "2": "• Chiffrement des données en transit (TLS/SSL) et au repos\n• Contrôle d'accès basé sur les rôles (RBAC)\n• Surveillance continue de la sécurité\n• Audits de sécurité réguliers\n• Sauvegardes chiffrées et redondantes\n• Politiques de conservation des données",
+          "3": "Malgré nos efforts, aucun système n'est totalement sécurisé. Si nous identifions une violation de données, nous notifierons les utilisateurs concernés et l'Autorité nationale de protection des données (ANPD) dans les délais légaux."
+        }
+      },
+      "6": {
+        "title": "7. Conservation des données",
+        "summary": "Nous conservons vos données aussi longtemps que nécessaire, puis les anonymisons.",
+        "contentLength": "2",
+        "content": {
+          "0": "Vos données personnelles sont conservées pendant la durée nécessaire à la réalisation des finalités décrites dans la présente Politique, sauf si une durée de conservation plus longue est requise ou autorisée par la loi.",
+          "1": "Après la clôture de votre compte, nous conserverons certaines données pendant la durée nécessaire pour : (a) satisfaire aux obligations légales ; (b) résoudre les litiges ; (c) faire appliquer nos accords. Les données d'utilisation et les journaux seront anonymisés après 24 mois."
+        }
+      },
+      "7": {
+        "title": "8. Vos droits",
+        "summary": "Vous pouvez accéder à vos données, les rectifier, les supprimer et les transférer.",
+        "contentLength": "3",
+        "content": {
+          "0": "Conformément à la Loi générale brésilienne sur la protection des données (LGPD), vous disposez des droits suivants concernant vos données personnelles :",
+          "1": "• Confirmation de l'existence d'un traitement de données\n• Accès aux données personnelles\n• Rectification de données incomplètes, inexactes ou obsolètes\n• Anonymisation, blocage ou suppression de données inutiles ou excessives\n• Portabilité des données vers un autre fournisseur\n• Suppression des données traitées sur la base du consentement\n• Information sur le partage de données avec des tiers\n• Information sur la possibilité de ne pas donner son consentement et ses conséquences\n• Révocation du consentement",
+          "2": "Pour exercer vos droits, contactez-nous via la page Contact ou par email à privacidade@infra.app. Nous répondrons à votre demande sous 15 jours ouvrés."
+        }
+      },
+      "8": {
+        "title": "9. Cookies et technologies de suivi",
+        "summary": "Nous utilisons des cookies pour le fonctionnement et l'analyse, pas pour la publicité.",
+        "contentLength": "4",
+        "content": {
+          "0": "Nous utilisons des cookies et des technologies similaires pour :",
+          "1": "• Maintenir votre session active et authentifiée\n• Mémoriser vos préférences et paramètres\n• Comprendre comment vous utilisez la Plateforme (analyse)\n• Améliorer les performances et l'expérience utilisateur",
+          "2": "Vous pouvez gérer les préférences de cookies via les paramètres de votre navigateur. La désactivation de certains cookies peut affecter le fonctionnement de la Plateforme.",
+          "3": "Nous n'utilisons pas de cookies pour le suivi publicitaire de tiers."
+        }
+      },
+      "9": {
+        "title": "10. Vie privée des mineurs",
+        "summary": "La plateforme n'est pas destinée aux personnes de moins de 18 ans.",
+        "contentLength": "1",
+        "content": {
+          "0": "La Plateforme n'est pas destinée aux personnes de moins de 18 ans. Nous ne collectons pas intentionnellement de données personnelles de mineurs de moins de 18 ans sans le consentement d'un représentant légal. Si nous identifions que nous avons collecté des données d'un mineur sans le consentement approprié, nous prendrons des mesures pour supprimer ces informations."
+        }
+      },
+      "10": {
+        "title": "11. Transfert international de données",
+        "summary": "Les données peuvent être traitées en dehors du Brésil avec une protection adéquate.",
+        "contentLength": "1",
+        "content": {
+          "0": "Vos données peuvent être traitées par des prestataires de services situés en dehors du Brésil. Dans ce cas, nous veillons à ce que le transfert soit conforme à la Loi générale brésilienne sur la protection des données (LGPD), au moyen de clauses contractuelles types ou d'autres garanties adéquates prévues par la loi."
+        }
+      },
+      "11": {
+        "title": "12. Modifications de cette politique",
+        "summary": "Nous vous informerons lorsque la politique changera.",
+        "contentLength": "2",
+        "content": {
+          "0": "Nous pouvons mettre à jour cette Politique périodiquement. Les modifications significatives seront communiquées via la Plateforme ou par email avant leur entrée en vigueur. Nous vous recommandons de consulter régulièrement cette Politique.",
+          "1": "La date de la dernière mise à jour est toujours indiquée en haut de cette page."
+        }
+      },
+      "12": {
+        "title": "13. Délégué à la protection des données (DPO)",
+        "summary": "Nous avons un Délégué à la protection des données que vous pouvez contacter.",
+        "contentLength": "1",
+        "content": {
+          "0": "Conformément à la Loi générale brésilienne sur la protection des données (LGPD), {appName} a désigné un Délégué à la protection des données (DPO), joignable à dpo@infra.app pour toute question relative à la protection des données personnelles."
+        }
+      },
+      "13": {
+        "title": "14. Contact",
+        "summary": "Comment nous joindre pour les questions de confidentialité.",
+        "contentLength": "2",
+        "content": {
+          "0": "Pour toute question relative à la présente Politique de confidentialité, veuillez contacter :",
+          "1": "{appName} Tecnologia Ltda.\nEmail : privacidade@infra.app\nDélégué à la protection des données (DPO) : dpo@infra.app\nPage de contact : /contato"
+        }
+      }
+    },
+    "footer": "© {year} {appName} Tecnologia Ltda. Tous droits réservés."
+  },
+  "comoFunciona": {
+    "back": "Retour",
+    "sectionLabel": "Comment ça marche",
+    "heroTitle": "Pages Instagram, groupes WhatsApp.",
+    "heroTitleAccent": "Rien de tout ça ne marche.",
+    "heroSubtitle": "Les pages Instagram de quartier publient en retard, sans vérification, et l'algorithme décide qui voit quoi. Les groupes WhatsApp noient tout dans le bruit. L'information qui compte continue de se perdre — et votre communauté reste déconnectée.",
+    "scrollHint": "Faites défiler pour explorer",
+    "problemsLabel": "Les problèmes",
+    "problemsTitle": "Tout ce qui compte pour votre communauté",
+    "problemsTitleFaint": "se perd dans le bruit.",
+    "problemsCounter": "quelques problèmes",
+    "problems": {
+      "0": {
+        "emoji": "📱",
+        "title": "Vous suivez la page Instagram du quartier.",
+        "body": "Elle publie le cambriolage d'hier — mais seulement demain. Mélangé avec des pubs de restaurants et des reposts de mèmes. Pas de localisation précise, pas de détails utiles, pas de vérification.",
+        "punchline": "Quand l'info arrive, c'est déjà trop tard."
+      },
+      "1": {
+        "emoji": "💬",
+        "title": "Le groupe de la copropriété a 847 messages non lus.",
+        "body": "Quelqu'un a demandé de l'aide pour une fuite. Le message a été noyé sous les chaînes politiques, les stickers de bonjour et un audio de 7 minutes se plaignant du syndic.",
+        "punchline": "L'urgence est devenue du bruit."
+      },
+      "2": {
+        "emoji": "📢",
+        "title": "La page du quartier décide de ce qui est une info.",
+        "body": "Un admin choisit quoi publier. L'algorithme choisit qui le voit. Votre voisin d'à côté ne voit pas ce qui s'est passé dans sa rue — mais voit un reel d'un quartier qu'il n'a jamais visité.",
+        "punchline": "L'information locale est devenue otage de l'algorithme."
+      },
+      "3": {
+        "emoji": "🏪",
+        "title": "Les commerces locaux restent invisibles.",
+        "body": "La boulangerie artisanale a ouvert au coin de la rue. A posté sur Instagram, a atteint 40 personnes — la plupart n'habitent même pas dans le quartier. L'algorithme a priorisé autre chose. Les voisins d'à côté ne l'ont jamais vu.",
+        "punchline": "L'information locale n'est pas faite pour rivaliser avec le fil mondial."
+      },
+      "4": {
+        "emoji": "🔕",
+        "title": "Trois cambriolages la même semaine. Zéro trace.",
+        "body": "Les victimes ont raconté ce qui s'est passé. Ça a duré 24 heures et a disparu. Personne n'a consolidé, personne n'a cartographié, personne n'a alerté la rue d'à côté. Chaque cas est resté une histoire isolée.",
+        "punchline": "Sans trace collective, le schéma n'apparaît jamais."
+      },
+      "5": {
+        "emoji": "🤝",
+        "title": "Votre voisine a besoin d'aide. Vous ne savez même pas qui elle est.",
+        "body": "Elle vit à l'étage depuis 3 ans. Elle a besoin de quelqu'un pour aller chercher ses médicaments. Elle n'a personne à qui demander — parce qu'il n'y a aucun canal où les voisins se connectent vraiment.",
+        "punchline": "Nous vivons proches, mais éloignés."
+      }
+    },
+    "transitionLine1": "Ce n'est pas que les gens s'en moquent.",
+    "transitionLine2": "Il n'y a simplement aucun endroit",
+    "transitionLine2Accent": "conçu pour ça.",
+    "transitionDramatic": "Jusqu'à maintenant.",
+    "solutionLabel": "La solution",
+    "solutionTitle": "Simple, comme ça devrait l'être.",
+    "solutions": {
+      "0": { "step": "01", "title": "Quelqu'un publie.", "body": "N'importe quel résident peut créer une publication sur ce qui se passe autour de lui. Sécurité, événements, demandes d'aide, commerce local, infrastructure — tout.", "detail": "Pas de formulaires bureaucratiques. Pas de catégories confuses. Droit au but." },
+      "1": { "step": "02", "title": "Le quartier voit.", "body": "La publication n'apparaît qu'aux personnes qui vivent à proximité. Ce n'est pas un fil mondial — c'est votre quartier, votre rue, ce qui se passe autour de vous.", "detail": "La portée s'adapte au type de publication. Les alertes de sécurité couvrent plus de terrain. Les recommandations de restaurants, moins." },
+      "2": { "step": "03", "title": "La communauté confirme.", "body": "Les voisins vérifient si c'est réel. Ce n'est pas un like — c'est une confirmation. Quand de nombreux voisins disent que c'est pertinent, ce n'est pas une opinion.", "detail": "C'est une preuve." },
+      "3": { "step": "04", "title": "L'information arrive.", "body": "En moins de 5 minutes, ceux qui ont besoin de savoir, savent. Alertes de sécurité, opportunités, demandes d'aide — tout circule vite.", "detail": "Avec crédibilité. Parce que c'est vérifié par des gens qui y vivent." }
+    },
+    "comparisonLabel": "Avant vs. après",
+    "comparisonTitle": "La différence est",
+    "comparisonTitleAccent": "immédiate.",
+    "comparisons": {
+      "0": { "before": "La page Instagram publie le cambriolage 2 jours plus tard.", "after": "Alerte vérifiée en 3 minutes, 40 voisins confirment.", "stat": "3min" },
+      "1": { "before": "Marché au parc — le post Instagram touche 5 % du quartier.", "after": "Tous ceux qui vivent à proximité sont informés automatiquement.", "stat": "100%" },
+      "2": { "before": "Plainte dans le groupe — noyée en 30 secondes.", "after": "67 confirmations → preuve → mairie notifiée.", "stat": "67" },
+      "3": { "before": "Commerce local — l'algorithme décide qui voit.", "after": "89 voisins à proximité sont informés dès le premier jour.", "stat": "89" }
+    },
+    "ctaLine1": "La bonne information. Les bonnes personnes. Le bon moment.",
+    "ctaLine2": "Voilà",
+    "ctaPrimary": "Retour à l'accueil",
+    "ctaSecondary": "Ce qui se passe autour de vous"
+  },
+  "oQueAcontece": {
+    "back": "Retour",
+    "sectionLabel": "Ce qui se passe",
+    "heroTitle": "Tout ce qui se passe",
+    "heroTitleAccent": "autour de vous.",
+    "heroSubtitle": "Sécurité, culture, solidarité, infrastructure, commerce local. De votre pâté de maisons à toute la ville — vous ne serez plus jamais le dernier informé.",
+    "categories": {
+      "0": {
+        "emoji": "🚨",
+        "tag": "Sécurité",
+        "title": "Soyez informé en premier. Restez en sécurité.",
+        "body": "Alertes de sécurité vérifiées par les voisins en temps réel. Cambriolages, vols, activités suspectes — l'information arrive en minutes, pas en jours. Vous savez ce qui se passe autour de vous avant de sortir de chez vous.",
+        "examples": {
+          "0": "Tentative de vol rue Haddock Lobo — 43 confirmations",
+          "1": "Cambriolage rue Augusta — communauté alertée en 3 min",
+          "2": "Voiture suspecte qui tourne dans le quartier — 12 voisins confirment"
+        }
+      },
+      "1": {
+        "emoji": "🎵",
+        "tag": "Événements et culture",
+        "title": "Ce qui se passe à côté arrive jusqu'à vous.",
+        "body": "Marchés, concerts, ateliers, événements communautaires. Tout ce qui se passe dans votre quartier apparaît pour ceux qui vivent à proximité. Le bon événement trouve le bon public — par proximité, pas par algorithme.",
+        "examples": {
+          "0": "Marché bio au parc — samedi 9h",
+          "1": "Concert gratuit à Ibirapuera aujourd'hui à 18h",
+          "2": "Atelier de céramique au centre culturel — places limitées"
+        }
+      },
+      "2": {
+        "emoji": "🆘",
+        "tag": "Solidarité",
+        "title": "Quand c'est urgent, chaque minute compte.",
+        "body": "Demandes d'aide qui atteignent ceux qui peuvent vraiment aider — des gens qui vivent à proximité. Don de sang, animal perdu, personne âgée ayant besoin d'assistance. La proximité transforme l'intention en action.",
+        "examples": {
+          "0": "Besoin de don de sang O- — hôpital à 2 km",
+          "1": "Chien perdu — golden, collier bleu, vu à Pinheiros",
+          "2": "Voisine âgée a besoin d'un transport pour un rendez-vous demain"
+        }
+      },
+      "3": {
+        "emoji": "🏗️",
+        "tag": "Infrastructure",
+        "title": "Ce n'est pas une plainte. C'est une preuve.",
+        "body": "Nids-de-poule, feux de circulation en panne, fuites, trottoirs endommagés. Quand des dizaines de résidents confirment le même problème, ce n'est pas une opinion — ce sont des données. Et les données déclenchent l'action.",
+        "examples": {
+          "0": "Énorme nid-de-poule rue Flores — 67 confirmations",
+          "1": "Feu de circulation en panne depuis 3 jours au carrefour — 45 signalements",
+          "2": "Fuite d'eau au coin de la rue — 28 voisins confirment"
+        }
+      },
+      "4": {
+        "emoji": "🛒",
+        "tag": "Commerce local",
+        "title": "Vos voisins recommandent, le commerce local prospère.",
+        "body": "Boulangeries, restaurants, services, promotions. Les commerces locaux gagnent une vraie visibilité auprès de gens qui peuvent réellement s'y rendre. La recommandation d'un voisin vaut plus qu'une publicité.",
+        "examples": {
+          "0": "Nouvelle boulangerie avec du pain artisanal au coin — 89 likes",
+          "1": "Épicerie -40 % aujourd'hui jusqu'à 20h",
+          "2": "Restaurant japonais ouvert à Vila Madalena"
+        }
+      },
+      "5": {
+        "emoji": "💬",
+        "tag": "Vie quotidienne",
+        "title": "Des recommandations de gens qui marchent sur le même trottoir.",
+        "body": "Électricien, pédiatre, animalerie, salle de sport. Quand la recommandation vient de quelqu'un qui habite à côté, la confiance est différente. Des questions simples avec des réponses de gens qui connaissent vraiment le quartier.",
+        "examples": {
+          "0": "Quelqu'un connaît un électricien dans le coin ?",
+          "1": "Quelle est la meilleure salle de sport du quartier ?",
+          "2": "Vétérinaire 24h près de Vila Olímpia ?"
+        }
+      },
+      "6": {
+        "emoji": "📋",
+        "tag": "Objets trouvés",
+        "title": "L'info atteint ceux qui peuvent le rendre.",
+        "body": "Documents, portefeuilles, objets trouvés. Au lieu de rester sur un comptoir en attendant, l'information va directement aux gens du quartier — là où la chance de retrouver le propriétaire est réelle.",
+        "examples": {
+          "0": "Carte d'identité trouvée avenue Paulista — à récupérer au café X",
+          "1": "Portefeuille trouvé près de la station Consolação",
+          "2": "Clés trouvées sur le banc du parc — avec porte-clés rouge"
+        }
+      },
+      "7": {
+        "emoji": "🐕",
+        "tag": "Alertes",
+        "title": "Toute la rue est au courant en quelques minutes.",
+        "body": "Animaux en liberté, coupures de courant, inondations, fermetures de routes. L'information qui concerne ceux qui y vivent arrive vite et vérifiée. Ce n'est pas de la panique — c'est de la conscience collective.",
+        "examples": {
+          "0": "Chien agressif en liberté à Vila Madalena — 56 alertes",
+          "1": "Coupure de courant dans le quartier — retour estimé dans 2h",
+          "2": "Inondation rue Consolação — évitez le tronçon"
+        }
+      }
+    },
+    "closingLine1": "Un réseau social n'a pas besoin de parler du monde entier.",
+    "closingLine2": "Parfois, il suffit de parler",
+    "closingLine2Accent": "de votre rue.",
+    "ctaPrimary": "Retour à l'accueil"
+  },
+  "verificacao": {
+    "back": "Retour",
+    "sectionLabel": "Vérification collective",
+    "heroTitle": "Une personne publie.",
+    "heroTitleAccent": "La communauté confirme.",
+    "heroSubtitle": "Le système de vérification de {appName} repose sur un principe simple : la vérité est plus forte quand elle vient de plusieurs. Pas d'un algorithme — de vraies personnes qui y vivent.",
+    "stepsLabel": "Étape par étape",
+    "stepsTitle": "Comment fonctionne la vérification.",
+    "steps": {
+      "0": { "number": "1", "title": "Quelqu'un signale", "body": "Un résident voit quelque chose dans le quartier — un cambriolage, un nid-de-poule, un nouveau marché, une demande d'aide. Il crée une publication en quelques secondes.", "detail": "Pas de formulaires bureaucratiques. Pas de catégories confuses. Droit au but : quoi, où, quand." },
+      "1": { "number": "2", "title": "Les voisins sont notifiés", "body": "La publication apparaît automatiquement à ceux qui vivent à proximité. Ce n'est pas un fil mondial — c'est hyperlocal. Seules les personnes concernées la voient.", "detail": "La portée dépend du type de publication. Une alerte de sécurité couvre plus de terrain. Une recommandation de restaurant, moins." },
+      "2": { "number": "3", "title": "La communauté vérifie", "body": "Chaque voisin peut confirmer : « je l'ai vu aussi », « c'est en cours », « c'est réel ». Ce n'est pas un like — c'est une attestation de vérité.", "detail": "Chaque confirmation porte le poids d'une personne réelle, avec une adresse réelle, qui vit sur place. On ne peut pas créer de faux comptes pour des quartiers où on ne vit pas." },
+      "3": { "number": "4", "title": "La confiance grandit", "body": "Avec 5 confirmations, la publication gagne en visibilité. Avec 20, elle est promue vers les quartiers adjacents. Avec 40+, elle devient une preuve vérifiée.", "detail": "La crédibilité ne vient pas d'une entreprise — elle vient de votre communauté. Plus les voisins confirment, plus l'information est forte." },
+      "4": { "number": "5", "title": "L'action se produit", "body": "L'information vérifiée déclenche l'action. Les voisins se protègent, les événements font salle comble, le commerce local prospère, les problèmes d'infrastructure obtiennent des preuves pour être résolus.", "detail": "Ce n'est pas une plateforme de réclamation. C'est une plateforme de transformation — portée par la communauté, pour la communauté." }
+    },
+    "principlesLabel": "Principes",
+    "principlesTitle": "Ce qui nous rend",
+    "principlesTitleAccent": "différents.",
+    "principles": {
+      "0": { "icon": "🛡️", "title": "Moins de désinformation", "body": "La communauté vérifie. Les publications sans confirmation perdent automatiquement en visibilité. Plus les voisins valident, plus l'information devient visible.", "detail": "Sur les réseaux traditionnels, l'algorithme priorise l'engagement — indépendamment de la véracité. Ici, la portée est proportionnelle aux vérifications réelles de personnes réelles." },
+      "1": { "icon": "🎯", "title": "Pas de bruit", "body": "Seul ce qui se passe autour de vous apparaît pour vous. Pas de politique nationale, pas de célébrités, pas de publicités. Votre fil, c'est votre quartier.", "detail": "Le fil de {appName} est géographiquement limité par conception. Vous voyez ce qui compte pour ceux qui vivent près de vous. Ni plus, ni moins." },
+      "2": { "icon": "👁️", "title": "Pas de boîte noire", "body": "Qui a publié, qui a confirmé, combien de vérifications. Tout est visible. Aucun algorithme caché ne décide de ce que vous voyez.", "detail": "Chaque publication montre exactement combien de personnes ont confirmé, de quels quartiers, et quand. Transparence totale. Vous faites confiance parce que vous pouvez vérifier." },
+      "3": { "icon": "📍", "title": "Pas d'anonymat toxique", "body": "Chaque utilisateur est lié à son adresse réelle. On ne peut pas créer de faux comptes pour des quartiers où on ne vit pas.", "detail": "Cela ne signifie pas que votre nom apparaît publiquement. Cela signifie que le système sait que vous êtes réel et que vous vivez là où vous le dites. Responsabilité et vie privée." }
+    },
+    "comparisonLabel": "Comparaison",
+    "comparisonTitle": "Réseaux traditionnels vs. {appName}.",
+    "comparisonHeaderThem": "Réseaux traditionnels",
+    "comparisons": {
+      "0": { "them": "L'algorithme décide de ce que vous voyez", "us": "La proximité décide de ce que vous voyez" },
+      "1": { "them": "La portée est indépendante de la véracité", "us": "La portée est proportionnelle aux vérifications" },
+      "2": { "them": "Engagement = likes et commentaires", "us": "Engagement = confirmation de vérité" },
+      "3": { "them": "Fil mondial, bruit infini", "us": "Fil local, pertinence maximale" },
+      "4": { "them": "Comptes anonymes sans conséquence", "us": "Identité liée à l'adresse" }
+    },
+    "trustLine1": "La confiance ne s'achète pas.",
+    "trustLine2": "Elle se construit,",
+    "trustLine2Accent": "voisin par voisin.",
+    "ctaPrimary": "Retour à l'accueil"
+  }
+}
