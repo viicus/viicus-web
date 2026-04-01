@@ -15,7 +15,9 @@
     "subtitle": "Reporta. Vota. Confirma. Mira cómo tu barrio se transforma con el poder de la acción colectiva.",
     "ctaPrimary": "Descargar la app",
     "ctaSecondary": "Cómo funciona",
-    "tagline": "Tu barrio. Tu ciudad. Tu voz."
+    "tagline": "Tu barrio. Tu ciudad. Tu voz.",
+    "metaTitle": "Viicus — La red social de tu barrio. Tu ciudad. Tu voz.",
+    "metaDescription": "Reporta problemas, vota lo que importa y confirma lo que pasa a tu alrededor. Viicus conecta vecinos para transformar barrios con el poder de la acción colectiva."
   },
   "howItWorks": {
     "sectionLabel": "Esta semana, en tu barrio:",

@@ -15,7 +15,9 @@
     "subtitle": "Signalez. Votez. Confirmez. Regardez votre quartier se transformer grâce à la force de l'action collective.",
     "ctaPrimary": "Télécharger l'app",
     "ctaSecondary": "Comment ça marche",
-    "tagline": "Ton quartier. Ta ville. Ta voix."
+    "tagline": "Ton quartier. Ta ville. Ta voix.",
+    "metaTitle": "Viicus — Le réseau social de ton quartier. Ta ville. Ta voix.",
+    "metaDescription": "Signale des problèmes, vote pour ce qui compte et confirme ce qui se passe autour de toi. Viicus connecte les voisins pour transformer les quartiers par l'action collective."
   },
   "howItWorks": {
     "sectionLabel": "Cette semaine, dans votre quartier :",

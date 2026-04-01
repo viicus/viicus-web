@@ -31,8 +31,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "hero" });
 
-  const title = `${APP_NAME} — ${t("tagline")}`;
-  const description = t("subtitle");
+  const title = t("metaTitle");
+  const description = t("metaDescription");
   const url = "https://viicus.com";
 
   return {
