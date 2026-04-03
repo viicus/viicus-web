@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -39,14 +40,49 @@ export default function NetworkHero({ personCount = 75 }: { personCount?: number
     collecting: tc("collecting"),
   };
 
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mouseActive, setMouseActive] = useState(false);
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    setMousePos({ x: e.clientX, y: e.clientY });
+    if (!mouseActive) setMouseActive(true);
+  }, [mouseActive]);
+
   return (
-    <section className="relative min-h-screen w-full overflow-hidden" style={{ background: "var(--hero-bg)" }}>
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ background: "var(--hero-bg)" }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={() => setMouseActive(false)}
+    >
       <NetworkCanvas personCount={personCount} translations={canvasTranslations} />
 
-      {/* Radial glow behind text */}
-      <div
+      {/* Cursor glow */}
+      {mouseActive && (
+        <div
+          className="pointer-events-none fixed z-10 rounded-full"
+          style={{
+            left: mousePos.x - 200,
+            top: mousePos.y - 200,
+            width: 400,
+            height: 400,
+            background: `radial-gradient(circle, rgba(var(--accent-rgb),0.06) 0%, transparent 70%)`,
+            transition: "left 0.15s ease-out, top 0.15s ease-out",
+          }}
+        />
+      )}
+
+      {/* Radial glow behind text — subtle parallax */}
+      <motion.div
         className="pointer-events-none absolute inset-0 z-10"
-        style={{ background: "radial-gradient(ellipse 50% 40% at 50% 50%, rgba(var(--person-rgb),0.05) 0%, transparent 100%)" }}
+        style={{
+          background: "radial-gradient(ellipse 50% 40% at 50% 50%, rgba(var(--person-rgb),0.05) 0%, transparent 100%)",
+          y: typeof window !== "undefined" ? undefined : 0,
+        }}
+        initial={{ y: 0 }}
+        whileInView={{ y: -30 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        viewport={{ once: false }}
       />
 
       {/* Content */}
@@ -66,7 +102,7 @@ export default function NetworkHero({ personCount = 75 }: { personCount?: number
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-60" style={{ background: "var(--accent-light)" }} />
             <span className="relative inline-flex h-2 w-2 rounded-full" style={{ background: "var(--accent)" }} />
           </span>
-          <span className="text-[13px] font-medium tracking-wide" style={{ color: "rgba(var(--accent-rgb),0.9)" }}>
+          <span className="text-[13px] font-medium tracking-wide" style={{ color: "var(--text-accent)" }}>
             {t("badge")}
           </span>
         </motion.div>
@@ -88,7 +124,7 @@ export default function NetworkHero({ personCount = 75 }: { personCount?: number
             transition={{ duration: 0.6, delay: 0.6, ease: [0.23, 1, 0.32, 1] }}
             className="mt-1 block text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-7xl"
           >
-            <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">
+            <span className="gradient-text-hero">
               {t("titleLine2Accent")}
             </span>{" "}
             <span style={{ color: "var(--foreground)" }}>{t("titleLine2Rest")}</span>
@@ -116,14 +152,15 @@ export default function NetworkHero({ personCount = 75 }: { personCount?: number
           <motion.button
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
-            className="group relative overflow-hidden rounded-full px-7 py-3.5 text-sm font-semibold text-white cursor-pointer transition-shadow duration-300 w-full sm:w-auto text-center"
+            className="group relative overflow-hidden rounded-full px-7 py-3.5 text-sm font-semibold cursor-pointer transition-shadow duration-300 w-full sm:w-auto text-center"
             style={{
               background: "var(--accent)",
+              color: "var(--accent-foreground)",
               boxShadow: "0 2px 16px var(--accent-glow)",
             }}
           >
             {t("ctaPrimary")}
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
+            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
           </motion.button>
           <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
             <Link

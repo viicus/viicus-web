@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { APP_NAME } from "@/config/app-config";
 import { CONTACT } from "@/config/contact";
 import { ROUTES } from "@/config/routes";
+import TiltCard from "@/components/TiltCard";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 20 },
@@ -131,13 +132,13 @@ export default function ContatoPage() {
             <span style={{ color: `rgba(var(--text-rgb),var(--text-faint))` }}>
               &gt;
             </span>
-            <span style={{ color: "var(--accent)" }}>{t("breadcrumbCurrent")}</span>
+            <span style={{ color: "var(--text-accent)" }}>{t("breadcrumbCurrent")}</span>
           </nav>
 
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("sectionLabel")}
           </motion.p>
@@ -170,28 +171,27 @@ export default function ContatoPage() {
         <div className="mx-auto max-w-3xl px-6 py-20">
           <div className="space-y-6">
             {CHANNEL_ICONS.map((icon, i) => (
-              <motion.a
+              <motion.div
                 key={i}
-                href={CHANNEL_HREFS[i]}
                 {...fadeUp(i * 0.06)}
+              >
+              <TiltCard
                 className="group block rounded-2xl p-6 sm:p-8 transition-all duration-300 hover-lift"
                 style={{
                   background: `rgba(var(--card-bg-rgb),0.5)`,
                   border: `1px solid var(--border-subtle)`,
                 }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = `rgba(var(--accent-rgb),0.4)`;
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = `var(--border-subtle)`;
-                }}
+              >
+              <a
+                href={CHANNEL_HREFS[i]}
+                className="block"
               >
                 <div className="flex items-start gap-5">
                   <div
                     className="shrink-0 flex items-center justify-center w-12 h-12 rounded-xl"
                     style={{
                       background: `rgba(var(--accent-rgb),0.08)`,
-                      color: "var(--accent)",
+                      color: "var(--text-accent)",
                     }}
                   >
                     {icon}
@@ -207,7 +207,7 @@ export default function ContatoPage() {
                       </h3>
                       <span
                         className="text-[13px] font-semibold"
-                        style={{ color: "var(--accent)" }}
+                        style={{ color: "var(--text-accent)" }}
                       >
                         {[CONTACT.EMAIL_GENERAL, CONTACT.EMAIL_PRIVACY, CONTACT.EMAIL_DPO, CONTACT.EMAIL_LEGAL, CONTACT.EMAIL_SECURITY][i]}
                       </span>
@@ -238,7 +238,9 @@ export default function ContatoPage() {
                     </svg>
                   </div>
                 </div>
-              </motion.a>
+              </a>
+              </TiltCard>
+              </motion.div>
             ))}
           </div>
 
@@ -246,7 +248,7 @@ export default function ContatoPage() {
           <motion.div {...fadeUp(0)} className="mt-20">
             <h2
               className="text-[12px] font-bold uppercase tracking-[0.25em] mb-2"
-              style={{ color: "var(--accent)" }}
+              style={{ color: "var(--text-accent)" }}
             >
               {t("formTitle")}
             </h2>
@@ -275,7 +277,7 @@ export default function ContatoPage() {
                     className="flex items-center justify-center w-16 h-16 rounded-full mb-6"
                     style={{
                       background: `rgba(var(--accent-rgb),0.1)`,
-                      color: "var(--accent)",
+                      color: "var(--text-accent)",
                     }}
                   >
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -412,7 +414,7 @@ export default function ContatoPage() {
                     className="relative overflow-hidden rounded-2xl px-8 py-4 text-[15px] font-bold transition-all duration-300 hover-glow"
                     style={{
                       background: "var(--accent)",
-                      color: "var(--accent-foreground, #fff)",
+                      color: "var(--accent-foreground)",
                       width: "100%",
                       border: "none",
                       cursor: "pointer",
@@ -460,7 +462,7 @@ export default function ContatoPage() {
             <div className="flex items-start gap-4">
               <div
                 className="shrink-0 mt-0.5"
-                style={{ color: "var(--accent)" }}
+                style={{ color: "var(--text-accent)" }}
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
@@ -492,7 +494,7 @@ export default function ContatoPage() {
                     <div key={emergency.number} className="flex items-center gap-2">
                       <span
                         className="text-[18px] font-black tabular-nums"
-                        style={{ color: "var(--accent)" }}
+                        style={{ color: "var(--text-accent)" }}
                       >
                         {emergency.number}
                       </span>
@@ -513,7 +515,7 @@ export default function ContatoPage() {
           <motion.div {...fadeUp(0)} className="mt-16">
             <h3
               className="text-[12px] font-bold uppercase tracking-[0.25em] mb-6"
-              style={{ color: "var(--accent)" }}
+              style={{ color: "var(--text-accent)" }}
             >
               {t("addressTitle")}
             </h3>
@@ -552,7 +554,7 @@ export default function ContatoPage() {
                   key={link.label}
                   href={link.href}
                   className="text-[13px] font-medium transition-colors duration-200"
-                  style={{ color: "var(--accent)" }}
+                  style={{ color: "var(--text-accent)" }}
                 >
                   {link.label}
                 </Link>
@@ -574,7 +576,7 @@ export default function ContatoPage() {
             className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 cursor-pointer"
             style={{
               background: "var(--accent)",
-              color: "var(--accent-foreground, #fff)",
+              color: "var(--accent-foreground)",
               boxShadow: "0 4px 20px rgba(var(--accent-rgb),0.3)",
               border: "none",
             }}

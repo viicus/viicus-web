@@ -74,6 +74,34 @@
     "act3Body2": "Sobre as coisas que realmente importam para vocês.",
     "learnMore": "Saiba mais"
   },
+  "reportDemo": {
+    "sectionLabel": "Experimente",
+    "title": "Viu algo no bairro?",
+    "titleAccent": "Reporte agora.",
+    "subtitle": "Digite o que aconteceu e veja como a sua comunidade inteira fica sabendo em segundos.",
+    "inputPlaceholder": "O que está acontecendo no seu bairro?",
+    "inputAuthor": "Você",
+    "inputLocation": "Seu bairro · agora",
+    "submitButton": "Reportar",
+    "demoMessages": {
+      "0": "Tentativa de assalto na esquina da Rua Augusta com a Consolação. Dois homens em moto preta.",
+      "1": "Buraco enorme abriu na Rua das Flores depois da chuva. Carro já caiu dentro.",
+      "2": "Show gratuito no parque do Ibirapuera neste sábado. Banda local às 16h."
+    },
+    "categories": {
+      "security": "Segurança",
+      "infrastructure": "Infraestrutura",
+      "events": "Eventos",
+      "general": "Relato"
+    },
+    "cardLocation": "Vila Madalena, SP",
+    "cardTime": "agora mesmo",
+    "cardLive": "AO VIVO",
+    "neighborsNotified": "vizinhos notificados",
+    "verifying": "Verificando",
+    "sending": "Enviando...",
+    "broadcasting": "Notificando vizinhos da sua região..."
+  },
   "features": {
     "sectionLabel": "O que acontece aqui",
     "title": "Tudo que a sua comunidade",

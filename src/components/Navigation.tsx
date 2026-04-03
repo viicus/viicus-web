@@ -6,6 +6,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname, Link } from "@/i18n/navigation";
 import { APP_NAME } from "@/config/app-config";
 import { ROUTES } from "@/config/routes";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const LOCALE_LABELS: Record<string, string> = {
   pt: "PT-BR",
@@ -194,18 +195,21 @@ export default function Navigation() {
           </div>
           */}
 
+          <ThemeToggle />
+
           {/* CTA */}
           <motion.button
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
-            className="group relative overflow-hidden rounded-full px-5 py-2 text-sm font-semibold text-white cursor-pointer"
+            className="group relative overflow-hidden rounded-full px-5 py-2 text-sm font-semibold cursor-pointer"
             style={{
               backgroundColor: "var(--accent)",
+              color: "var(--accent-foreground)",
               boxShadow: "0 2px 12px var(--accent-glow)",
             }}
           >
             {t("download")}
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
+            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
           </motion.button>
         </div>
 
@@ -287,17 +291,21 @@ export default function Navigation() {
               </div>
               */}
 
-              <motion.button
-                whileTap={{ scale: 0.97 }}
-                className="group relative overflow-hidden rounded-full px-5 py-2.5 text-sm font-semibold text-white w-full cursor-pointer"
-                style={{
-                  backgroundColor: "var(--accent)",
-                  boxShadow: "0 2px 12px var(--accent-glow)",
-                }}
-              >
-                {t("download")}
-                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
-              </motion.button>
+              <div className="flex items-center justify-between gap-3">
+                <motion.button
+                  whileTap={{ scale: 0.97 }}
+                  className="group relative overflow-hidden rounded-full px-5 py-2.5 text-sm font-semibold flex-1 cursor-pointer"
+                  style={{
+                    backgroundColor: "var(--accent)",
+                    color: "var(--accent-foreground)",
+                    boxShadow: "0 2px 12px var(--accent-glow)",
+                  }}
+                >
+                  {t("download")}
+                  <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
+                </motion.button>
+                <ThemeToggle />
+              </div>
             </div>
           </motion.div>
         )}

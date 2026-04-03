@@ -24,7 +24,7 @@ export default function OQueAcontecePage() {
     title: t(`categories.${i}.title`),
     body: t(`categories.${i}.body`),
     examples: Array.from({ length: EXAMPLE_COUNT }, (_, j) => t(`categories.${i}.examples.${j}`)),
-    color: "var(--accent)",
+    color: "var(--text-accent)",
   }));
 
   return (
@@ -56,7 +56,7 @@ export default function OQueAcontecePage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("sectionLabel")}
           </motion.p>
@@ -107,7 +107,7 @@ export default function OQueAcontecePage() {
                 <div className="flex-1">
                   <p
                     className="text-[11px] font-bold uppercase tracking-[0.25em]"
-                    style={{ color: "var(--accent)" }}
+                    style={{ color: "var(--text-accent)" }}
                   >
                     {cat.tag}
                   </p>
@@ -145,7 +145,7 @@ export default function OQueAcontecePage() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           className="shrink-0"
-                          style={{ color: "var(--accent)" }}
+                          style={{ color: "var(--text-accent)" }}
                         >
                           <polyline points="22 4 12 14.01 9 11.01" />
                         </svg>
@@ -187,20 +187,21 @@ export default function OQueAcontecePage() {
             style={{ color: "var(--foreground)" }}
           >
             {t("closingLine2")}{" "}
-            <span style={{ color: "var(--accent)" }}>{t("closingLine2Accent")}</span>
+            <span style={{ color: "var(--text-accent)" }}>{t("closingLine2Accent")}</span>
           </motion.p>
 
           <motion.div {...fadeUp(0.2)} className="mt-12">
             <Link
               href={ROUTES.HOME}
-              className="group relative inline-flex overflow-hidden rounded-full px-8 py-4 text-[15px] font-bold text-white transition-all duration-300 hover:scale-[1.04] cursor-pointer hover-glow"
+              className="group relative inline-flex overflow-hidden rounded-full px-8 py-4 text-[15px] font-bold transition-all duration-300 hover:scale-[1.04] cursor-pointer hover-glow"
               style={{
                 background: "var(--accent)",
+                color: "var(--accent-foreground)",
                 boxShadow: `0 4px 24px var(--accent-glow)`,
               }}
             >
               {t("ctaPrimary")}
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
             </Link>
           </motion.div>
         </div>

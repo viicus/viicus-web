@@ -73,16 +73,16 @@ interface CanvasTheme {
 function readTheme(): CanvasTheme {
   const s = getComputedStyle(document.documentElement);
   const get = (v: string) => s.getPropertyValue(v).trim();
-  const personRgb = get("--person-rgb") || "5,150,105";
+  const personRgb = get("--person-rgb") || "255,222,33";
   return {
-    personColor: get("--person-color") || "#059669",
+    personColor: get("--person-color") || "#FFDE21",
     personDim: `rgba(${personRgb},`,
-    gridColor: get("--grid-color") || "rgba(0,0,0,0.05)",
-    textRgb: get("--text-rgb") || "26,26,26",
+    gridColor: get("--grid-color") || "rgba(0,0,0,0.04)",
+    textRgb: get("--text-rgb") || "15,15,14",
     cardBgRgb: get("--card-bg-rgb") || "255,255,255",
     popupBgRgb: get("--popup-bg-rgb") || "255,255,255",
-    shadowAlpha: parseFloat(get("--shadow-alpha")) || 0.1,
-    highlightRgb: get("--highlight-rgb") || "0,0,0",
+    shadowAlpha: parseFloat(get("--shadow-alpha")) || 0.08,
+    highlightRgb: get("--highlight-rgb") || "15,15,14",
   };
 }
 
@@ -106,8 +106,8 @@ const CARD_RESOLVE_ANIM_DURATION = 180; // ~3s for resolution animation
 const CARD_ACTION_DELAY = 300; // 5s after confirmation before showing action overlay
 const CARD_ACTION_FADE = 50; // ~0.8s fade transition
 
-const CARD_COLORS = ["#fb923c", "#f87171", "#fbbf24"];
-const CARD_DIM = ["rgba(251,146,60,", "rgba(248,113,113,", "rgba(251,191,36,"];
+const CARD_COLORS = ["#FF6B21", "#E24B4A", "#FFB800"];
+const CARD_DIM = ["rgba(255,107,33,", "rgba(226,75,74,", "rgba(255,184,0,"];
 // --- Translations interface (passed from parent via useTranslations) ---
 export interface CanvasTranslations {
   typeLabels: string[];
@@ -902,9 +902,9 @@ export default function NetworkCanvas({ personCount = 75, translations: T_TEXT }
           const isConfirmed = card.resolvedType === "confirmed";
 
           // Resolution colors
-          const resolveColor = isConfirmed ? "#34d399" : "#94a3b8";
-          const resolveDim = isConfirmed ? "rgba(52,211,153," : "rgba(148,163,184,";
-          const resolveGlowColor = isConfirmed ? "rgba(52,211,153," : "rgba(148,163,184,";
+          const resolveColor = isConfirmed ? "#1D9E75" : "#9E9C93";
+          const resolveDim = isConfirmed ? "rgba(29,158,117," : "rgba(158,156,147,";
+          const resolveGlowColor = isConfirmed ? "rgba(29,158,117," : "rgba(158,156,147,";
 
           // Blend between original card color and resolve color
           const activeColor = isResolved ? resolveColor : color;
@@ -1019,10 +1019,10 @@ export default function NetworkCanvas({ personCount = 75, translations: T_TEXT }
             ctx.globalAlpha = aAlpha * 0.9;
             ctx.font = "700 11px system-ui, sans-serif";
             if (isConfirmed) {
-              ctx.fillStyle = "#34d399";
+              ctx.fillStyle = "#1D9E75";
               ctx.fillText(`\u2713 ${T_TEXT.confirmed}`, cx + 14, cy + 20);
             } else {
-              ctx.fillStyle = "#94a3b8";
+              ctx.fillStyle = "#9E9C93";
               ctx.fillText(`\u2717 ${T_TEXT.dismissed}`, cx + 14, cy + 20);
             }
 

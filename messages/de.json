@@ -74,6 +74,34 @@
     "act3Body2": "Über die Dinge, die Ihnen wirklich wichtig sind.",
     "learnMore": "Mehr erfahren"
   },
+  "reportDemo": {
+    "sectionLabel": "Ausprobieren",
+    "title": "Etwas im Viertel gesehen?",
+    "titleAccent": "Jetzt melden.",
+    "subtitle": "Schreib, was passiert ist, und sieh zu, wie deine ganze Nachbarschaft in Sekunden informiert wird.",
+    "inputPlaceholder": "Was passiert in deiner Nachbarschaft?",
+    "inputAuthor": "Du",
+    "inputLocation": "Dein Viertel · jetzt",
+    "submitButton": "Melden",
+    "demoMessages": {
+      "0": "Raubversuch an der Ecke Hauptstraße und Berliner Allee. Zwei Männer auf schwarzem Motorrad.",
+      "1": "Riesiges Schlagloch in der Blumenstraße nach dem Regen. Ein Auto ist schon reingefallen.",
+      "2": "Kostenloses Konzert im Stadtpark diesen Samstag. Lokale Band um 16 Uhr."
+    },
+    "categories": {
+      "security": "Sicherheit",
+      "infrastructure": "Infrastruktur",
+      "events": "Veranstaltungen",
+      "general": "Meldung"
+    },
+    "cardLocation": "Kreuzberg, Berlin",
+    "cardTime": "gerade eben",
+    "cardLive": "LIVE",
+    "neighborsNotified": "Nachbarn benachrichtigt",
+    "verifying": "Wird überprüft",
+    "sending": "Wird gesendet...",
+    "broadcasting": "Nachbarn in deiner Umgebung werden benachrichtigt..."
+  },
   "features": {
     "sectionLabel": "Was hier passiert",
     "title": "Alles, was Ihre Gemeinschaft",

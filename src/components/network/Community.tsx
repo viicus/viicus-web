@@ -1,10 +1,49 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import { motion, useScroll, useTransform, useInView, MotionValue } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ROUTES } from "@/config/routes";
+
+/* ── Animated stat counter ── */
+function AnimatedStat({ value }: { value: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-60px" });
+  const [display, setDisplay] = useState(value);
+
+  useEffect(() => {
+    if (!inView) return;
+
+    // Parse: prefix (non-digit), number, suffix
+    const match = value.match(/^([^0-9]*)(\d+)(.*)$/);
+    if (!match) {
+      setDisplay(value);
+      return;
+    }
+
+    const [, prefix, numStr, suffix] = match;
+    const target = parseInt(numStr, 10);
+    let current = 0;
+    const duration = 1200; // ms
+    const start = performance.now();
+
+    const tick = (now: number) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      // ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      current = Math.round(eased * target);
+      setDisplay(`${prefix}${current}${suffix}`);
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+
+    setDisplay(`${prefix}0${suffix}`);
+    requestAnimationFrame(tick);
+  }, [inView, value]);
+
+  return <span ref={ref}>{display}</span>;
+}
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
@@ -81,13 +120,13 @@ function FeedItem({
           strokeWidth="2.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-          style={{ color: "var(--accent)" }}
+          style={{ color: "var(--text-accent)" }}
         >
           <polyline points="22 4 12 14.01 9 11.01" />
         </svg>
         <span
           className="text-[13px] font-bold tabular-nums"
-          style={{ color: "var(--accent)" }}
+          style={{ color: "var(--text-accent)" }}
         >
           {item.verified}
         </span>
@@ -134,7 +173,7 @@ export default function Community() {
         <motion.p
           {...fadeUp(0)}
           className="text-[12px] font-bold uppercase tracking-[0.25em]"
-          style={{ color: "var(--accent)" }}
+          style={{ color: "var(--text-accent)" }}
         >
           {t("sectionLabel")}
         </motion.p>
@@ -149,7 +188,7 @@ export default function Community() {
         <motion.h2
           {...fadeUp(0.2)}
           className="text-3xl sm:text-5xl font-bold tracking-tight leading-tight"
-          style={{ color: "var(--accent)" }}
+          style={{ color: "var(--text-accent)" }}
         >
           {t("title2")}
         </motion.h2>
@@ -288,10 +327,10 @@ export default function Community() {
               className="text-center"
             >
               <p
-                className="text-4xl sm:text-5xl font-black tracking-tight"
-                style={{ color: "var(--accent)" }}
+                className="text-4xl sm:text-5xl font-black tracking-tight tabular-nums"
+                style={{ color: "var(--text-accent)" }}
               >
-                {t(`stats.${i}.value`)}
+                <AnimatedStat value={t(`stats.${i}.value`)} />
               </p>
               <p
                 className="mt-3 text-[14px] font-medium leading-relaxed"
@@ -325,7 +364,7 @@ export default function Community() {
           <Link
             href={ROUTES.VERIFICATION}
             className="inline-flex items-center gap-2 text-[14px] font-semibold transition-all duration-300 hover:gap-3"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("learnMore")}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

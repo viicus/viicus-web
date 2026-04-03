@@ -74,6 +74,34 @@
     "act3Body2": "About the things that truly matter to you.",
     "learnMore": "Learn more"
   },
+  "reportDemo": {
+    "sectionLabel": "Try it out",
+    "title": "See something in the neighborhood?",
+    "titleAccent": "Report it now.",
+    "subtitle": "Type what happened and watch your entire community find out in seconds.",
+    "inputPlaceholder": "What's happening in your neighborhood?",
+    "inputAuthor": "You",
+    "inputLocation": "Your neighborhood · now",
+    "submitButton": "Report",
+    "demoMessages": {
+      "0": "Attempted robbery on the corner of Main St and 5th Ave. Two men on a black motorcycle.",
+      "1": "Huge pothole opened on Elm Street after the rain. A car already fell in.",
+      "2": "Free concert at Central Park this Saturday. Local band at 4 PM."
+    },
+    "categories": {
+      "security": "Security",
+      "infrastructure": "Infrastructure",
+      "events": "Events",
+      "general": "Report"
+    },
+    "cardLocation": "Downtown, NYC",
+    "cardTime": "just now",
+    "cardLive": "LIVE",
+    "neighborsNotified": "neighbors notified",
+    "verifying": "Verifying",
+    "sending": "Sending...",
+    "broadcasting": "Notifying neighbors in your area..."
+  },
   "features": {
     "sectionLabel": "What happens here",
     "title": "Everything your community",

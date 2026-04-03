@@ -121,7 +121,7 @@ export default function CtaFooter() {
 
           <p
             className="text-[11px] font-bold uppercase tracking-[0.35em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("ctaLabel")}
           </p>
@@ -146,14 +146,15 @@ export default function CtaFooter() {
               href="#"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="group relative overflow-hidden rounded-2xl px-8 py-4 text-[15px] font-bold text-white cursor-pointer text-center"
+              className="group relative overflow-hidden rounded-2xl px-8 py-4 text-[15px] font-bold cursor-pointer text-center"
               style={{
                 background: "var(--accent)",
+                color: "var(--accent-foreground)",
                 boxShadow: `0 4px 24px var(--accent-glow)`,
               }}
             >
               {t("ctaButton")}
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
             </motion.a>
           </div>
 

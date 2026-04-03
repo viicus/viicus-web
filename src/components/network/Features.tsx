@@ -97,7 +97,7 @@ function EventNode({
           <div className="min-w-0 flex-1">
             <p
               className="text-[10px] font-bold uppercase tracking-widest"
-              style={{ color: "var(--accent)" }}
+              style={{ color: "var(--text-accent)" }}
             >
               {event.tag}
             </p>
@@ -124,13 +124,13 @@ function EventNode({
               strokeWidth="3"
               strokeLinecap="round"
               strokeLinejoin="round"
-              style={{ color: "var(--accent)" }}
+              style={{ color: "var(--text-accent)" }}
             >
               <polyline points="22 4 12 14.01 9 11.01" />
             </svg>
             <span
               className="text-[11px] font-bold tabular-nums"
-              style={{ color: "var(--accent)" }}
+              style={{ color: "var(--text-accent)" }}
             >
               {event.verified}
             </span>
@@ -172,8 +172,8 @@ export default function Features() {
         }}
       />
 
-      {/* Atmospheric glow */}
-      <div
+      {/* Atmospheric glow — parallax */}
+      <motion.div
         className="pointer-events-none absolute top-[20%] left-1/2 -translate-x-1/2"
         style={{
           width: "min(90vw, 800px)",
@@ -181,6 +181,10 @@ export default function Features() {
           borderRadius: "50%",
           background: `radial-gradient(circle, rgba(var(--accent-rgb),0.04) 0%, transparent 70%)`,
         }}
+        initial={{ y: 0 }}
+        whileInView={{ y: -40 }}
+        transition={{ duration: 2.5, ease: "easeOut" }}
+        viewport={{ once: false, margin: "-20%" }}
       />
 
       {/* ── Header ── */}
@@ -188,7 +192,7 @@ export default function Features() {
         <motion.p
           {...fadeUp(0)}
           className="text-[12px] font-bold uppercase tracking-[0.25em]"
-          style={{ color: "var(--accent)" }}
+          style={{ color: "var(--text-accent)" }}
         >
           {t("sectionLabel")}
         </motion.p>
@@ -286,7 +290,7 @@ export default function Features() {
               />
               <p
                 className="text-[10px] font-bold uppercase tracking-widest"
-                style={{ color: "var(--accent)" }}
+                style={{ color: "var(--text-accent)" }}
               >
                 {event.tag}
               </p>
@@ -312,13 +316,13 @@ export default function Features() {
                   strokeWidth="3"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  style={{ color: "var(--accent)" }}
+                  style={{ color: "var(--text-accent)" }}
                 >
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
                 <span
                   className="text-[12px] font-bold tabular-nums"
-                  style={{ color: "var(--accent)" }}
+                  style={{ color: "var(--text-accent)" }}
                 >
                   {event.verified} verificações
                 </span>
@@ -356,14 +360,14 @@ export default function Features() {
           style={{ color: "var(--foreground)" }}
         >
           {t("punchline2")}{" "}
-          <span style={{ color: "var(--accent)" }}>{t("punchline2Accent")}</span>
+          <span style={{ color: "var(--text-accent)" }}>{t("punchline2Accent")}</span>
         </motion.p>
 
         <motion.div {...fadeUp(0.25)} className="mt-10">
           <Link
             href={ROUTES.WHAT_HAPPENS}
             className="inline-flex items-center gap-2 text-[14px] font-semibold transition-all duration-300 hover:gap-3"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("learnMore")}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

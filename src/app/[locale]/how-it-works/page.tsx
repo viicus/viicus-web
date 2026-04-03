@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { APP_NAME } from "@/config/app-config";
 import { ROUTES } from "@/config/routes";
 import { useTranslations } from "next-intl";
+import TiltCard from "@/components/TiltCard";
 
 /* ── Fade-up helper ── */
 const fadeUp = (delay = 0) => ({
@@ -119,7 +120,7 @@ function SolutionStep({
           className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-2xl text-[18px] sm:text-[20px] font-black"
           style={{
             background: "var(--hero-bg)",
-            color: "var(--accent)",
+            color: "var(--text-accent)",
             border: `1px solid rgba(var(--accent-rgb),0.2)`,
             boxShadow: `0 0 0 6px var(--hero-bg)`,
           }}
@@ -184,7 +185,7 @@ function ComparisonCard({
   const statOpacity = useTransform(scrollYProgress, [mid, mid + 0.04], [0, 1]);
 
   return (
-    <div
+    <TiltCard
       className="rounded-2xl p-6 sm:p-8 hover-lift"
       style={{
         background: `rgba(var(--card-bg-rgb),0.4)`,
@@ -196,7 +197,7 @@ function ComparisonCard({
           style={{ scale: statScale, opacity: statOpacity }}
           className="text-3xl sm:text-4xl font-black tracking-tight"
         >
-          <span style={{ color: "var(--accent)" }}>{item.stat}</span>
+          <span style={{ color: "var(--text-accent)" }}>{item.stat}</span>
         </motion.p>
       </motion.div>
 
@@ -213,9 +214,9 @@ function ComparisonCard({
         style={{ opacity: afterOpacity, y: afterY }}
         className="mt-3 text-[15px] font-semibold leading-relaxed"
       >
-        <span style={{ color: "var(--accent)" }}>{item.after}</span>
+        <span style={{ color: "var(--text-accent)" }}>{item.after}</span>
       </motion.p>
-    </div>
+    </TiltCard>
   );
 }
 
@@ -310,7 +311,7 @@ export default function ComoFuncionaPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("sectionLabel")}
           </motion.p>
@@ -365,7 +366,7 @@ export default function ComoFuncionaPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("problemsLabel")}
           </motion.p>
@@ -441,7 +442,7 @@ export default function ComoFuncionaPage() {
             style={{ color: "var(--foreground)" }}
           >
             {t("transitionLine2")}{" "}
-            <span style={{ color: "var(--accent)" }}>{t("transitionLine2Accent")}</span>
+            <span style={{ color: "var(--text-accent)" }}>{t("transitionLine2Accent")}</span>
           </motion.p>
 
           {/* Dramatic "Até agora." */}
@@ -493,7 +494,7 @@ export default function ComoFuncionaPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("solutionLabel")}
           </motion.p>
@@ -549,7 +550,7 @@ export default function ComoFuncionaPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("comparisonLabel")}
           </motion.p>
@@ -622,14 +623,15 @@ export default function ComoFuncionaPage() {
           <motion.div {...fadeUp(0.2)} className="mt-12 flex flex-wrap gap-4">
             <Link
               href={ROUTES.HOME}
-              className="group relative inline-flex overflow-hidden rounded-full px-8 py-4 text-[15px] font-bold text-white transition-all duration-300 hover:scale-[1.04] cursor-pointer hover-glow"
+              className="group relative inline-flex overflow-hidden rounded-full px-8 py-4 text-[15px] font-bold transition-all duration-300 hover:scale-[1.04] cursor-pointer hover-glow"
               style={{
                 background: "var(--accent)",
+                color: "var(--accent-foreground)",
                 boxShadow: `0 4px 24px var(--accent-glow)`,
               }}
             >
               {t("ctaPrimary")}
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
             </Link>
             <Link
               href={ROUTES.WHAT_HAPPENS}

@@ -74,6 +74,34 @@
     "act3Body2": "Sobre as coisas que realmente importam para vocês.",
     "learnMore": "Saber mais"
   },
+  "reportDemo": {
+    "sectionLabel": "Experimenta",
+    "title": "Viste algo no bairro?",
+    "titleAccent": "Reporta agora.",
+    "subtitle": "Escreve o que aconteceu e vê como toda a tua comunidade fica a saber em segundos.",
+    "inputPlaceholder": "O que está a acontecer no teu bairro?",
+    "inputAuthor": "Tu",
+    "inputLocation": "O teu bairro · agora",
+    "submitButton": "Reportar",
+    "demoMessages": {
+      "0": "Tentativa de assalto na esquina da Rua Augusta com a Consolação. Dois homens em moto preta.",
+      "1": "Buraco enorme abriu na Rua das Flores depois da chuva. Já caiu um carro lá dentro.",
+      "2": "Concerto gratuito no parque neste sábado. Banda local às 16h."
+    },
+    "categories": {
+      "security": "Segurança",
+      "infrastructure": "Infraestrutura",
+      "events": "Eventos",
+      "general": "Relato"
+    },
+    "cardLocation": "Alfama, Lisboa",
+    "cardTime": "agora mesmo",
+    "cardLive": "EM DIRETO",
+    "neighborsNotified": "vizinhos notificados",
+    "verifying": "A verificar",
+    "sending": "A enviar...",
+    "broadcasting": "A notificar vizinhos da tua zona..."
+  },
   "features": {
     "sectionLabel": "O que acontece aqui",
     "title": "Tudo o que a tua comunidade",

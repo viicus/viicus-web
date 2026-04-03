@@ -133,7 +133,7 @@ export default function TermosPage() {
             <Link
               href={ROUTES.HOME}
               className="transition-colors duration-200 hover:opacity-80"
-              style={{ color: "var(--accent)" }}
+              style={{ color: "var(--text-accent)" }}
             >
               {t("breadcrumbHome")}
             </Link>
@@ -159,7 +159,7 @@ export default function TermosPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             Legal
           </motion.p>
@@ -288,7 +288,7 @@ export default function TermosPage() {
                               strokeLinecap="round"
                               strokeLinejoin="round"
                               className="shrink-0 mt-0.5"
-                              style={{ color: "var(--accent)" }}
+                              style={{ color: "var(--text-accent)" }}
                             >
                               <circle cx="12" cy="12" r="10" />
                               <path d="M12 16v-4" />
@@ -397,7 +397,7 @@ export default function TermosPage() {
             className="fixed bottom-8 right-8 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-colors duration-200"
             style={{
               background: "var(--accent)",
-              color: "var(--accent-contrast, #fff)",
+              color: "var(--accent-foreground)",
             }}
             aria-label={t("backToTop")}
           >

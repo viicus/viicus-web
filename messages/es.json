@@ -74,6 +74,34 @@
     "act3Body2": "Sobre las cosas que realmente te importan.",
     "learnMore": "Saber más"
   },
+  "reportDemo": {
+    "sectionLabel": "Pruébalo",
+    "title": "¿Viste algo en el barrio?",
+    "titleAccent": "Repórtalo ahora.",
+    "subtitle": "Escribe lo que pasó y mira cómo toda tu comunidad se entera en segundos.",
+    "inputPlaceholder": "¿Qué está pasando en tu barrio?",
+    "inputAuthor": "Tú",
+    "inputLocation": "Tu barrio · ahora",
+    "submitButton": "Reportar",
+    "demoMessages": {
+      "0": "Intento de asalto en la esquina de Calle Mayor con la 5ta. Dos hombres en moto negra.",
+      "1": "Enorme bache en la Calle de las Flores después de la lluvia. Ya cayó un coche.",
+      "2": "Concierto gratis en el parque este sábado. Banda local a las 16h."
+    },
+    "categories": {
+      "security": "Seguridad",
+      "infrastructure": "Infraestructura",
+      "events": "Eventos",
+      "general": "Reporte"
+    },
+    "cardLocation": "Centro, Madrid",
+    "cardTime": "ahora mismo",
+    "cardLive": "EN VIVO",
+    "neighborsNotified": "vecinos notificados",
+    "verifying": "Verificando",
+    "sending": "Enviando...",
+    "broadcasting": "Notificando a vecinos de tu zona..."
+  },
   "features": {
     "sectionLabel": "Lo que pasa aquí",
     "title": "Todo lo que tu comunidad",

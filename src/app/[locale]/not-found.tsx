@@ -42,9 +42,10 @@ export default function NotFound() {
         <motion.div className="mt-10" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
           <Link
             href={ROUTES.HOME}
-            className="inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold text-white transition-shadow duration-300"
+            className="inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold transition-shadow duration-300"
             style={{
               background: "var(--accent)",
+              color: "var(--accent-foreground)",
               boxShadow: "0 2px 16px var(--accent-glow)",
             }}
           >

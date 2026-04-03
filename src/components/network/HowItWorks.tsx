@@ -167,7 +167,7 @@ function RotatorSlide({
         <p className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-tight">
           <span style={{ color: "var(--foreground)" }}>{items[index]}</span>
           <br />
-          <span style={{ color: "var(--accent)" }}>{suffix}</span>
+          <span style={{ color: "var(--text-accent)" }}>{suffix}</span>
         </p>
       </div>
     </motion.div>
@@ -205,8 +205,8 @@ export default function HowItWorks() {
 
   return (
     <section className="relative" style={{ background: "var(--background)" }}>
-      {/* Atmospheric glow behind stories */}
-      <div
+      {/* Atmospheric glow behind stories — parallax */}
+      <motion.div
         className="pointer-events-none absolute top-[30%] left-1/2 -translate-x-1/2"
         style={{
           width: "min(90vw, 700px)",
@@ -214,6 +214,10 @@ export default function HowItWorks() {
           borderRadius: "50%",
           background: `radial-gradient(circle, rgba(var(--accent-rgb),0.03) 0%, transparent 70%)`,
         }}
+        initial={{ y: 0 }}
+        whileInView={{ y: -35 }}
+        transition={{ duration: 2.5, ease: "easeOut" }}
+        viewport={{ once: false, margin: "-20%" }}
       />
       {/* ── Act 1: Sticky scroll stories ── */}
       <div
@@ -328,7 +332,7 @@ export default function HowItWorks() {
           style={{ color: "var(--foreground)" }}
         >
           {t("act2Body3")}{" "}
-          <span style={{ color: "var(--accent)" }}>{t("act2Body3Accent")}</span>
+          <span style={{ color: "var(--text-accent)" }}>{t("act2Body3Accent")}</span>
         </motion.p>
       </div>
 
@@ -427,7 +431,7 @@ export default function HowItWorks() {
             <Link
               href={ROUTES.HOW_IT_WORKS}
               className="inline-flex items-center gap-2 text-[14px] font-semibold transition-all duration-300 hover:gap-3"
-              style={{ color: "var(--accent)" }}
+              style={{ color: "var(--text-accent)" }}
             >
               {t("learnMore")}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

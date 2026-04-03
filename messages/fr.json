@@ -74,6 +74,34 @@
     "act3Body2": "Sur les choses qui comptent vraiment pour vous.",
     "learnMore": "En savoir plus"
   },
+  "reportDemo": {
+    "sectionLabel": "Essayez",
+    "title": "Quelque chose dans le quartier ?",
+    "titleAccent": "Signalez-le.",
+    "subtitle": "Décrivez ce qui s'est passé et voyez comment tout votre quartier est informé en quelques secondes.",
+    "inputPlaceholder": "Que se passe-t-il dans votre quartier ?",
+    "inputAuthor": "Vous",
+    "inputLocation": "Votre quartier · maintenant",
+    "submitButton": "Signaler",
+    "demoMessages": {
+      "0": "Tentative de vol au coin de la Rue de Rivoli et du Boulevard Sébastopol. Deux hommes en moto noire.",
+      "1": "Énorme nid-de-poule Rue des Fleurs après la pluie. Une voiture est déjà tombée dedans.",
+      "2": "Concert gratuit au parc ce samedi. Groupe local à 16h."
+    },
+    "categories": {
+      "security": "Sécurité",
+      "infrastructure": "Infrastructure",
+      "events": "Événements",
+      "general": "Signalement"
+    },
+    "cardLocation": "Le Marais, Paris",
+    "cardTime": "à l'instant",
+    "cardLive": "EN DIRECT",
+    "neighborsNotified": "voisins notifiés",
+    "verifying": "Vérification en cours",
+    "sending": "Envoi...",
+    "broadcasting": "Notification des voisins de votre quartier..."
+  },
   "features": {
     "sectionLabel": "Ce qui se passe ici",
     "title": "Tout ce que votre communauté",

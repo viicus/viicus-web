@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { APP_NAME } from "@/config/app-config";
 import { ROUTES } from "@/config/routes";
 import { useTranslations } from "next-intl";
+import TiltCard from "@/components/TiltCard";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
@@ -68,7 +69,7 @@ export default function VerificacaoPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("sectionLabel")}
           </motion.p>
@@ -105,7 +106,7 @@ export default function VerificacaoPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("stepsLabel")}
           </motion.p>
@@ -136,7 +137,7 @@ export default function VerificacaoPage() {
                     className="relative z-10 flex items-center justify-center w-10 h-10 rounded-full shrink-0 text-[15px] font-black"
                     style={{
                       background: "var(--accent)",
-                      color: "white",
+                      color: "var(--accent-foreground)",
                       boxShadow: `0 0 20px var(--accent-glow)`,
                     }}
                   >
@@ -192,7 +193,7 @@ export default function VerificacaoPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("principlesLabel")}
           </motion.p>
@@ -210,31 +211,34 @@ export default function VerificacaoPage() {
               <motion.div
                 key={principle.title}
                 {...fadeUp(i * 0.08)}
-                className="rounded-2xl p-8 hover-lift"
-                style={{
-                  background: `rgba(var(--card-bg-rgb),0.5)`,
-                  border: `1px solid var(--border-subtle)`,
-                }}
               >
-                <span className="text-3xl">{principle.icon}</span>
-                <h3
-                  className="mt-5 text-xl font-bold"
-                  style={{ color: "var(--foreground)" }}
+                <TiltCard
+                  className="rounded-2xl p-8 hover-lift"
+                  style={{
+                    background: `rgba(var(--card-bg-rgb),0.5)`,
+                    border: `1px solid var(--border-subtle)`,
+                  }}
                 >
-                  {principle.title}
-                </h3>
-                <p
-                  className="mt-3 text-[14px] leading-relaxed"
-                  style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
-                >
-                  {principle.body}
-                </p>
-                <p
-                  className="mt-4 text-[13px] leading-relaxed"
-                  style={{ color: `rgba(var(--text-rgb),var(--text-faint))` }}
-                >
-                  {principle.detail}
-                </p>
+                  <span className="text-3xl">{principle.icon}</span>
+                  <h3
+                    className="mt-5 text-xl font-bold"
+                    style={{ color: "var(--foreground)" }}
+                  >
+                    {principle.title}
+                  </h3>
+                  <p
+                    className="mt-3 text-[14px] leading-relaxed"
+                    style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
+                  >
+                    {principle.body}
+                  </p>
+                  <p
+                    className="mt-4 text-[13px] leading-relaxed"
+                    style={{ color: `rgba(var(--text-rgb),var(--text-faint))` }}
+                  >
+                    {principle.detail}
+                  </p>
+                </TiltCard>
               </motion.div>
             ))}
           </div>
@@ -247,7 +251,7 @@ export default function VerificacaoPage() {
           <motion.p
             {...fadeUp(0)}
             className="text-[12px] font-bold uppercase tracking-[0.25em]"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "var(--text-accent)" }}
           >
             {t("comparisonLabel")}
           </motion.p>
@@ -279,7 +283,7 @@ export default function VerificacaoPage() {
               </p>
               <p
                 className="text-[11px] font-bold uppercase tracking-widest"
-                style={{ color: "var(--accent)" }}
+                style={{ color: "var(--text-accent)" }}
               >
                 {APP_NAME}
               </p>
@@ -348,14 +352,15 @@ export default function VerificacaoPage() {
           <motion.div {...fadeUp(0.2)} className="mt-12">
             <Link
               href={ROUTES.HOME}
-              className="group relative inline-flex overflow-hidden rounded-full px-8 py-4 text-[15px] font-bold text-white transition-all duration-300 hover:scale-[1.04] cursor-pointer hover-glow"
+              className="group relative inline-flex overflow-hidden rounded-full px-8 py-4 text-[15px] font-bold transition-all duration-300 hover:scale-[1.04] cursor-pointer hover-glow"
               style={{
                 background: "var(--accent)",
+                color: "var(--accent-foreground)",
                 boxShadow: `0 4px 24px var(--accent-glow)`,
               }}
             >
               {t("ctaPrimary")}
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
             </Link>
           </motion.div>
         </div>

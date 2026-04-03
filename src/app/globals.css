@@ -1,70 +1,94 @@
 @import "tailwindcss";
 
+/*
+ * Theme tokens — mirrors src/config/theme.ts
+ * Palette: yellow-400 accent on warm gray scale
+ */
+
 /* ===== Light theme (default) ===== */
 :root {
-  --background: #f5f2ed;
-  --foreground: #1a1a1a;
+  --background: #FFFFFF;
+  --foreground: #0F0F0E;
 
   /* Hero / Canvas */
-  --hero-bg: #f5f2ed;
-  --hero-bg-rgb: 245,242,237;
-  --person-color: #059669;
-  --person-rgb: 5,150,105;
-  --grid-color: rgba(0,0,0,0.05);
-  --text-rgb: 26,26,26;
+  --hero-bg: #F5F4F0;
+  --hero-bg-rgb: 245,244,240;
+  --person-color: #FFDE21;
+  --person-rgb: 255,222,33;
+  --grid-color: rgba(0,0,0,0.04);
+  --text-rgb: 15,15,14;
   --card-bg-rgb: 255,255,255;
   --popup-bg-rgb: 255,255,255;
-  --shadow-alpha: 0.1;
-  --highlight-rgb: 0,0,0;
+  --shadow-alpha: 0.08;
+  --highlight-rgb: 15,15,14;
 
-  /* Accent */
-  --accent: #059669;
-  --accent-rgb: 5,150,105;
-  --accent-light: #10b981;
-  --accent-glow: rgba(5,150,105,0.2);
+  /* Accent (yellow) */
+  --accent: #FFDE21;
+  --accent-rgb: 255,222,33;
+  --accent-light: #FFE14D;
+  --accent-warm: #FFB800;
+  --accent-glow: rgba(255,222,33,0.18);
+  --accent-foreground: #0F0F0E;
+
+  /* Readable accent text on light backgrounds */
+  --text-accent: #A08800;
 
   /* UI text opacities */
-  --text-strong: 0.9;
-  --text-medium: 0.55;
-  --text-muted: 0.4;
+  --text-strong: 0.92;
+  --text-medium: 0.58;
+  --text-muted: 0.42;
   --text-faint: 0.25;
-  --border-subtle: rgba(0,0,0,0.08);
-  --border-hover: rgba(0,0,0,0.2);
+  --border-subtle: rgba(214,212,203,0.7);
+  --border-hover: rgba(158,156,147,0.6);
   --btn-ghost-bg: rgba(0,0,0,0.03);
   --btn-ghost-hover: rgba(0,0,0,0.06);
-  --divider: rgba(0,0,0,0.08);
+  --divider: rgba(214,212,203,0.5);
+
+  /* Status */
+  --status-success: #1D9E75;
+  --status-warning: #FF6B21;
+  --status-danger: #E24B4A;
 }
 
-/* ===== Dark theme (activated via .dark class on <html>) ===== */
+/* ===== Dark theme ===== */
 :root.dark {
-  --background: #0a0a0f;
-  --foreground: #ffffff;
+  --background: #0F0F0E;
+  --foreground: #F5F4F0;
 
-  --hero-bg: #0a0a0f;
-  --hero-bg-rgb: 10,10,15;
-  --person-color: #7dd3a8;
-  --person-rgb: 125,211,168;
+  --hero-bg: #0F0F0E;
+  --hero-bg-rgb: 15,15,14;
+  --person-color: #FFDE21;
+  --person-rgb: 255,222,33;
   --grid-color: rgba(255,255,255,0.018);
-  --text-rgb: 255,255,255;
-  --card-bg-rgb: 18,18,28;
-  --popup-bg-rgb: 14,14,22;
+  --text-rgb: 245,244,240;
+  --card-bg-rgb: 44,44,42;
+  --popup-bg-rgb: 26,26,25;
   --shadow-alpha: 0.3;
-  --highlight-rgb: 255,255,255;
+  --highlight-rgb: 245,244,240;
 
-  --accent: #10b981;
-  --accent-rgb: 16,185,129;
-  --accent-light: #34d399;
-  --accent-glow: rgba(16,185,129,0.3);
+  --accent: #FFDE21;
+  --accent-rgb: 255,222,33;
+  --accent-light: #FFE14D;
+  --accent-warm: #FFB800;
+  --accent-glow: rgba(255,222,33,0.22);
+  --accent-foreground: #0F0F0E;
 
-  --text-strong: 0.9;
-  --text-medium: 0.5;
-  --text-muted: 0.35;
-  --text-faint: 0.2;
-  --border-subtle: rgba(255,255,255,0.08);
-  --border-hover: rgba(255,255,255,0.2);
+  /* Yellow pops on dark backgrounds */
+  --text-accent: #FFDE21;
+
+  --text-strong: 0.92;
+  --text-medium: 0.55;
+  --text-muted: 0.38;
+  --text-faint: 0.22;
+  --border-subtle: rgba(44,44,42,0.9);
+  --border-hover: rgba(95,94,90,0.6);
   --btn-ghost-bg: rgba(255,255,255,0.02);
   --btn-ghost-hover: rgba(255,255,255,0.05);
-  --divider: rgba(255,255,255,0.06);
+  --divider: rgba(44,44,42,0.7);
+
+  --status-success: #5DCAA5;
+  --status-warning: #FFB800;
+  --status-danger: #F09595;
 }
 
 @theme inline {
@@ -92,14 +116,22 @@ body {
 
 /* ── Gradient text utility ── */
 .gradient-text {
-  background: linear-gradient(135deg, var(--foreground) 30%, var(--accent) 100%);
+  background: linear-gradient(135deg, var(--foreground) 30%, var(--text-accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-accent {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-warm) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero title gradient — golden shimmer */
+.gradient-text-hero {
+  background: linear-gradient(135deg, #FFDE21 0%, #FFB800 40%, #FFE14D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -180,8 +212,6 @@ body {
   height: 520%;
   transform-style: preserve-3d;
 }
-
-/* Map transform is driven by JS — no CSS animation needed */
 
 /* Pin pulse — ripple effect */
 @keyframes pin-pulse {
