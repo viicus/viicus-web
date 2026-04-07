@@ -896,5 +896,52 @@
     "trustLine2": "Se constrói,",
     "trustLine2Accent": "vizinho por vizinho.",
     "ctaPrimary": "Voltar para o início"
+  },
+  "emailCategories": {
+    "security": "Segurança",
+    "account": "Conta",
+    "moderation": "Moderação",
+    "social": "Social"
+  },
+  "emailCategoryDescriptions": {
+    "security": "Alertas de login suspeito, redefinição de senha e verificação de email. Não pode ser desativado por motivos de segurança.",
+    "account": "Mudanças importantes na sua conta, como alteração de email, exclusão ou recuperação.",
+    "moderation": "Resultado de denúncias e recursos que você enviou na plataforma.",
+    "social": "Comentários, menções e interações em seus posts e reportes."
+  },
+  "emailUnsubscribe": {
+    "loadingTitle": "Processando seu pedido...",
+    "loadingBody": "Aguarde um instante.",
+    "missingTitle": "Link",
+    "missingTitleAccent": "inválido.",
+    "missingBody": "Esse link de cancelamento não é válido. Use o link mais recente do email que você recebeu.",
+    "errorTitle": "Algo deu",
+    "errorTitleAccent": "errado.",
+    "errorBody": "Não conseguimos processar seu pedido. Tente novamente em alguns minutos.",
+    "doneTitle": "Pronto.",
+    "doneTitleAccent": "Você foi descadastrado.",
+    "doneBody": "Não enviaremos mais emails de {category} para {email}.",
+    "ctaReactivate": "Reativar",
+    "ctaManage": "Gerenciar todas as preferências",
+    "reactivatedTitle": "Reativado",
+    "reactivatedTitleAccent": "com sucesso.",
+    "reactivatedBody": "Você voltará a receber emails de {category}.",
+    "footer": "Você pode alterar isso a qualquer momento.",
+    "footerPrivacy": "Política de privacidade"
+  },
+  "emailPreferences": {
+    "title": "Preferências de",
+    "titleAccent": "email.",
+    "subtitle": "Escolha quais comunicações você quer receber. Emails de segurança não podem ser desativados.",
+    "loading": "Carregando...",
+    "missingTitle": "Link inválido",
+    "missingBody": "Esse link expirou ou não é válido. Use o link mais recente do email que você recebeu.",
+    "errorTitle": "Erro",
+    "errorBody": "Não conseguimos carregar suas preferências. Tente novamente em instantes.",
+    "signedInAs": "Conta:",
+    "required": "Obrigatório",
+    "autosave": "Suas alterações são salvas automaticamente.",
+    "footer": "Saiba como tratamos seus dados na",
+    "footerPrivacy": "Política de privacidade"
   }
 }

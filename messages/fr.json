@@ -896,5 +896,52 @@
     "trustLine2": "Elle se construit,",
     "trustLine2Accent": "voisin par voisin.",
     "ctaPrimary": "Retour à l'accueil"
+  },
+  "emailCategories": {
+    "security": "Security",
+    "account": "Account",
+    "moderation": "Moderation",
+    "social": "Social"
+  },
+  "emailCategoryDescriptions": {
+    "security": "Suspicious login alerts, password resets and email verification. Cannot be turned off for security reasons.",
+    "account": "Important changes to your account, like email change, deletion or recovery.",
+    "moderation": "Outcomes of reports and appeals you submitted on the platform.",
+    "social": "Comments, mentions and interactions on your posts and reports."
+  },
+  "emailUnsubscribe": {
+    "loadingTitle": "Processing your request...",
+    "loadingBody": "Just a moment.",
+    "missingTitle": "Invalid",
+    "missingTitleAccent": "link.",
+    "missingBody": "This unsubscribe link is not valid. Please use the most recent link from the email you received.",
+    "errorTitle": "Something went",
+    "errorTitleAccent": "wrong.",
+    "errorBody": "We couldn't process your request. Please try again in a few minutes.",
+    "doneTitle": "Done.",
+    "doneTitleAccent": "You're unsubscribed.",
+    "doneBody": "We will no longer send {category} emails to {email}.",
+    "ctaReactivate": "Reactivate",
+    "ctaManage": "Manage all preferences",
+    "reactivatedTitle": "Reactivated",
+    "reactivatedTitleAccent": "successfully.",
+    "reactivatedBody": "You will receive {category} emails again.",
+    "footer": "You can change this at any time.",
+    "footerPrivacy": "Privacy policy"
+  },
+  "emailPreferences": {
+    "title": "Email",
+    "titleAccent": "preferences.",
+    "subtitle": "Choose which communications you want to receive. Security emails cannot be turned off.",
+    "loading": "Loading...",
+    "missingTitle": "Invalid link",
+    "missingBody": "This link expired or is not valid. Please use the most recent link from the email you received.",
+    "errorTitle": "Error",
+    "errorBody": "We couldn't load your preferences. Please try again in a moment.",
+    "signedInAs": "Account:",
+    "required": "Required",
+    "autosave": "Your changes are saved automatically.",
+    "footer": "Learn how we handle your data in our",
+    "footerPrivacy": "Privacy policy"
   }
 }

@@ -896,5 +896,52 @@
     "trustLine2": "Constrói-se,",
     "trustLine2Accent": "vizinho por vizinho.",
     "ctaPrimary": "Voltar para o início"
+  },
+  "emailCategories": {
+    "security": "Segurança",
+    "account": "Conta",
+    "moderation": "Moderação",
+    "social": "Social"
+  },
+  "emailCategoryDescriptions": {
+    "security": "Alertas de início de sessão suspeito, redefinição de palavra-passe e verificação de email. Não pode ser desativado por motivos de segurança.",
+    "account": "Alterações importantes na sua conta, como mudança de email, eliminação ou recuperação.",
+    "moderation": "Resultado de denúncias e recursos que submeteu na plataforma.",
+    "social": "Comentários, menções e interações nos seus posts e reportes."
+  },
+  "emailUnsubscribe": {
+    "loadingTitle": "A processar o seu pedido...",
+    "loadingBody": "Aguarde um instante.",
+    "missingTitle": "Ligação",
+    "missingTitleAccent": "inválida.",
+    "missingBody": "Esta ligação de cancelamento não é válida. Utilize a ligação mais recente do email que recebeu.",
+    "errorTitle": "Algo correu",
+    "errorTitleAccent": "mal.",
+    "errorBody": "Não foi possível processar o seu pedido. Tente novamente dentro de alguns minutos.",
+    "doneTitle": "Pronto.",
+    "doneTitleAccent": "Foi removido.",
+    "doneBody": "Deixaremos de enviar emails de {category} para {email}.",
+    "ctaReactivate": "Reativar",
+    "ctaManage": "Gerir todas as preferências",
+    "reactivatedTitle": "Reativado",
+    "reactivatedTitleAccent": "com sucesso.",
+    "reactivatedBody": "Voltará a receber emails de {category}.",
+    "footer": "Pode alterar isto a qualquer momento.",
+    "footerPrivacy": "Política de privacidade"
+  },
+  "emailPreferences": {
+    "title": "Preferências de",
+    "titleAccent": "email.",
+    "subtitle": "Escolha que comunicações quer receber. Emails de segurança não podem ser desativados.",
+    "loading": "A carregar...",
+    "missingTitle": "Ligação inválida",
+    "missingBody": "Esta ligação expirou ou não é válida. Utilize a ligação mais recente do email que recebeu.",
+    "errorTitle": "Erro",
+    "errorBody": "Não foi possível carregar as suas preferências. Tente novamente dentro de instantes.",
+    "signedInAs": "Conta:",
+    "required": "Obrigatório",
+    "autosave": "As suas alterações são guardadas automaticamente.",
+    "footer": "Saiba como tratamos os seus dados na",
+    "footerPrivacy": "Política de privacidade"
   }
 }
