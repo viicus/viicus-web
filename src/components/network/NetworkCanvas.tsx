@@ -73,16 +73,16 @@ interface CanvasTheme {
 function readTheme(): CanvasTheme {
   const s = getComputedStyle(document.documentElement);
   const get = (v: string) => s.getPropertyValue(v).trim();
-  const personRgb = get("--person-rgb") || "255,222,33";
+  const personRgb = get("--person-rgb") || "10,10,15";
   return {
-    personColor: get("--person-color") || "#FFDE21",
+    personColor: get("--person-color") || "#0A0A0F",
     personDim: `rgba(${personRgb},`,
-    gridColor: get("--grid-color") || "rgba(0,0,0,0.04)",
-    textRgb: get("--text-rgb") || "15,15,14",
+    gridColor: get("--grid-color") || "rgba(10,10,15,0.035)",
+    textRgb: get("--text-rgb") || "10,10,15",
     cardBgRgb: get("--card-bg-rgb") || "255,255,255",
     popupBgRgb: get("--popup-bg-rgb") || "255,255,255",
     shadowAlpha: parseFloat(get("--shadow-alpha")) || 0.08,
-    highlightRgb: get("--highlight-rgb") || "15,15,14",
+    highlightRgb: get("--highlight-rgb") || "10,10,15",
   };
 }
 
@@ -106,8 +106,8 @@ const CARD_RESOLVE_ANIM_DURATION = 180; // ~3s for resolution animation
 const CARD_ACTION_DELAY = 300; // 5s after confirmation before showing action overlay
 const CARD_ACTION_FADE = 50; // ~0.8s fade transition
 
-const CARD_COLORS = ["#FF6B21", "#E24B4A", "#FFB800"];
-const CARD_DIM = ["rgba(255,107,33,", "rgba(226,75,74,", "rgba(255,184,0,"];
+const CARD_COLORS = ["#FF2D75", "#6B3FFF", "#FFD60A"];
+const CARD_DIM = ["rgba(255,45,117,", "rgba(107,63,255,", "rgba(255,214,10,"];
 // --- Translations interface (passed from parent via useTranslations) ---
 export interface CanvasTranslations {
   typeLabels: string[];
@@ -902,7 +902,7 @@ export default function NetworkCanvas({ personCount = 75, translations: T_TEXT }
           const isConfirmed = card.resolvedType === "confirmed";
 
           // Resolution colors
-          const resolveColor = isConfirmed ? "#1D9E75" : "#9E9C93";
+          const resolveColor = isConfirmed ? "#00A884" : "#8A8A95";
           const resolveDim = isConfirmed ? "rgba(29,158,117," : "rgba(158,156,147,";
           const resolveGlowColor = isConfirmed ? "rgba(29,158,117," : "rgba(158,156,147,";
 
@@ -1019,10 +1019,10 @@ export default function NetworkCanvas({ personCount = 75, translations: T_TEXT }
             ctx.globalAlpha = aAlpha * 0.9;
             ctx.font = "700 11px system-ui, sans-serif";
             if (isConfirmed) {
-              ctx.fillStyle = "#1D9E75";
+              ctx.fillStyle = "#00A884";
               ctx.fillText(`\u2713 ${T_TEXT.confirmed}`, cx + 14, cy + 20);
             } else {
-              ctx.fillStyle = "#9E9C93";
+              ctx.fillStyle = "#8A8A95";
               ctx.fillText(`\u2717 ${T_TEXT.dismissed}`, cx + 14, cy + 20);
             }
 

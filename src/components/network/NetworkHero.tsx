@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ROUTES } from "@/config/routes";
+import { APP_NAME } from "@/config/app-config";
 import NetworkCanvas, { type CanvasTranslations } from "./NetworkCanvas";
 
 export default function NetworkHero({ personCount = 75 }: { personCount?: number }) {
@@ -43,147 +44,261 @@ export default function NetworkHero({ personCount = 75 }: { personCount?: number
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [mouseActive, setMouseActive] = useState(false);
 
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    setMousePos({ x: e.clientX, y: e.clientY });
-    if (!mouseActive) setMouseActive(true);
-  }, [mouseActive]);
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+      if (!mouseActive) setMouseActive(true);
+    },
+    [mouseActive]
+  );
 
   return (
     <section
-      className="relative min-h-screen w-full overflow-hidden"
+      className="relative w-full overflow-hidden min-h-[760px] md:min-h-[860px] lg:min-h-[900px]"
       style={{ background: "var(--hero-bg)" }}
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setMouseActive(false)}
     >
       <NetworkCanvas personCount={personCount} translations={canvasTranslations} />
 
-      {/* Cursor glow */}
+      {/* Cursor glow — subtle magenta wash */}
       {mouseActive && (
         <div
           className="pointer-events-none fixed z-10 rounded-full"
           style={{
-            left: mousePos.x - 200,
-            top: mousePos.y - 200,
-            width: 400,
-            height: 400,
-            background: `radial-gradient(circle, rgba(var(--accent-rgb),0.06) 0%, transparent 70%)`,
+            left: mousePos.x - 220,
+            top: mousePos.y - 220,
+            width: 440,
+            height: 440,
+            background: `radial-gradient(circle, rgba(var(--accent-rgb),0.05) 0%, transparent 70%)`,
             transition: "left 0.15s ease-out, top 0.15s ease-out",
           }}
         />
       )}
 
-      {/* Radial glow behind text — subtle parallax */}
-      <motion.div
-        className="pointer-events-none absolute inset-0 z-10"
-        style={{
-          background: "radial-gradient(ellipse 50% 40% at 50% 50%, rgba(var(--person-rgb),0.05) 0%, transparent 100%)",
-          y: typeof window !== "undefined" ? undefined : 0,
-        }}
-        initial={{ y: 0 }}
-        whileInView={{ y: -30 }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        viewport={{ once: false }}
-      />
+      {/* Decorative orbit rings (echo the mobile auth backdrop) */}
+      <DecorativeRings />
 
       {/* Content */}
-      <div className="relative z-20 flex min-h-screen flex-col items-center justify-center px-4 sm:px-6 py-24 sm:py-0">
-        {/* Badge */}
+      <div className="relative z-20 flex flex-col items-start justify-center px-6 sm:px-10 lg:px-16 py-20 max-w-7xl mx-auto w-full min-h-[760px] md:min-h-[860px] lg:min-h-[900px]">
+        {/* Live badge — compact, moved to top */}
         <motion.div
-          initial={{ opacity: 0, y: 16, scale: 0.95 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.3, ease: [0.23, 1, 0.32, 1] }}
-          className="mb-5 sm:mb-7 flex items-center gap-2.5 rounded-full px-4 sm:px-5 py-2 backdrop-blur-sm"
-          style={{
-            border: "1px solid rgba(var(--accent-rgb),0.2)",
-            background: "rgba(var(--accent-rgb),0.06)",
-          }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="inline-flex items-center gap-2 mb-6"
         >
           <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-60" style={{ background: "var(--accent-light)" }} />
-            <span className="relative inline-flex h-2 w-2 rounded-full" style={{ background: "var(--accent)" }} />
+            <span
+              className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-70"
+              style={{ background: "var(--vivid-pink)" }}
+            />
+            <span
+              className="relative inline-flex h-2 w-2 rounded-full"
+              style={{ background: "var(--vivid-pink)" }}
+            />
           </span>
-          <span className="text-[13px] font-medium tracking-wide" style={{ color: "var(--text-accent)" }}>
+          <span
+            className="text-xs font-medium lowercase"
+            style={{ color: `rgba(var(--text-rgb),var(--text-medium))` }}
+          >
             {t("badge")}
           </span>
         </motion.div>
 
-        {/* Title */}
-        <div className="max-w-3xl text-center">
-          <motion.span
-            initial={{ opacity: 0, y: 25 }}
+        {/* Brand mark — three vivid dots */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex items-center gap-1.5 mb-5"
+          aria-hidden
+        >
+          <span className="h-2.5 w-2.5 rounded-full dot-pink" />
+          <span className="h-2.5 w-2.5 rounded-full dot-yellow" />
+          <span className="h-2.5 w-2.5 rounded-full dot-mint" />
+        </motion.div>
+
+        {/* Wordmark */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex items-end gap-1 mb-4"
+        >
+          <span
+            className="type-display text-5xl sm:text-6xl md:text-7xl"
+            style={{ color: "var(--foreground)" }}
+          >
+            {APP_NAME.toLowerCase()}
+          </span>
+          <span
+            className="mb-2 sm:mb-2.5 md:mb-3 h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full"
+            style={{ background: "var(--vivid-pink)" }}
+            aria-hidden
+          />
+        </motion.div>
+
+        {/* Headline */}
+        <div className="max-w-2xl">
+          <motion.h1
+            initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.45, ease: [0.23, 1, 0.32, 1] }}
-            className="block text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-7xl"
+            transition={{ duration: 0.5, delay: 0.42 }}
+            className="type-display-sm text-3xl sm:text-4xl md:text-5xl"
             style={{ color: "var(--foreground)" }}
           >
             {t("titleLine1")}
-          </motion.span>
-          <motion.span
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6, ease: [0.23, 1, 0.32, 1] }}
-            className="mt-1 block text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-7xl"
-          >
-            <span className="gradient-text-hero">
-              {t("titleLine2Accent")}
-            </span>{" "}
+            <br />
+            <span className="gradient-text-hero">{t("titleLine2Accent")}</span>
             <span style={{ color: "var(--foreground)" }}>{t("titleLine2Rest")}</span>
-          </motion.span>
+          </motion.h1>
+
+          {/* Kicker — editorial strip */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, delay: 0.55 }}
+            className="mt-5 kicker"
+          >
+            {t("kicker")}
+          </motion.div>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.68 }}
+            className="mt-5 max-w-xl text-base sm:text-lg leading-relaxed font-light"
+            style={{ color: `rgba(var(--text-rgb),var(--text-medium))` }}
+          >
+            {t("subtitle")}
+          </motion.p>
         </div>
 
-        {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.85, ease: [0.23, 1, 0.32, 1] }}
-          className="mt-5 sm:mt-6 max-w-md text-center text-[15px] sm:text-[17px] leading-relaxed"
-          style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
-        >
-          {t("subtitle")}
-        </motion.p>
-
-        {/* CTA */}
+        {/* CTAs */}
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1.05, ease: [0.23, 1, 0.32, 1] }}
-          className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto"
+          transition={{ duration: 0.5, delay: 0.82 }}
+          className="mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto"
         >
           <motion.button
-            whileHover={{ scale: 1.04 }}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.97 }}
-            className="group relative overflow-hidden rounded-full px-7 py-3.5 text-sm font-semibold cursor-pointer transition-shadow duration-300 w-full sm:w-auto text-center"
+            className="group inline-flex items-center justify-center gap-3 rounded-2xl px-7 py-3.5 text-sm font-medium tracking-wide cursor-pointer w-full sm:w-auto"
             style={{
-              background: "var(--accent)",
-              color: "var(--accent-foreground)",
-              boxShadow: "0 2px 16px var(--accent-glow)",
+              background: "var(--foreground)",
+              color: "var(--background)",
             }}
           >
-            {t("ctaPrimary")}
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
+            <span>{t("ctaPrimary")}</span>
+            <span
+              className="h-1.5 w-1.5 rounded-full transition-transform duration-300 group-hover:scale-150"
+              style={{ background: "var(--vivid-pink)" }}
+            />
           </motion.button>
-          <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
+
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
             <Link
               href={ROUTES.HOW_IT_WORKS}
-              className="block rounded-full px-7 py-3.5 text-sm font-medium cursor-pointer transition-all duration-300 w-full sm:w-auto text-center"
+              className="block rounded-2xl px-7 py-3.5 text-sm font-medium cursor-pointer text-center transition-colors w-full sm:w-auto"
               style={{
-                border: `1px solid var(--border-subtle)`,
-                background: "var(--hero-bg)",
-                color: `rgba(var(--text-rgb),var(--text-medium))`,
+                border: "1px solid var(--border-subtle)",
+                color: "var(--foreground)",
               }}
             >
               {t("ctaSecondary")}
             </Link>
           </motion.div>
         </motion.div>
-
       </div>
 
       {/* Edge fades */}
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-40" style={{ background: `linear-gradient(to top, var(--hero-bg), rgba(var(--hero-bg-rgb),0.5), transparent)` }} />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 z-10 h-24" style={{ background: `linear-gradient(to bottom, rgba(var(--hero-bg-rgb),0.6), transparent)` }} />
-      <div className="pointer-events-none absolute top-0 bottom-0 left-0 z-10 w-24" style={{ background: `linear-gradient(to right, rgba(var(--hero-bg-rgb),0.4), transparent)` }} />
-      <div className="pointer-events-none absolute top-0 bottom-0 right-0 z-10 w-24" style={{ background: `linear-gradient(to left, rgba(var(--hero-bg-rgb),0.4), transparent)` }} />
+      <div
+        className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-40"
+        style={{
+          background:
+            "linear-gradient(to top, var(--hero-bg), rgba(var(--hero-bg-rgb),0.5), transparent)",
+        }}
+      />
     </section>
+  );
+}
+
+/**
+ * Decorative thin rings that slowly orbit in the background — matches the
+ * AuthBackdrop motif used by the iOS / Android auth flow.
+ */
+function DecorativeRings() {
+  return (
+    <>
+      {/* Top-right ring with a yellow satellite */}
+      <div
+        className="pointer-events-none absolute z-0 animate-orbit"
+        style={{
+          width: 520,
+          height: 520,
+          top: -220,
+          right: -240,
+        }}
+        aria-hidden
+      >
+        <div
+          className="absolute inset-0 rounded-full"
+          style={{ border: "1px solid rgba(var(--text-rgb),0.08)" }}
+        />
+        <span
+          className="absolute rounded-full"
+          style={{
+            width: 14,
+            height: 14,
+            top: "50%",
+            right: 0,
+            transform: "translate(50%, -50%)",
+            background: "var(--vivid-yellow)",
+          }}
+        />
+      </div>
+
+      {/* Bottom-left ring with mint + violet satellites */}
+      <div
+        className="pointer-events-none absolute z-0 animate-orbit-reverse"
+        style={{
+          width: 340,
+          height: 340,
+          bottom: -160,
+          left: -140,
+        }}
+        aria-hidden
+      >
+        <div
+          className="absolute inset-0 rounded-full"
+          style={{ border: "1px solid rgba(var(--text-rgb),0.10)" }}
+        />
+        <span
+          className="absolute rounded-full"
+          style={{
+            width: 12,
+            height: 12,
+            top: "50%",
+            right: 0,
+            transform: "translate(50%, -50%)",
+            background: "var(--vivid-mint)",
+          }}
+        />
+        <span
+          className="absolute rounded-full"
+          style={{
+            width: 12,
+            height: 12,
+            top: "50%",
+            left: 0,
+            transform: "translate(-50%, -50%)",
+            background: "var(--vivid-violet)",
+          }}
+        />
+      </div>
+    </>
   );
 }

@@ -1,90 +1,114 @@
 @import "tailwindcss";
 
 /*
- * Theme tokens — mirrors src/config/theme.ts
- * Palette: yellow-400 accent on warm gray scale
+ * Theme tokens — single source of truth for the visual system.
+ * Palette: off-white canvas, ink type, vivid accent stack
+ * (hot-pink primary · electric-yellow · mint-cyan · deep-violet).
+ * Mirrors src/config/theme.ts. If you change a value here, update the
+ * other file to match.
  */
 
 /* ===== Light theme (default) ===== */
 :root {
-  --background: #FFFFFF;
-  --foreground: #0F0F0E;
+  /* Canvas + type */
+  --background: #FBFAF6;
+  --foreground: #0A0A0F;
 
-  /* Hero / Canvas */
-  --hero-bg: #F5F4F0;
-  --hero-bg-rgb: 245,244,240;
-  --person-color: #FFDE21;
-  --person-rgb: 255,222,33;
-  --grid-color: rgba(0,0,0,0.04);
-  --text-rgb: 15,15,14;
+  /* Hero / Canvas visuals (NetworkCanvas reads the *-rgb forms) */
+  --hero-bg: #FBFAF6;
+  --hero-bg-rgb: 251,250,246;
+  --person-color: #0A0A0F;
+  --person-rgb: 10,10,15;
+  --grid-color: rgba(10,10,15,0.035);
+  --text-rgb: 10,10,15;
   --card-bg-rgb: 255,255,255;
   --popup-bg-rgb: 255,255,255;
   --shadow-alpha: 0.08;
-  --highlight-rgb: 15,15,14;
+  --highlight-rgb: 10,10,15;
 
-  /* Accent (yellow) */
-  --accent: #FFDE21;
-  --accent-rgb: 255,222,33;
-  --accent-light: #FFE14D;
-  --accent-warm: #FFB800;
-  --accent-glow: rgba(255,222,33,0.18);
-  --accent-foreground: #0F0F0E;
+  /* Primary accent — hot pink */
+  --accent: #FF2D75;
+  --accent-rgb: 255,45,117;
+  --accent-light: #FF5E9C;
+  --accent-warm: #FFD60A;
+  --accent-glow: rgba(255,45,117,0.22);
+  --accent-foreground: #FFFFFF;
+  --text-accent: #0A0A0F;
 
-  /* Readable accent text on light backgrounds */
-  --text-accent: #A08800;
+  /* Vivid accent stack — reused across cards, chips, satellites */
+  --vivid-pink: #FF2D75;
+  --vivid-pink-rgb: 255,45,117;
+  --vivid-yellow: #FFD60A;
+  --vivid-yellow-rgb: 255,214,10;
+  --vivid-mint: #00E5C4;
+  --vivid-mint-rgb: 0,229,196;
+  --vivid-violet: #6B3FFF;
+  --vivid-violet-rgb: 107,63,255;
 
-  /* UI text opacities */
+  /* Text opacities (ink on canvas) */
   --text-strong: 0.92;
-  --text-medium: 0.58;
-  --text-muted: 0.42;
-  --text-faint: 0.25;
-  --border-subtle: rgba(214,212,203,0.7);
-  --border-hover: rgba(158,156,147,0.6);
-  --btn-ghost-bg: rgba(0,0,0,0.03);
-  --btn-ghost-hover: rgba(0,0,0,0.06);
-  --divider: rgba(214,212,203,0.5);
+  --text-medium: 0.55;
+  --text-muted: 0.40;
+  --text-faint: 0.22;
 
-  /* Status */
-  --status-success: #1D9E75;
-  --status-warning: #FF6B21;
-  --status-danger: #E24B4A;
+  /* Lines + dividers — hairlines */
+  --border-subtle: rgba(10,10,15,0.10);
+  --border-hover: rgba(10,10,15,0.28);
+  --btn-ghost-bg: rgba(10,10,15,0.03);
+  --btn-ghost-hover: rgba(10,10,15,0.06);
+  --divider: rgba(10,10,15,0.06);
+  --surface-soft: rgba(10,10,15,0.025);
+
+  /* Status (kept muted on canvas) */
+  --status-success: #00A884;
+  --status-warning: #FF8A00;
+  --status-danger: #D14343;
 }
 
 /* ===== Dark theme ===== */
 :root.dark {
-  --background: #0F0F0E;
-  --foreground: #F5F4F0;
+  --background: #0A0A0F;
+  --foreground: #FBFAF6;
 
-  --hero-bg: #0F0F0E;
-  --hero-bg-rgb: 15,15,14;
-  --person-color: #FFDE21;
-  --person-rgb: 255,222,33;
-  --grid-color: rgba(255,255,255,0.018);
-  --text-rgb: 245,244,240;
-  --card-bg-rgb: 44,44,42;
-  --popup-bg-rgb: 26,26,25;
-  --shadow-alpha: 0.3;
-  --highlight-rgb: 245,244,240;
+  --hero-bg: #0A0A0F;
+  --hero-bg-rgb: 10,10,15;
+  --person-color: #FBFAF6;
+  --person-rgb: 251,250,246;
+  --grid-color: rgba(251,250,246,0.025);
+  --text-rgb: 251,250,246;
+  --card-bg-rgb: 22,22,28;
+  --popup-bg-rgb: 14,14,20;
+  --shadow-alpha: 0.45;
+  --highlight-rgb: 251,250,246;
 
-  --accent: #FFDE21;
-  --accent-rgb: 255,222,33;
-  --accent-light: #FFE14D;
-  --accent-warm: #FFB800;
-  --accent-glow: rgba(255,222,33,0.22);
-  --accent-foreground: #0F0F0E;
+  --accent: #FF2D75;
+  --accent-rgb: 255,45,117;
+  --accent-light: #FF5E9C;
+  --accent-warm: #FFD60A;
+  --accent-glow: rgba(255,45,117,0.28);
+  --accent-foreground: #FFFFFF;
+  --text-accent: #FBFAF6;
 
-  /* Yellow pops on dark backgrounds */
-  --text-accent: #FFDE21;
+  --vivid-pink: #FF2D75;
+  --vivid-pink-rgb: 255,45,117;
+  --vivid-yellow: #FFD60A;
+  --vivid-yellow-rgb: 255,214,10;
+  --vivid-mint: #00E5C4;
+  --vivid-mint-rgb: 0,229,196;
+  --vivid-violet: #6B3FFF;
+  --vivid-violet-rgb: 107,63,255;
 
   --text-strong: 0.92;
   --text-medium: 0.55;
-  --text-muted: 0.38;
+  --text-muted: 0.40;
   --text-faint: 0.22;
-  --border-subtle: rgba(44,44,42,0.9);
-  --border-hover: rgba(95,94,90,0.6);
-  --btn-ghost-bg: rgba(255,255,255,0.02);
-  --btn-ghost-hover: rgba(255,255,255,0.05);
-  --divider: rgba(44,44,42,0.7);
+
+  --border-subtle: rgba(251,250,246,0.10);
+  --border-hover: rgba(251,250,246,0.25);
+  --btn-ghost-bg: rgba(251,250,246,0.04);
+  --btn-ghost-hover: rgba(251,250,246,0.08);
+  --divider: rgba(251,250,246,0.08);
+  --surface-soft: rgba(251,250,246,0.04);
 
   --status-success: #5DCAA5;
   --status-warning: #FFB800;
@@ -111,27 +135,75 @@ body {
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+  scrollbar-color: rgba(var(--text-rgb), 0.12) transparent;
+}
+
+/* ── Editorial kicker ───────────────────────────────────────────────────── */
+/* Matches the mobile app's "—  news · local · agora" motif. */
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: var(--foreground);
+}
+.kicker::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--foreground);
+}
+
+/* ── Type utilities ─────────────────────────────────────────────────────── */
+.type-display {
+  font-weight: 300;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+}
+
+.type-display-sm {
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+.type-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-feature-settings: "ss01", "tnum";
+  letter-spacing: 0.02em;
 }
 
 /* ── Gradient text utility ── */
 .gradient-text {
-  background: linear-gradient(135deg, var(--foreground) 30%, var(--text-accent) 100%);
+  background: linear-gradient(135deg, var(--foreground) 20%, var(--accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-accent {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-warm) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--vivid-pink) 0%,
+    var(--vivid-violet) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Hero title gradient — golden shimmer */
+/* Legacy alias kept for components that still reference it — now a subtle
+   pink→violet wash instead of the old yellow shimmer */
 .gradient-text-hero {
-  background: linear-gradient(135deg, #FFDE21 0%, #FFB800 40%, #FFE14D 100%);
+  background: linear-gradient(
+    120deg,
+    var(--vivid-pink) 0%,
+    var(--vivid-violet) 60%,
+    var(--vivid-pink) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -147,7 +219,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 160px;
   background: linear-gradient(to bottom, var(--background), transparent);
   pointer-events: none;
   z-index: 1;
@@ -159,13 +231,13 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 160px;
   background: linear-gradient(to top, var(--hero-bg), transparent);
   pointer-events: none;
   z-index: 1;
 }
 
-/* ── Noise texture overlay ── */
+/* ── Noise texture overlay — kept subtle for the off-white canvas ──────── */
 .noise-overlay::before {
   content: "";
   position: fixed;
@@ -175,7 +247,7 @@ body {
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.025;
+  opacity: 0.02;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
@@ -183,27 +255,33 @@ body {
 
 /* ── Hover micro-interactions ── */
 .hover-lift {
-  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s ease;
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1),
+              box-shadow 0.2s ease,
+              border-color 0.2s ease;
 }
 .hover-lift:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  border-color: var(--border-hover);
 }
 
 .hover-glow {
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.22s ease;
 }
 .hover-glow:hover {
   box-shadow: 0 0 40px var(--accent-glow);
 }
 
-/* Perspective camera */
+/* ── Colored dot — mirrors mobile brand mark ──────────────────────────── */
+.dot-pink   { background: var(--vivid-pink); }
+.dot-yellow { background: var(--vivid-yellow); }
+.dot-mint   { background: var(--vivid-mint); }
+.dot-violet { background: var(--vivid-violet); }
+
+/* ── Perspective / 3D map (kept for existing decorative sections) ─────── */
 .map-perspective {
   perspective: 800px;
   perspective-origin: 50% 20%;
 }
-
-/* 3D map plane — cards live inside here */
 .map-inner {
   position: absolute;
   left: -70%;
@@ -213,41 +291,33 @@ body {
   transform-style: preserve-3d;
 }
 
-/* Pin pulse — ripple effect */
+/* ── Pin pulse — ripple effect ────────────────────────────────────────── */
 @keyframes pin-pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.4;
-  }
-  70% {
-    transform: scale(2.2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(2.2);
-    opacity: 0;
-  }
+  0%   { transform: scale(1);   opacity: 0.4; }
+  70%  { transform: scale(2.2); opacity: 0; }
+  100% { transform: scale(2.2); opacity: 0; }
 }
-
 @keyframes pin-pulse-inner {
-  0% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1.6);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1.6);
-    opacity: 0;
-  }
+  0%   { transform: scale(1);   opacity: 0.5; }
+  50%  { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+.animate-pin-pulse        { animation: pin-pulse 2s ease-out infinite; }
+.animate-pin-pulse-inner  { animation: pin-pulse-inner 2s ease-out 0.3s infinite; }
+
+/* ── Marquee (kicker strip) ───────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
 }
 
-.animate-pin-pulse {
-  animation: pin-pulse 2s ease-out infinite;
+/* ── Slow orbit — for the decorative rings behind sections ────────────── */
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
-
-.animate-pin-pulse-inner {
-  animation: pin-pulse-inner 2s ease-out 0.3s infinite;
-}
+.animate-orbit        { animation: orbit 28s linear infinite; }
+.animate-orbit-reverse { animation: orbit 36s linear infinite reverse; }

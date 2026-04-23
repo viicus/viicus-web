@@ -1,21 +1,20 @@
 import NetworkHero from "@/components/network/NetworkHero";
-import HowItWorks from "@/components/network/HowItWorks";
-import ReportDemo from "@/components/network/ReportDemo";
-import Features from "@/components/network/Features";
-import Community from "@/components/network/Community";
+import Statement from "@/components/network/Statement";
+import Pillars from "@/components/network/Pillars";
+import Preview from "@/components/network/Preview";
 import CtaFooter from "@/components/network/CtaFooter";
 import BackToTop from "@/components/BackToTop";
 
-const PERSON_COUNT = 80;
+// Hero background network density — kept minimal so the foreground breathes.
+const PERSON_COUNT = 60;
 
 export default function HomePage() {
   return (
-    <main className="noise-overlay">
+    <main>
       <NetworkHero personCount={PERSON_COUNT} />
-      <HowItWorks />
-      <ReportDemo />
-      <Features />
-      <Community />
+      <Statement />
+      <Pillars />
+      <Preview />
       <CtaFooter />
       <BackToTop />
     </main>

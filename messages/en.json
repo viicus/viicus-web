@@ -1,23 +1,24 @@
 {
   "nav": {
-    "home": "Home",
-    "howItWorks": "How it works",
-    "features": "What happens",
-    "verification": "Verification",
-    "download": "Download app",
-    "language": "Language"
+    "home": "home",
+    "howItWorks": "how it works",
+    "features": "what happens",
+    "verification": "verification",
+    "download": "download the app",
+    "language": "language"
   },
   "hero": {
-    "badge": "Activate your city",
-    "titleLine1": "Every voice",
-    "titleLine2Accent": "connects",
-    "titleLine2Rest": "to change",
-    "subtitle": "Report. Vote. Confirm. Watch your neighborhood transform through the power of collective action.",
-    "ctaPrimary": "Download the app",
-    "ctaSecondary": "How it works",
-    "tagline": "Your neighborhood. Your city. Your voice.",
-    "metaTitle": "Viicus — The social network for your neighborhood. Your city. Your voice.",
-    "metaDescription": "Report issues, vote on what matters and confirm what happens around you. Viicus connects neighbors to transform communities through the power of collective action."
+    "badge": "what's happening around you, now",
+    "kicker": "news · local · now",
+    "titleLine1": "your neighborhood",
+    "titleLine2Accent": "in real time",
+    "titleLine2Rest": ".",
+    "subtitle": "the news that actually matters — only what's happening around you, verified by the people who live there.",
+    "ctaPrimary": "download the app",
+    "ctaSecondary": "how it works",
+    "tagline": "your block. your neighborhood. now.",
+    "metaTitle": "Viicus — your neighborhood in real time. news · local · now.",
+    "metaDescription": "hyperlocal news verified by the community. what's happening around you, right now. download Viicus."
   },
   "howItWorks": {
     "sectionLabel": "This week, in your neighborhood:",
@@ -165,40 +166,78 @@
     "feedHeader": "Happening now",
     "feedLocation": "São Paulo, SP",
     "feedItems": {
-      "0": { "text": "Attempted theft on Haddock Lobo Street", "where": "Jardins, SP", "time": "now" },
-      "1": { "text": "Free concert at Ibirapuera Park today 6pm", "where": "Vila Mariana, SP", "time": "12 min" },
-      "2": { "text": "Lost dog — golden, blue collar", "where": "Pinheiros, SP", "time": "25 min" },
-      "3": { "text": "Traffic light out at Faria Lima intersection", "where": "Itaim Bibi, SP", "time": "38 min" },
-      "4": { "text": "Wallet found near Consolação station", "where": "Consolação, SP", "time": "1h" },
-      "5": { "text": "Grocery store 40% off today until 8pm", "where": "Perdizes, SP", "time": "1h" },
-      "6": { "text": "Anyone recommend a pediatrician around here?", "where": "Moema, SP", "time": "2h" }
+      "0": {
+        "text": "Attempted theft on Haddock Lobo Street",
+        "where": "Jardins, SP",
+        "time": "now"
+      },
+      "1": {
+        "text": "Free concert at Ibirapuera Park today 6pm",
+        "where": "Vila Mariana, SP",
+        "time": "12 min"
+      },
+      "2": {
+        "text": "Lost dog — golden, blue collar",
+        "where": "Pinheiros, SP",
+        "time": "25 min"
+      },
+      "3": {
+        "text": "Traffic light out at Faria Lima intersection",
+        "where": "Itaim Bibi, SP",
+        "time": "38 min"
+      },
+      "4": {
+        "text": "Wallet found near Consolação station",
+        "where": "Consolação, SP",
+        "time": "1h"
+      },
+      "5": {
+        "text": "Grocery store 40% off today until 8pm",
+        "where": "Perdizes, SP",
+        "time": "1h"
+      },
+      "6": {
+        "text": "Anyone recommend a pediatrician around here?",
+        "where": "Moema, SP",
+        "time": "2h"
+      }
     },
     "stats": {
-      "0": { "value": "40+", "label": "neighbors confirm each alert" },
-      "1": { "value": "<5min", "label": "for info to arrive" },
-      "2": { "value": "100%", "label": "transparency in every post" }
+      "0": {
+        "value": "40+",
+        "label": "neighbors confirm each alert"
+      },
+      "1": {
+        "value": "<5min",
+        "label": "for info to arrive"
+      },
+      "2": {
+        "value": "100%",
+        "label": "transparency in every post"
+      }
     },
     "closing1": "From your block to the entire city. Safety, culture, solidarity, infrastructure, local business. Everything happening around you.",
     "closing2": "You'll never be the last to know again.",
     "learnMore": "Learn more"
   },
   "ctaFooter": {
-    "narrative1": "Social networks connect you with the world.",
-    "narrative2": "But who connects you",
-    "narrative2Bold": "with your neighborhood?",
-    "narrative3": "{appName} is not for everyone.",
-    "narrative3Bold": "It's for those who care about where they live.",
-    "narrative4": "We're opening community by community. Neighborhood by neighborhood.",
-    "narrative5": "Your neighborhood hasn't started yet?",
-    "narrative5Accent": "Be the first. Kick it off.",
-    "ctaLabel": "Activate your area",
-    "ctaTitle": "Your neighborhood isn't on yet?",
-    "ctaBody": "Download the app and be the one to activate your community.",
-    "ctaButton": "Download the app",
-    "ctaNote": "Available for iOS and Android.",
-    "footerTerms": "Terms",
-    "footerPrivacy": "Privacy",
-    "footerContact": "Contact"
+    "kicker": "news · local · now",
+    "narrative1": "social networks connect you with the world.",
+    "narrative2": "viicus connects you",
+    "narrative2Bold": "with what's happening around you — right now.",
+    "narrative3": "not for everyone.",
+    "narrative3Bold": "for people who care about where they live.",
+    "narrative4": "we're opening neighborhood by neighborhood.",
+    "narrative5": "yours hasn't started yet?",
+    "narrative5Accent": "be the one to kick it off.",
+    "ctaLabel": "activate your area",
+    "ctaTitle": "your neighborhood isn't on yet?",
+    "ctaBody": "download the app and be the one to activate your community.",
+    "ctaButton": "download the app",
+    "ctaNote": "available for iOS and Android.",
+    "footerTerms": "terms",
+    "footerPrivacy": "privacy",
+    "footerContact": "contact"
   },
   "contato": {
     "breadcrumbHome": "Home",
@@ -315,66 +354,210 @@
     },
     "actions": {
       "0": {
-        "0": { "0": "Community notified", "1": "City hall aware — pothole crew dispatched" },
-        "1": { "0": "Community notified", "1": "Street lighting team dispatched" },
-        "2": { "0": "Community notified", "1": "Civil defense monitoring — city hall aware" },
-        "3": { "0": "Community notified", "1": "City hall aware — repair scheduled" },
-        "4": { "0": "Community notified", "1": "Water company dispatched — crew on the way" },
-        "5": { "0": "Community notified", "1": "City hall aware — maintenance dispatched" },
-        "6": { "0": "Community notified", "1": "Traffic dept notified — signage in progress" },
-        "7": { "0": "Community notified", "1": "City hall aware — collection scheduled" }
+        "0": {
+          "0": "Community notified",
+          "1": "City hall aware — pothole crew dispatched"
+        },
+        "1": {
+          "0": "Community notified",
+          "1": "Street lighting team dispatched"
+        },
+        "2": {
+          "0": "Community notified",
+          "1": "Civil defense monitoring — city hall aware"
+        },
+        "3": {
+          "0": "Community notified",
+          "1": "City hall aware — repair scheduled"
+        },
+        "4": {
+          "0": "Community notified",
+          "1": "Water company dispatched — crew on the way"
+        },
+        "5": {
+          "0": "Community notified",
+          "1": "City hall aware — maintenance dispatched"
+        },
+        "6": {
+          "0": "Community notified",
+          "1": "Traffic dept notified — signage in progress"
+        },
+        "7": {
+          "0": "Community notified",
+          "1": "City hall aware — collection scheduled"
+        }
       },
       "1": {
-        "0": { "0": "Community notified", "1": "Police notified" },
-        "1": { "0": "Community notified", "1": "Power company dispatched — estimated repair time shared" },
-        "2": { "0": "Community notified", "1": "Fire department dispatched — area secured" },
-        "3": { "0": "Community notified", "1": "Traffic dept notified — inspection on site" },
-        "4": { "0": "Community notified", "1": "Civil defense dispatched — area closed" },
-        "5": { "0": "Community notified", "1": "City hall aware — emergency cleanup dispatched" },
-        "6": { "0": "Community notified", "1": "City hall aware — inspection dispatched" },
-        "7": { "0": "Community notified", "1": "Fire department dispatched — emergency repair" }
+        "0": {
+          "0": "Community notified",
+          "1": "Police notified"
+        },
+        "1": {
+          "0": "Community notified",
+          "1": "Power company dispatched — estimated repair time shared"
+        },
+        "2": {
+          "0": "Community notified",
+          "1": "Fire department dispatched — area secured"
+        },
+        "3": {
+          "0": "Community notified",
+          "1": "Traffic dept notified — inspection on site"
+        },
+        "4": {
+          "0": "Community notified",
+          "1": "Civil defense dispatched — area closed"
+        },
+        "5": {
+          "0": "Community notified",
+          "1": "City hall aware — emergency cleanup dispatched"
+        },
+        "6": {
+          "0": "Community notified",
+          "1": "City hall aware — inspection dispatched"
+        },
+        "7": {
+          "0": "Community notified",
+          "1": "Fire department dispatched — emergency repair"
+        }
       },
       "2": {
-        "0": { "0": "Community notified", "1": "City hall aware — maintenance scheduled" },
-        "1": { "0": "Community notified", "1": "Traffic dept notified — repainting scheduled" },
-        "2": { "0": "Community notified", "1": "City hall aware — project under review" },
-        "3": { "0": "Community notified", "1": "Traffic dept notified — traffic study started" },
-        "4": { "0": "Community notified", "1": "City hall aware — project in progress" },
-        "5": { "0": "Community notified", "1": "City hall aware — maintenance crew dispatched" },
-        "6": { "0": "Community notified", "1": "City hall aware — cleanup scheduled" },
-        "7": { "0": "Community notified", "1": "City hall aware — feasibility under review" }
+        "0": {
+          "0": "Community notified",
+          "1": "City hall aware — maintenance scheduled"
+        },
+        "1": {
+          "0": "Community notified",
+          "1": "Traffic dept notified — repainting scheduled"
+        },
+        "2": {
+          "0": "Community notified",
+          "1": "City hall aware — project under review"
+        },
+        "3": {
+          "0": "Community notified",
+          "1": "Traffic dept notified — traffic study started"
+        },
+        "4": {
+          "0": "Community notified",
+          "1": "City hall aware — project in progress"
+        },
+        "5": {
+          "0": "Community notified",
+          "1": "City hall aware — maintenance crew dispatched"
+        },
+        "6": {
+          "0": "Community notified",
+          "1": "City hall aware — cleanup scheduled"
+        },
+        "7": {
+          "0": "Community notified",
+          "1": "City hall aware — feasibility under review"
+        }
       }
     },
     "dismissReasons": {
       "0": {
-        "0": { "0": "Event dismissed", "1": "Information not verified — reach reduced" },
-        "1": { "0": "Event dismissed", "1": "Already resolved — crew confirmed repair on site" },
-        "2": { "0": "Event dismissed", "1": "Already resolved — issue not found on site" },
-        "3": { "0": "Event dismissed", "1": "Duplicate — already reported by another citizen" },
-        "4": { "0": "Event dismissed", "1": "Not relevant — maintenance already scheduled" },
-        "5": { "0": "Event dismissed", "1": "Already resolved — repair completed earlier" },
-        "6": { "0": "Event dismissed", "1": "Inaccurate info — incorrect location" },
-        "7": { "0": "Event dismissed", "1": "Not relevant — regular collection already scheduled" }
+        "0": {
+          "0": "Event dismissed",
+          "1": "Information not verified — reach reduced"
+        },
+        "1": {
+          "0": "Event dismissed",
+          "1": "Already resolved — crew confirmed repair on site"
+        },
+        "2": {
+          "0": "Event dismissed",
+          "1": "Already resolved — issue not found on site"
+        },
+        "3": {
+          "0": "Event dismissed",
+          "1": "Duplicate — already reported by another citizen"
+        },
+        "4": {
+          "0": "Event dismissed",
+          "1": "Not relevant — maintenance already scheduled"
+        },
+        "5": {
+          "0": "Event dismissed",
+          "1": "Already resolved — repair completed earlier"
+        },
+        "6": {
+          "0": "Event dismissed",
+          "1": "Inaccurate info — incorrect location"
+        },
+        "7": {
+          "0": "Event dismissed",
+          "1": "Not relevant — regular collection already scheduled"
+        }
       },
       "1": {
-        "0": { "0": "Event dismissed", "1": "False alarm — no incident at location" },
-        "1": { "0": "Event dismissed", "1": "Already normalized — power restored" },
-        "2": { "0": "Event dismissed", "1": "False alarm — inspection found no risk" },
-        "3": { "0": "Event dismissed", "1": "Not relevant — existing signage in place" },
-        "4": { "0": "Event dismissed", "1": "Risk not confirmed — tree evaluated and safe" },
-        "5": { "0": "Event dismissed", "1": "Already resolved — drainage cleared" },
-        "6": { "0": "Event dismissed", "1": "Not relevant — construction authorized and signed" },
-        "7": { "0": "Event dismissed", "1": "Duplicate — incident already registered" }
+        "0": {
+          "0": "Event dismissed",
+          "1": "False alarm — no incident at location"
+        },
+        "1": {
+          "0": "Event dismissed",
+          "1": "Already normalized — power restored"
+        },
+        "2": {
+          "0": "Event dismissed",
+          "1": "False alarm — inspection found no risk"
+        },
+        "3": {
+          "0": "Event dismissed",
+          "1": "Not relevant — existing signage in place"
+        },
+        "4": {
+          "0": "Event dismissed",
+          "1": "Risk not confirmed — tree evaluated and safe"
+        },
+        "5": {
+          "0": "Event dismissed",
+          "1": "Already resolved — drainage cleared"
+        },
+        "6": {
+          "0": "Event dismissed",
+          "1": "Not relevant — construction authorized and signed"
+        },
+        "7": {
+          "0": "Event dismissed",
+          "1": "Duplicate — incident already registered"
+        }
       },
       "2": {
-        "0": { "0": "Event dismissed", "1": "Out of scope — private property responsibility" },
-        "1": { "0": "Event dismissed", "1": "Not approved — budget unavailable" },
-        "2": { "0": "Event dismissed", "1": "Duplicate — request already under review" },
-        "3": { "0": "Event dismissed", "1": "Not feasible — technical restriction identified" },
-        "4": { "0": "Event dismissed", "1": "Not approved — negative impact study" },
-        "5": { "0": "Event dismissed", "1": "Not relevant — recent maintenance completed" },
-        "6": { "0": "Event dismissed", "1": "Already scheduled — service set for this month" },
-        "7": { "0": "Event dismissed", "1": "Not feasible — incompatible infrastructure" }
+        "0": {
+          "0": "Event dismissed",
+          "1": "Out of scope — private property responsibility"
+        },
+        "1": {
+          "0": "Event dismissed",
+          "1": "Not approved — budget unavailable"
+        },
+        "2": {
+          "0": "Event dismissed",
+          "1": "Duplicate — request already under review"
+        },
+        "3": {
+          "0": "Event dismissed",
+          "1": "Not feasible — technical restriction identified"
+        },
+        "4": {
+          "0": "Event dismissed",
+          "1": "Not approved — negative impact study"
+        },
+        "5": {
+          "0": "Event dismissed",
+          "1": "Not relevant — recent maintenance completed"
+        },
+        "6": {
+          "0": "Event dismissed",
+          "1": "Already scheduled — service set for this month"
+        },
+        "7": {
+          "0": "Event dismissed",
+          "1": "Not feasible — incompatible infrastructure"
+        }
       }
     },
     "recentlyReported": "Recently reported",
@@ -542,14 +725,14 @@
     "lastUpdated": "Last updated: {date}",
     "lastUpdatedDate": "March 15, 2026",
     "backToTop": "Back to top",
-    "introParagraph": "This Privacy Policy describes how {companyName}, registered under CNPJ No. {tbd}, headquartered at {tbd} (\u201c{appName}\u201d, \u201cCompany\u201d, \u201cwe\u201d, or \u201cour\u201d), processes the personal data of users of the {appName} platform.",
+    "introParagraph": "This Privacy Policy describes how {companyName}, registered under CNPJ No. {tbd}, headquartered at {tbd} (“{appName}”, “Company”, “we”, or “our”), processes the personal data of users of the {appName} platform.",
     "sections": {
       "0": {
         "title": "1. Introduction",
         "summary": "This policy explains how we handle your personal data.",
         "contentLength": "3",
         "content": {
-          "0": "Your privacy is fundamental to {appName}. This Privacy Policy (\u201cPolicy\u201d) describes how we collect, use, store, share, and protect your personal information when you use our platform, including the mobile application and website (\u201cPlatform\u201d).",
+          "0": "Your privacy is fundamental to {appName}. This Privacy Policy (“Policy”) describes how we collect, use, store, share, and protect your personal information when you use our platform, including the mobile application and website (“Platform”).",
           "1": "This Policy complies with the Brazilian General Data Protection Law (LGPD) (Law No. 13,709/2018), the Brazilian Civil Rights Framework for the Internet (Law No. 12,965/2014), and other applicable regulations.",
           "2": "By using the Platform, you confirm that you have read, understood, and agree to the practices described in this Policy."
         }
@@ -560,9 +743,9 @@
         "contentLength": "4",
         "content": {
           "0": "We collect different categories of personal data, as described below:",
-          "1": "2.1. Data provided by you:\n\u2022 Full name and display name\n\u2022 Email address\n\u2022 Phone number\n\u2022 Residential address (for geolocation verification)\n\u2022 Profile photo (optional)\n\u2022 Content you publish, including text, images, and verifications",
-          "2": "2.2. Automatically collected data:\n\u2022 IP address and connection information\n\u2022 Device type, operating system, and browser\n\u2022 Geolocation data (with your explicit consent)\n\u2022 Platform usage data (pages accessed, features used, session duration)\n\u2022 Device identifiers\n\u2022 Cookies and similar technologies",
-          "3": "2.3. Third-party data:\n\u2022 Information from authentication services, if you choose social login (Google, Apple)\n\u2022 Address verification data through validation partners"
+          "1": "2.1. Data provided by you:\n• Full name and display name\n• Email address\n• Phone number\n• Residential address (for geolocation verification)\n• Profile photo (optional)\n• Content you publish, including text, images, and verifications",
+          "2": "2.2. Automatically collected data:\n• IP address and connection information\n• Device type, operating system, and browser\n• Geolocation data (with your explicit consent)\n• Platform usage data (pages accessed, features used, session duration)\n• Device identifiers\n• Cookies and similar technologies",
+          "3": "2.3. Third-party data:\n• Information from authentication services, if you choose social login (Google, Apple)\n• Address verification data through validation partners"
         }
       },
       "2": {
@@ -571,7 +754,7 @@
         "contentLength": "2",
         "content": {
           "0": "We use your personal data for the following purposes:",
-          "1": "\u2022 Create and manage your account on the Platform\n\u2022 Verify your residential address to ensure the integrity of the hyperlocal system\n\u2022 Display relevant content based on your location\n\u2022 Operate the collective verification system\n\u2022 Send notifications about relevant activities in your area\n\u2022 Improve and personalize the Platform experience\n\u2022 Ensure Platform security and prevent fraud\n\u2022 Comply with legal and regulatory obligations\n\u2022 Generate aggregated and anonymized statistical and analytical data\n\u2022 Communicate updates, Platform changes, and relevant information"
+          "1": "• Create and manage your account on the Platform\n• Verify your residential address to ensure the integrity of the hyperlocal system\n• Display relevant content based on your location\n• Operate the collective verification system\n• Send notifications about relevant activities in your area\n• Improve and personalize the Platform experience\n• Ensure Platform security and prevent fraud\n• Comply with legal and regulatory obligations\n• Generate aggregated and anonymized statistical and analytical data\n• Communicate updates, Platform changes, and relevant information"
         }
       },
       "3": {
@@ -580,7 +763,7 @@
         "contentLength": "2",
         "content": {
           "0": "The processing of your personal data is based on the following legal grounds provided by the Brazilian General Data Protection Law (LGPD):",
-          "1": "\u2022 Consent (Art. 7, I): for collection of geolocation data and sending optional communications\n\u2022 Performance of contract (Art. 7, V): for provision of Platform services\n\u2022 Legitimate interest (Art. 7, IX): for Platform improvement, security, and fraud prevention\n\u2022 Compliance with legal obligation (Art. 7, II): to meet legal and regulatory requirements\n\u2022 Credit protection and regular exercise of rights (Art. 7, VI and X): when applicable"
+          "1": "• Consent (Art. 7, I): for collection of geolocation data and sending optional communications\n• Performance of contract (Art. 7, V): for provision of Platform services\n• Legitimate interest (Art. 7, IX): for Platform improvement, security, and fraud prevention\n• Compliance with legal obligation (Art. 7, II): to meet legal and regulatory requirements\n• Credit protection and regular exercise of rights (Art. 7, VI and X): when applicable"
         }
       },
       "4": {
@@ -603,7 +786,7 @@
         "content": {
           "0": "Your personal data is stored on secure servers located in Brazil and/or in data centers that ensure adequate levels of protection, in compliance with the Brazilian General Data Protection Law (LGPD).",
           "1": "We adopt appropriate technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction, including:",
-          "2": "\u2022 Data encryption in transit (TLS/SSL) and at rest\n\u2022 Role-based access control (RBAC)\n\u2022 Continuous security monitoring\n\u2022 Regular security audits\n\u2022 Encrypted and redundant backups\n\u2022 Data retention policies",
+          "2": "• Data encryption in transit (TLS/SSL) and at rest\n• Role-based access control (RBAC)\n• Continuous security monitoring\n• Regular security audits\n• Encrypted and redundant backups\n• Data retention policies",
           "3": "Despite our efforts, no system is completely secure. If we identify a data breach, we will notify affected users and the National Data Protection Authority (ANPD) within the legal timeframes."
         }
       },
@@ -622,7 +805,7 @@
         "contentLength": "3",
         "content": {
           "0": "In compliance with the Brazilian General Data Protection Law (LGPD), you have the following rights regarding your personal data:",
-          "1": "\u2022 Confirmation of the existence of data processing\n\u2022 Access to personal data\n\u2022 Correction of incomplete, inaccurate, or outdated data\n\u2022 Anonymization, blocking, or deletion of unnecessary or excessive data\n\u2022 Data portability to another provider\n\u2022 Deletion of data processed based on consent\n\u2022 Information about data sharing with third parties\n\u2022 Information about the possibility of not providing consent and its consequences\n\u2022 Revocation of consent",
+          "1": "• Confirmation of the existence of data processing\n• Access to personal data\n• Correction of incomplete, inaccurate, or outdated data\n• Anonymization, blocking, or deletion of unnecessary or excessive data\n• Data portability to another provider\n• Deletion of data processed based on consent\n• Information about data sharing with third parties\n• Information about the possibility of not providing consent and its consequences\n• Revocation of consent",
           "2": "To exercise your rights, contact us through the Contact page or by email at {emailPrivacy}. We will respond to your request within 15 business days."
         }
       },
@@ -632,7 +815,7 @@
         "contentLength": "4",
         "content": {
           "0": "We use cookies and similar technologies to:",
-          "1": "\u2022 Keep your session active and authenticated\n\u2022 Remember your preferences and settings\n\u2022 Understand how you use the Platform (analytics)\n\u2022 Improve performance and user experience",
+          "1": "• Keep your session active and authenticated\n• Remember your preferences and settings\n• Understand how you use the Platform (analytics)\n• Improve performance and user experience",
           "2": "You can manage cookie preferences through your browser settings. Disabling certain cookies may affect Platform functionality.",
           "3": "We do not use cookies for third-party advertising tracking."
         }
@@ -680,7 +863,7 @@
         }
       }
     },
-    "footer": "\u00a9 {year} {companyName} All rights reserved."
+    "footer": "© {year} {companyName} All rights reserved."
   },
   "comoFunciona": {
     "back": "Back",
@@ -738,19 +921,55 @@
     "solutionLabel": "The solution",
     "solutionTitle": "Simple as it should be.",
     "solutions": {
-      "0": { "step": "01", "title": "Someone posts.", "body": "Any resident can create a post about what's happening around them. Safety, events, requests for help, local business, infrastructure — everything.", "detail": "No bureaucratic forms. No confusing categories. Straight to the point." },
-      "1": { "step": "02", "title": "The neighborhood sees.", "body": "The post only appears to people who live nearby. It's not a global feed — it's about your neighborhood, your street, what happens around you.", "detail": "The reach adapts to the post type. Safety alerts cover more area. Restaurant recommendations, less." },
-      "2": { "step": "03", "title": "The community confirms.", "body": "Neighbors verify if it's real. It's not a like — it's a confirmation. When many neighbors say it's relevant, it's not opinion.", "detail": "It's evidence." },
-      "3": { "step": "04", "title": "The information arrives.", "body": "In less than 5 minutes, those who need to know, know. Safety alerts, opportunities, requests for help — everything circulates fast.", "detail": "With credibility. Because it was verified by people who live there." }
+      "0": {
+        "step": "01",
+        "title": "Someone posts.",
+        "body": "Any resident can create a post about what's happening around them. Safety, events, requests for help, local business, infrastructure — everything.",
+        "detail": "No bureaucratic forms. No confusing categories. Straight to the point."
+      },
+      "1": {
+        "step": "02",
+        "title": "The neighborhood sees.",
+        "body": "The post only appears to people who live nearby. It's not a global feed — it's about your neighborhood, your street, what happens around you.",
+        "detail": "The reach adapts to the post type. Safety alerts cover more area. Restaurant recommendations, less."
+      },
+      "2": {
+        "step": "03",
+        "title": "The community confirms.",
+        "body": "Neighbors verify if it's real. It's not a like — it's a confirmation. When many neighbors say it's relevant, it's not opinion.",
+        "detail": "It's evidence."
+      },
+      "3": {
+        "step": "04",
+        "title": "The information arrives.",
+        "body": "In less than 5 minutes, those who need to know, know. Safety alerts, opportunities, requests for help — everything circulates fast.",
+        "detail": "With credibility. Because it was verified by people who live there."
+      }
     },
     "comparisonLabel": "Before vs. after",
     "comparisonTitle": "The difference is",
     "comparisonTitleAccent": "immediate.",
     "comparisons": {
-      "0": { "before": "Instagram page posts the robbery 2 days later.", "after": "Verified alert in 3 minutes, 40 neighbors confirm.", "stat": "3min" },
-      "1": { "before": "Fair at the park — Instagram post reaches 5% of the neighborhood.", "after": "Everyone who lives nearby finds out automatically.", "stat": "100%" },
-      "2": { "before": "Complaint in the group — buried in 30 seconds.", "after": "67 confirmations → evidence → city hall notified.", "stat": "67" },
-      "3": { "before": "Local business — the algorithm decides who sees.", "after": "89 neighbors who live nearby know on day one.", "stat": "89" }
+      "0": {
+        "before": "Instagram page posts the robbery 2 days later.",
+        "after": "Verified alert in 3 minutes, 40 neighbors confirm.",
+        "stat": "3min"
+      },
+      "1": {
+        "before": "Fair at the park — Instagram post reaches 5% of the neighborhood.",
+        "after": "Everyone who lives nearby finds out automatically.",
+        "stat": "100%"
+      },
+      "2": {
+        "before": "Complaint in the group — buried in 30 seconds.",
+        "after": "67 confirmations → evidence → city hall notified.",
+        "stat": "67"
+      },
+      "3": {
+        "before": "Local business — the algorithm decides who sees.",
+        "after": "89 neighbors who live nearby know on day one.",
+        "stat": "89"
+      }
     },
     "ctaLine1": "Right information. Right people. Right time.",
     "ctaLine2": "That's",
@@ -867,30 +1086,90 @@
     "stepsLabel": "Step by step",
     "stepsTitle": "How verification works.",
     "steps": {
-      "0": { "number": "1", "title": "Someone reports", "body": "A resident sees something happening in the neighborhood — a robbery, a pothole, a new fair, a request for help. They create a post in seconds.", "detail": "No bureaucratic forms. No confusing categories. Straight to the point: what happened, where, when." },
-      "1": { "number": "2", "title": "Neighbors are notified", "body": "The post automatically appears to those who live nearby. It's not a global feed — it's hyperlocal. Only relevant people see it.", "detail": "The reach depends on the post type. A safety alert covers more area. A restaurant recommendation, less." },
-      "2": { "number": "3", "title": "The community verifies", "body": "Each neighbor can confirm: \"I saw it too\", \"it's happening\", \"it's real\". It's not a like — it's a statement of truth.", "detail": "Each confirmation carries the weight of a real person, with a real address, who lives there. You can't create fake accounts for neighborhoods where you don't live." },
-      "3": { "number": "4", "title": "Trust grows", "body": "With 5 confirmations, the post gains prominence. With 20, it's promoted to adjacent neighborhoods. With 40+, it becomes verified evidence.", "detail": "Credibility doesn't come from a company — it comes from your community. The more neighbors confirm, the stronger the information." },
-      "4": { "number": "5", "title": "Action happens", "body": "Verified information drives action. Neighbors protect themselves, events fill up, local business thrives, infrastructure problems gain evidence to be resolved.", "detail": "It's not a complaint platform. It's a transformation platform — driven by the community, for the community." }
+      "0": {
+        "number": "1",
+        "title": "Someone reports",
+        "body": "A resident sees something happening in the neighborhood — a robbery, a pothole, a new fair, a request for help. They create a post in seconds.",
+        "detail": "No bureaucratic forms. No confusing categories. Straight to the point: what happened, where, when."
+      },
+      "1": {
+        "number": "2",
+        "title": "Neighbors are notified",
+        "body": "The post automatically appears to those who live nearby. It's not a global feed — it's hyperlocal. Only relevant people see it.",
+        "detail": "The reach depends on the post type. A safety alert covers more area. A restaurant recommendation, less."
+      },
+      "2": {
+        "number": "3",
+        "title": "The community verifies",
+        "body": "Each neighbor can confirm: \"I saw it too\", \"it's happening\", \"it's real\". It's not a like — it's a statement of truth.",
+        "detail": "Each confirmation carries the weight of a real person, with a real address, who lives there. You can't create fake accounts for neighborhoods where you don't live."
+      },
+      "3": {
+        "number": "4",
+        "title": "Trust grows",
+        "body": "With 5 confirmations, the post gains prominence. With 20, it's promoted to adjacent neighborhoods. With 40+, it becomes verified evidence.",
+        "detail": "Credibility doesn't come from a company — it comes from your community. The more neighbors confirm, the stronger the information."
+      },
+      "4": {
+        "number": "5",
+        "title": "Action happens",
+        "body": "Verified information drives action. Neighbors protect themselves, events fill up, local business thrives, infrastructure problems gain evidence to be resolved.",
+        "detail": "It's not a complaint platform. It's a transformation platform — driven by the community, for the community."
+      }
     },
     "principlesLabel": "Principles",
     "principlesTitle": "What makes us",
     "principlesTitleAccent": "different.",
     "principles": {
-      "0": { "icon": "🛡️", "title": "Less misinformation", "body": "The community verifies. Posts without confirmation automatically lose reach. The more neighbors validate, the more visible the information becomes.", "detail": "On traditional networks, the algorithm prioritizes engagement — regardless of truthfulness. Here, reach is proportional to real verifications from real people." },
-      "1": { "icon": "🎯", "title": "No noise", "body": "Only what happens around you shows up for you. No national politics, no celebrities, no ads. Your feed is your neighborhood.", "detail": "The {appName} feed is geographically limited by design. You see what matters to those who live near you. Nothing more, nothing less." },
-      "2": { "icon": "👁️", "title": "No black box", "body": "Who posted, who confirmed, how many verifications. Everything visible. No hidden algorithm deciding what you see.", "detail": "Each post shows exactly how many people confirmed, from which neighborhoods, and when. Total transparency. You trust because you can verify." },
-      "3": { "icon": "📍", "title": "No toxic anonymity", "body": "Each user is linked to their real address. You can't create fake accounts for neighborhoods where you don't live.", "detail": "This doesn't mean your name appears publicly. It means the system knows you're real and that you live where you say you live. Accountability with privacy." }
+      "0": {
+        "icon": "🛡️",
+        "title": "Less misinformation",
+        "body": "The community verifies. Posts without confirmation automatically lose reach. The more neighbors validate, the more visible the information becomes.",
+        "detail": "On traditional networks, the algorithm prioritizes engagement — regardless of truthfulness. Here, reach is proportional to real verifications from real people."
+      },
+      "1": {
+        "icon": "🎯",
+        "title": "No noise",
+        "body": "Only what happens around you shows up for you. No national politics, no celebrities, no ads. Your feed is your neighborhood.",
+        "detail": "The {appName} feed is geographically limited by design. You see what matters to those who live near you. Nothing more, nothing less."
+      },
+      "2": {
+        "icon": "👁️",
+        "title": "No black box",
+        "body": "Who posted, who confirmed, how many verifications. Everything visible. No hidden algorithm deciding what you see.",
+        "detail": "Each post shows exactly how many people confirmed, from which neighborhoods, and when. Total transparency. You trust because you can verify."
+      },
+      "3": {
+        "icon": "📍",
+        "title": "No toxic anonymity",
+        "body": "Each user is linked to their real address. You can't create fake accounts for neighborhoods where you don't live.",
+        "detail": "This doesn't mean your name appears publicly. It means the system knows you're real and that you live where you say you live. Accountability with privacy."
+      }
     },
     "comparisonLabel": "Comparison",
     "comparisonTitle": "Traditional networks vs. {appName}.",
     "comparisonHeaderThem": "Traditional networks",
     "comparisons": {
-      "0": { "them": "Algorithm decides what you see", "us": "Proximity decides what you see" },
-      "1": { "them": "Reach is independent of truthfulness", "us": "Reach proportional to verifications" },
-      "2": { "them": "Engagement = likes and comments", "us": "Engagement = truth confirmation" },
-      "3": { "them": "Global feed, infinite noise", "us": "Local feed, maximum relevance" },
-      "4": { "them": "Anonymous accounts without consequence", "us": "Identity linked to address" }
+      "0": {
+        "them": "Algorithm decides what you see",
+        "us": "Proximity decides what you see"
+      },
+      "1": {
+        "them": "Reach is independent of truthfulness",
+        "us": "Reach proportional to verifications"
+      },
+      "2": {
+        "them": "Engagement = likes and comments",
+        "us": "Engagement = truth confirmation"
+      },
+      "3": {
+        "them": "Global feed, infinite noise",
+        "us": "Local feed, maximum relevance"
+      },
+      "4": {
+        "them": "Anonymous accounts without consequence",
+        "us": "Identity linked to address"
+      }
     },
     "trustLine1": "Trust can't be bought.",
     "trustLine2": "It's built,",
@@ -943,5 +1222,70 @@
     "autosave": "Your changes are saved automatically.",
     "footer": "Learn how we handle your data in our",
     "footerPrivacy": "Privacy policy"
+  },
+  "statement": {
+    "kicker": "news · local · now",
+    "line1": "what's happening",
+    "line2": "next to you,",
+    "line3": "before any",
+    "line4": "other network.",
+    "footnote": "a thin filter for spam and inappropriate content. the rest — what actually reaches you — is decided by the neighbors themselves."
+  },
+  "pillars": {
+    "kicker": "three principles",
+    "one": {
+      "tag": "01",
+      "title": "hyperlocal",
+      "copy": "nothing from the other side of the world. just your block, your neighborhood, your city."
+    },
+    "two": {
+      "tag": "02",
+      "title": "verified by the people who live there",
+      "copy": "no algorithm decides what's real. your neighbors do."
+    },
+    "three": {
+      "tag": "03",
+      "title": "real-time",
+      "copy": "zero delay. what happened five minutes ago, arrives now."
+    }
+  },
+  "preview": {
+    "kicker": "in your feed",
+    "title": "this is how you find out.",
+    "subtitle": "one card per event. whoever saw, confirms. whoever didn't, learns.",
+    "cards": [
+      {
+        "tag": "vila madalena · 2 min ago",
+        "title": "lost dog on Fradique street",
+        "body": "brown pug, red collar. seen near the bakery.",
+        "confirmed": "confirmed by 14 neighbors",
+        "chip1": "lost & found",
+        "chip2": "neighborhood"
+      },
+      {
+        "tag": "pinheiros · 5 min ago",
+        "title": "fair at praça benedito calixto",
+        "body": "street food, live music and vintage stalls until 10pm.",
+        "confirmed": "confirmed by 32 neighbors",
+        "chip1": "events",
+        "chip2": "culture"
+      },
+      {
+        "tag": "sumaré · 8 min ago",
+        "title": "traffic light out on cardoso de almeida",
+        "body": "dangerous crossing towards Sumaré, avoid if possible.",
+        "confirmed": "confirmed by 27 neighbors",
+        "chip1": "alert",
+        "chip2": "mobility"
+      },
+      {
+        "tag": "perdizes · 12 min ago",
+        "title": "winter clothes donation drive",
+        "body": "pompeia market is collecting winter coats until friday.",
+        "confirmed": "confirmed by 19 neighbors",
+        "chip1": "solidarity",
+        "chip2": "help"
+      }
+    ]
   }
 }

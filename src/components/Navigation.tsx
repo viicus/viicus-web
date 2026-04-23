@@ -93,14 +93,19 @@ export default function Navigation() {
           borderColor: "var(--border-subtle)",
         }}
       >
-        {/* Logo */}
-        <Link href={ROUTES.HOME} className="flex items-center select-none pl-2 sm:pl-4 no-underline">
+        {/* Logo — wordmark + magenta dot */}
+        <Link href={ROUTES.HOME} className="flex items-end gap-0.5 select-none pl-2 sm:pl-4 no-underline">
           <span
-            className="text-lg font-bold tracking-tight"
-            style={{ color: "var(--foreground)" }}
+            className="text-lg font-light lowercase tracking-tight"
+            style={{ color: "var(--foreground)", letterSpacing: "-0.04em" }}
           >
-            {APP_NAME}
+            {APP_NAME.toLowerCase()}
           </span>
+          <span
+            className="mb-1 h-1.5 w-1.5 rounded-full"
+            style={{ background: "var(--vivid-pink)" }}
+            aria-hidden
+          />
         </Link>
 
         {/* Desktop actions */}
@@ -199,17 +204,19 @@ export default function Navigation() {
 
           {/* CTA */}
           <motion.button
-            whileHover={{ scale: 1.04 }}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.97 }}
-            className="group relative overflow-hidden rounded-full px-5 py-2 text-sm font-semibold cursor-pointer"
+            className="group inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium cursor-pointer lowercase"
             style={{
-              backgroundColor: "var(--accent)",
-              color: "var(--accent-foreground)",
-              boxShadow: "0 2px 12px var(--accent-glow)",
+              background: "var(--foreground)",
+              color: "var(--background)",
             }}
           >
-            {t("download")}
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
+            <span>{t("download")}</span>
+            <span
+              className="h-1.5 w-1.5 rounded-full transition-transform duration-300 group-hover:scale-150"
+              style={{ background: "var(--vivid-pink)" }}
+            />
           </motion.button>
         </div>
 

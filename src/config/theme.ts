@@ -2,41 +2,37 @@
  * Centralized theme configuration — single source of truth for the color system.
  *
  * Two layers:
- *   1. Primitives  — fixed values, never referenced directly in UI code
- *   2. Semantics   — theme-aware tokens consumed by CSS variables in globals.css
+ *   1. Primitives — fixed values, never referenced directly in UI code
+ *   2. Semantics  — theme-aware tokens consumed by CSS variables in globals.css
  *
- * The CSS variables in globals.css mirror these tokens. If you change a value
- * here, update globals.css to match (or vice-versa). Canvas/Three.js code that
- * can't read CSS vars should import from this file instead.
+ * Palette: off-white canvas, ink type, and a vivid accent stack
+ * (hot-pink primary · electric-yellow · mint-cyan · deep-violet).
+ * Mirrors the mobile (iOS/Android) auth design system.
  */
 
 // ─── Primitives ─────────────────────────────────────────────────────────────
 
 export const primitives = {
-  yellow: {
-    50: "#FFF8CC",
-    100: "#FFEE80",
-    200: "#FFE14D",
-    400: "#FFDE21",
-    600: "#E0BC00",
-    800: "#A08800",
-    900: "#60520A",
-  },
-  gray: {
+  canvas: {
     0: "#FFFFFF",
-    50: "#F5F4F0",
-    200: "#D6D4CB",
-    400: "#9E9C93",
-    600: "#5F5E5A",
-    800: "#2C2C2A",
-    900: "#0F0F0E",
+    50: "#FBFAF6", // off-white
+    100: "#F3F2EC",
+    200: "#E4E4E8",
+    400: "#8A8A95",
+    600: "#5A5A63",
+    800: "#22222A",
+    900: "#0A0A0F", // ink
+  },
+  vivid: {
+    pink:   "#FF2D75", // hot pink — primary accent
+    yellow: "#FFD60A", // electric yellow
+    mint:   "#00E5C4", // mint cyan
+    violet: "#6B3FFF", // deep violet
   },
   functional: {
-    accentWarm: "#FFB800",
-    mutedYellow: "#FFF1A3",
-    warning: "#FF6B21",
-    success: "#1D9E75",
-    danger: "#E24B4A",
+    success: "#00A884",
+    warning: "#FF8A00",
+    danger:  "#D14343",
   },
 } as const;
 
@@ -45,70 +41,70 @@ export const primitives = {
 export const semantic = {
   light: {
     background: {
-      primary: "#FFFFFF",
-      secondary: "#F5F4F0",
-      tertiary: "#D6D4CB",
-      accent: "#FFDE21",
+      primary:   "#FBFAF6",
+      secondary: "#FFFFFF",
+      tertiary:  "#F3F2EC",
+      accent:    "#FF2D75",
     },
     text: {
-      primary: "#0F0F0E",
-      secondary: "#5F5E5A",
-      tertiary: "#9E9C93",
-      onAccent: "#0F0F0E",
-      accent: "#A08800", // readable yellow on white
+      primary:   "#0A0A0F",
+      secondary: "#5A5A63",
+      tertiary:  "#8A8A95",
+      onAccent:  "#FFFFFF",
+      accent:    "#0A0A0F", // editorial — accents go on chips/dots, not prose
     },
     border: {
-      subtle: "#D6D4CB",
-      default: "#9E9C93",
-      strong: "#5F5E5A",
-      accent: "#E0BC00",
+      subtle:  "rgba(10,10,15,0.10)",
+      default: "rgba(10,10,15,0.18)",
+      strong:  "rgba(10,10,15,0.32)",
+      accent:  "#FF2D75",
     },
     surface: {
-      card: "#FFFFFF",
-      overlay: "#F5F4F0",
-      input: "#F5F4F0",
+      card:    "#FFFFFF",
+      overlay: "#FBFAF6",
+      input:   "#F3F2EC",
     },
     status: {
-      warningBg: "#FFF1A3",
-      warningText: "#60520A",
-      successBg: "#d4f0e7",
+      warningBg:   "#FFF1A3",
+      warningText: "#604100",
+      successBg:   "#D4F0E7",
       successText: "#085041",
-      dangerBg: "#fde8e8",
-      dangerText: "#A32D2D",
+      dangerBg:    "#FDE8E8",
+      dangerText:  "#A32D2D",
     },
   },
   dark: {
     background: {
-      primary: "#0F0F0E",
-      secondary: "#2C2C2A",
-      tertiary: "#5F5E5A",
-      accent: "#FFDE21",
+      primary:   "#0A0A0F",
+      secondary: "#16161C",
+      tertiary:  "#22222A",
+      accent:    "#FF2D75",
     },
     text: {
-      primary: "#F5F4F0",
-      secondary: "#9E9C93",
-      tertiary: "#5F5E5A",
-      onAccent: "#0F0F0E",
-      accent: "#FFDE21", // yellow pops on dark backgrounds
+      primary:   "#FBFAF6",
+      secondary: "#8A8A95",
+      tertiary:  "#5A5A63",
+      onAccent:  "#FFFFFF",
+      accent:    "#FBFAF6",
     },
     border: {
-      subtle: "#2C2C2A",
-      default: "#5F5E5A",
-      strong: "#9E9C93",
-      accent: "#FFDE21",
+      subtle:  "rgba(251,250,246,0.10)",
+      default: "rgba(251,250,246,0.18)",
+      strong:  "rgba(251,250,246,0.32)",
+      accent:  "#FF2D75",
     },
     surface: {
-      card: "#2C2C2A",
-      overlay: "#1a1a19",
-      input: "#2C2C2A",
+      card:    "#16161C",
+      overlay: "#0E0E14",
+      input:   "#22222A",
     },
     status: {
-      warningBg: "#60520A",
+      warningBg:   "#604100",
       warningText: "#FFE14D",
-      successBg: "#085041",
+      successBg:   "#085041",
       successText: "#5DCAA5",
-      dangerBg: "#501313",
-      dangerText: "#F09595",
+      dangerBg:    "#501313",
+      dangerText:  "#F09595",
     },
   },
 } as const;
@@ -122,38 +118,46 @@ function hexToRgb(hex: string): string {
 }
 
 export const rgb = {
-  accent: hexToRgb(primitives.yellow[400]),       // "255,222,33"
-  accentWarm: hexToRgb(primitives.functional.accentWarm),
+  accent:     hexToRgb(primitives.vivid.pink),   // "255,45,117"
+  accentWarm: hexToRgb(primitives.vivid.yellow),
+  vividPink:  hexToRgb(primitives.vivid.pink),
+  vividYellow: hexToRgb(primitives.vivid.yellow),
+  vividMint:  hexToRgb(primitives.vivid.mint),
+  vividViolet: hexToRgb(primitives.vivid.violet),
   light: {
-    textPrimary: hexToRgb(semantic.light.text.primary),   // "15,15,14"
-    bgPrimary: hexToRgb(semantic.light.background.primary),
+    textPrimary: hexToRgb(semantic.light.text.primary),
+    bgPrimary:   hexToRgb(semantic.light.background.primary),
     bgSecondary: hexToRgb(semantic.light.background.secondary),
-    card: hexToRgb(semantic.light.surface.card),
+    card:        hexToRgb(semantic.light.surface.card),
   },
   dark: {
     textPrimary: hexToRgb(semantic.dark.text.primary),
-    bgPrimary: hexToRgb(semantic.dark.background.primary),
+    bgPrimary:   hexToRgb(semantic.dark.background.primary),
     bgSecondary: hexToRgb(semantic.dark.background.secondary),
-    card: hexToRgb(semantic.dark.surface.card),
+    card:        hexToRgb(semantic.dark.surface.card),
   },
 } as const;
 
 // ─── Canvas-specific palette ────────────────────────────────────────────────
 
-/** Colors used by NetworkCanvas (Three.js / 2D canvas) */
+/**
+ * Colours used by NetworkCanvas (2D canvas over WebGL). Each "card type"
+ * gets one of the vivid accents so the floating reports feel like little
+ * editorial chips.
+ */
 export const canvasColors = {
   cardTypes: [
-    primitives.functional.warning,   // "#FF6B21" — orange (alert)
-    primitives.functional.danger,    // "#E24B4A" — red   (urgent)
-    primitives.functional.accentWarm, // "#FFB800" — gold  (info)
+    primitives.vivid.pink,   // alert — hot pink
+    primitives.vivid.violet, // urgent — deep violet
+    primitives.vivid.yellow, // info  — electric yellow
   ],
   cardTypesRgba: [
-    `rgba(255,107,33,`,   // warning
-    `rgba(226,75,74,`,    // danger
-    `rgba(255,184,0,`,    // accentWarm
+    `rgba(255,45,117,`,   // pink
+    `rgba(107,63,255,`,   // violet
+    `rgba(255,214,10,`,   // yellow
   ],
-  confirmed: primitives.functional.success,          // "#1D9E75"
-  confirmedRgba: "rgba(29,158,117,",
-  dismissed: primitives.gray[400],                   // "#9E9C93"
-  dismissedRgba: "rgba(158,156,147,",
+  confirmed:      primitives.vivid.mint,
+  confirmedRgba:  "rgba(0,229,196,",
+  dismissed:      primitives.canvas[400],
+  dismissedRgba:  "rgba(138,138,149,",
 } as const;

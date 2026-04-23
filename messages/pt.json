@@ -1,23 +1,24 @@
 {
   "nav": {
-    "home": "Início",
-    "howItWorks": "Como funciona",
-    "features": "O que acontece",
-    "verification": "Verificação",
-    "download": "Baixar app",
-    "language": "Idioma"
+    "home": "início",
+    "howItWorks": "como funciona",
+    "features": "o que acontece",
+    "verification": "verificação",
+    "download": "baixar o app",
+    "language": "idioma"
   },
   "hero": {
-    "badge": "Ative sua cidade",
-    "titleLine1": "Cada voz",
-    "titleLine2Accent": "conecta",
-    "titleLine2Rest": "a mudanças",
-    "subtitle": "Reporte. Vote. Confirme. Veja seu bairro se transformar pelo poder da ação coletiva.",
-    "ctaPrimary": "Baixar o app",
-    "ctaSecondary": "Como funciona",
-    "tagline": "Seu bairro. Sua cidade. Sua voz.",
-    "metaTitle": "Viicus — A rede social do seu bairro. Sua cidade. Sua voz.",
-    "metaDescription": "Reporte problemas, vote no que importa e confirme o que acontece ao seu redor. Viicus conecta vizinhos para transformar bairros pelo poder da ação coletiva."
+    "badge": "o que rola agora no seu bairro",
+    "kicker": "news · local · agora",
+    "titleLine1": "a vizinhança",
+    "titleLine2Accent": "em tempo real",
+    "titleLine2Rest": ".",
+    "subtitle": "as notícias que importam — só do que acontece ao seu redor, verificado por quem mora aí.",
+    "ctaPrimary": "baixar o app",
+    "ctaSecondary": "como funciona",
+    "tagline": "seu quarteirão. seu bairro. agora.",
+    "metaTitle": "Viicus — a vizinhança em tempo real. news · local · agora.",
+    "metaDescription": "notícias hiperlocais verificadas pela comunidade. o que acontece ao seu redor, agora. baixe o Viicus."
   },
   "howItWorks": {
     "sectionLabel": "Essa semana, na sua vizinhança:",
@@ -165,40 +166,78 @@
     "feedHeader": "Acontecendo agora",
     "feedLocation": "São Paulo, SP",
     "feedItems": {
-      "0": { "text": "Tentativa de furto na Rua Haddock Lobo", "where": "Jardins, SP", "time": "agora" },
-      "1": { "text": "Show gratuito no Parque Ibirapuera hoje 18h", "where": "Vila Mariana, SP", "time": "12 min" },
-      "2": { "text": "Cachorro perdido — golden, coleira azul", "where": "Pinheiros, SP", "time": "25 min" },
-      "3": { "text": "Semáforo apagado no cruzamento com a Faria Lima", "where": "Itaim Bibi, SP", "time": "38 min" },
-      "4": { "text": "Carteira encontrada perto do metrô Consolação", "where": "Consolação, SP", "time": "1h" },
-      "5": { "text": "Hortifruti com 40% off hoje até 20h", "where": "Perdizes, SP", "time": "1h" },
-      "6": { "text": "Alguém indica pediatra aqui na região?", "where": "Moema, SP", "time": "2h" }
+      "0": {
+        "text": "Tentativa de furto na Rua Haddock Lobo",
+        "where": "Jardins, SP",
+        "time": "agora"
+      },
+      "1": {
+        "text": "Show gratuito no Parque Ibirapuera hoje 18h",
+        "where": "Vila Mariana, SP",
+        "time": "12 min"
+      },
+      "2": {
+        "text": "Cachorro perdido — golden, coleira azul",
+        "where": "Pinheiros, SP",
+        "time": "25 min"
+      },
+      "3": {
+        "text": "Semáforo apagado no cruzamento com a Faria Lima",
+        "where": "Itaim Bibi, SP",
+        "time": "38 min"
+      },
+      "4": {
+        "text": "Carteira encontrada perto do metrô Consolação",
+        "where": "Consolação, SP",
+        "time": "1h"
+      },
+      "5": {
+        "text": "Hortifruti com 40% off hoje até 20h",
+        "where": "Perdizes, SP",
+        "time": "1h"
+      },
+      "6": {
+        "text": "Alguém indica pediatra aqui na região?",
+        "where": "Moema, SP",
+        "time": "2h"
+      }
     },
     "stats": {
-      "0": { "value": "40+", "label": "vizinhos confirmam cada alerta" },
-      "1": { "value": "<5min", "label": "para a informação chegar" },
-      "2": { "value": "100%", "label": "transparência em cada post" }
+      "0": {
+        "value": "40+",
+        "label": "vizinhos confirmam cada alerta"
+      },
+      "1": {
+        "value": "<5min",
+        "label": "para a informação chegar"
+      },
+      "2": {
+        "value": "100%",
+        "label": "transparência em cada post"
+      }
     },
     "closing1": "Do bairro à cidade inteira. Segurança, cultura, solidariedade, infraestrutura, comércio local. Tudo que acontece ao seu redor.",
     "closing2": "Você nunca mais vai ser o último a saber.",
     "learnMore": "Saiba mais"
   },
   "ctaFooter": {
-    "narrative1": "Redes sociais te conectam com o mundo.",
-    "narrative2": "Mas quem te conecta",
-    "narrative2Bold": "com o seu bairro?",
-    "narrative3": "{appName} não é para todo mundo.",
-    "narrative3Bold": "É para quem se importa com o lugar onde vive.",
-    "narrative4": "Estamos abrindo comunidade por comunidade. Bairro por bairro.",
-    "narrative5": "Seu bairro ainda não começou?",
-    "narrative5Accent": "Inaugure você. Seja o primeiro.",
-    "ctaLabel": "Ative sua região",
-    "ctaTitle": "Seu bairro ainda não está?",
-    "ctaBody": "Baixe o app e seja quem ativa a sua comunidade.",
-    "ctaButton": "Baixar o app",
-    "ctaNote": "Disponível para iOS e Android.",
-    "footerTerms": "Termos",
-    "footerPrivacy": "Privacidade",
-    "footerContact": "Contato"
+    "kicker": "news · local · agora",
+    "narrative1": "as redes sociais te conectam com o mundo.",
+    "narrative2": "o viicus te conecta",
+    "narrative2Bold": "com o que acontece ao seu redor — agora.",
+    "narrative3": "não é para todo mundo.",
+    "narrative3Bold": "é para quem se importa com o lugar onde vive.",
+    "narrative4": "estamos abrindo bairro por bairro.",
+    "narrative5": "o seu ainda não começou?",
+    "narrative5Accent": "inaugure você. seja o primeiro.",
+    "ctaLabel": "ative sua região",
+    "ctaTitle": "seu bairro ainda não está aqui?",
+    "ctaBody": "baixe o app e seja quem ativa a sua comunidade.",
+    "ctaButton": "baixar o app",
+    "ctaNote": "disponível para iOS e Android.",
+    "footerTerms": "termos",
+    "footerPrivacy": "privacidade",
+    "footerContact": "contato"
   },
   "contato": {
     "breadcrumbHome": "Início",
@@ -315,66 +354,210 @@
     },
     "actions": {
       "0": {
-        "0": { "0": "Comunidade avisada", "1": "Prefeitura ciente — equipe de tapa-buraco enviada" },
-        "1": { "0": "Comunidade avisada", "1": "Equipe de iluminação pública acionada" },
-        "2": { "0": "Comunidade avisada", "1": "Defesa Civil monitorando — Prefeitura ciente" },
-        "3": { "0": "Comunidade avisada", "1": "Prefeitura ciente — reparo programado" },
-        "4": { "0": "Comunidade avisada", "1": "Sabesp acionada — equipe a caminho" },
-        "5": { "0": "Comunidade avisada", "1": "Prefeitura ciente — manutenção enviada" },
-        "6": { "0": "Comunidade avisada", "1": "CET notificada — sinalização em andamento" },
-        "7": { "0": "Comunidade avisada", "1": "Prefeitura ciente — coleta programada" }
+        "0": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — equipe de tapa-buraco enviada"
+        },
+        "1": {
+          "0": "Comunidade avisada",
+          "1": "Equipe de iluminação pública acionada"
+        },
+        "2": {
+          "0": "Comunidade avisada",
+          "1": "Defesa Civil monitorando — Prefeitura ciente"
+        },
+        "3": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — reparo programado"
+        },
+        "4": {
+          "0": "Comunidade avisada",
+          "1": "Sabesp acionada — equipe a caminho"
+        },
+        "5": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — manutenção enviada"
+        },
+        "6": {
+          "0": "Comunidade avisada",
+          "1": "CET notificada — sinalização em andamento"
+        },
+        "7": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — coleta programada"
+        }
       },
       "1": {
-        "0": { "0": "Comunidade avisada", "1": "Polícia Militar notificada" },
-        "1": { "0": "Comunidade avisada", "1": "Enel acionada — previsão de reparo informada" },
-        "2": { "0": "Comunidade avisada", "1": "Bombeiros acionados — área isolada" },
-        "3": { "0": "Comunidade avisada", "1": "CET notificada — fiscalização no local" },
-        "4": { "0": "Comunidade avisada", "1": "Defesa Civil acionada — área interditada" },
-        "5": { "0": "Comunidade avisada", "1": "Prefeitura ciente — limpeza emergencial enviada" },
-        "6": { "0": "Comunidade avisada", "1": "Prefeitura ciente — fiscalização acionada" },
-        "7": { "0": "Comunidade avisada", "1": "Bombeiros acionados — reparo emergencial" }
+        "0": {
+          "0": "Comunidade avisada",
+          "1": "Polícia Militar notificada"
+        },
+        "1": {
+          "0": "Comunidade avisada",
+          "1": "Enel acionada — previsão de reparo informada"
+        },
+        "2": {
+          "0": "Comunidade avisada",
+          "1": "Bombeiros acionados — área isolada"
+        },
+        "3": {
+          "0": "Comunidade avisada",
+          "1": "CET notificada — fiscalização no local"
+        },
+        "4": {
+          "0": "Comunidade avisada",
+          "1": "Defesa Civil acionada — área interditada"
+        },
+        "5": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — limpeza emergencial enviada"
+        },
+        "6": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — fiscalização acionada"
+        },
+        "7": {
+          "0": "Comunidade avisada",
+          "1": "Bombeiros acionados — reparo emergencial"
+        }
       },
       "2": {
-        "0": { "0": "Comunidade avisada", "1": "Prefeitura ciente — manutenção programada" },
-        "1": { "0": "Comunidade avisada", "1": "CET notificada — pintura programada" },
-        "2": { "0": "Comunidade avisada", "1": "Prefeitura ciente — projeto em análise" },
-        "3": { "0": "Comunidade avisada", "1": "CET notificada — estudo de tráfego iniciado" },
-        "4": { "0": "Comunidade avisada", "1": "Prefeitura ciente — projeto em andamento" },
-        "5": { "0": "Comunidade avisada", "1": "Prefeitura ciente — equipe de manutenção enviada" },
-        "6": { "0": "Comunidade avisada", "1": "Prefeitura ciente — limpeza programada" },
-        "7": { "0": "Comunidade avisada", "1": "Prefeitura ciente — viabilidade em análise" }
+        "0": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — manutenção programada"
+        },
+        "1": {
+          "0": "Comunidade avisada",
+          "1": "CET notificada — pintura programada"
+        },
+        "2": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — projeto em análise"
+        },
+        "3": {
+          "0": "Comunidade avisada",
+          "1": "CET notificada — estudo de tráfego iniciado"
+        },
+        "4": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — projeto em andamento"
+        },
+        "5": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — equipe de manutenção enviada"
+        },
+        "6": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — limpeza programada"
+        },
+        "7": {
+          "0": "Comunidade avisada",
+          "1": "Prefeitura ciente — viabilidade em análise"
+        }
       }
     },
     "dismissReasons": {
       "0": {
-        "0": { "0": "Evento descartado", "1": "Informação não verificada — alcance reduzido" },
-        "1": { "0": "Evento descartado", "1": "Já resolvido — equipe no local confirmou reparo" },
-        "2": { "0": "Evento descartado", "1": "Já resolvido — problema não encontrado no local" },
-        "3": { "0": "Evento descartado", "1": "Duplicata — já registrado por outro cidadão" },
-        "4": { "0": "Evento descartado", "1": "Não relevante — manutenção já programada" },
-        "5": { "0": "Evento descartado", "1": "Já resolvido — reparo concluído anteriormente" },
-        "6": { "0": "Evento descartado", "1": "Informação imprecisa — localização incorreta" },
-        "7": { "0": "Evento descartado", "1": "Não relevante — coleta regular já agendada" }
+        "0": {
+          "0": "Evento descartado",
+          "1": "Informação não verificada — alcance reduzido"
+        },
+        "1": {
+          "0": "Evento descartado",
+          "1": "Já resolvido — equipe no local confirmou reparo"
+        },
+        "2": {
+          "0": "Evento descartado",
+          "1": "Já resolvido — problema não encontrado no local"
+        },
+        "3": {
+          "0": "Evento descartado",
+          "1": "Duplicata — já registrado por outro cidadão"
+        },
+        "4": {
+          "0": "Evento descartado",
+          "1": "Não relevante — manutenção já programada"
+        },
+        "5": {
+          "0": "Evento descartado",
+          "1": "Já resolvido — reparo concluído anteriormente"
+        },
+        "6": {
+          "0": "Evento descartado",
+          "1": "Informação imprecisa — localização incorreta"
+        },
+        "7": {
+          "0": "Evento descartado",
+          "1": "Não relevante — coleta regular já agendada"
+        }
       },
       "1": {
-        "0": { "0": "Evento descartado", "1": "Alarme falso — sem ocorrência no local" },
-        "1": { "0": "Evento descartado", "1": "Já normalizado — energia restabelecida" },
-        "2": { "0": "Evento descartado", "1": "Alarme falso — inspeção não confirmou risco" },
-        "3": { "0": "Evento descartado", "1": "Não relevante — sinalização já existente" },
-        "4": { "0": "Evento descartado", "1": "Risco não confirmado — árvore avaliada e segura" },
-        "5": { "0": "Evento descartado", "1": "Já resolvido — drenagem desobstruída" },
-        "6": { "0": "Evento descartado", "1": "Não relevante — obra autorizada e sinalizada" },
-        "7": { "0": "Evento descartado", "1": "Duplicata — ocorrência já registrada" }
+        "0": {
+          "0": "Evento descartado",
+          "1": "Alarme falso — sem ocorrência no local"
+        },
+        "1": {
+          "0": "Evento descartado",
+          "1": "Já normalizado — energia restabelecida"
+        },
+        "2": {
+          "0": "Evento descartado",
+          "1": "Alarme falso — inspeção não confirmou risco"
+        },
+        "3": {
+          "0": "Evento descartado",
+          "1": "Não relevante — sinalização já existente"
+        },
+        "4": {
+          "0": "Evento descartado",
+          "1": "Risco não confirmado — árvore avaliada e segura"
+        },
+        "5": {
+          "0": "Evento descartado",
+          "1": "Já resolvido — drenagem desobstruída"
+        },
+        "6": {
+          "0": "Evento descartado",
+          "1": "Não relevante — obra autorizada e sinalizada"
+        },
+        "7": {
+          "0": "Evento descartado",
+          "1": "Duplicata — ocorrência já registrada"
+        }
       },
       "2": {
-        "0": { "0": "Evento descartado", "1": "Fora do escopo — área de responsabilidade privada" },
-        "1": { "0": "Evento descartado", "1": "Não aprovado — orçamento indisponível" },
-        "2": { "0": "Evento descartado", "1": "Duplicata — solicitação já em análise" },
-        "3": { "0": "Evento descartado", "1": "Não viável — restrição técnica identificada" },
-        "4": { "0": "Evento descartado", "1": "Não aprovado — estudo de impacto negativo" },
-        "5": { "0": "Evento descartado", "1": "Não relevante — manutenção recente realizada" },
-        "6": { "0": "Evento descartado", "1": "Já programado — serviço agendado para o mês" },
-        "7": { "0": "Evento descartado", "1": "Não viável — infraestrutura incompatível" }
+        "0": {
+          "0": "Evento descartado",
+          "1": "Fora do escopo — área de responsabilidade privada"
+        },
+        "1": {
+          "0": "Evento descartado",
+          "1": "Não aprovado — orçamento indisponível"
+        },
+        "2": {
+          "0": "Evento descartado",
+          "1": "Duplicata — solicitação já em análise"
+        },
+        "3": {
+          "0": "Evento descartado",
+          "1": "Não viável — restrição técnica identificada"
+        },
+        "4": {
+          "0": "Evento descartado",
+          "1": "Não aprovado — estudo de impacto negativo"
+        },
+        "5": {
+          "0": "Evento descartado",
+          "1": "Não relevante — manutenção recente realizada"
+        },
+        "6": {
+          "0": "Evento descartado",
+          "1": "Já programado — serviço agendado para o mês"
+        },
+        "7": {
+          "0": "Evento descartado",
+          "1": "Não viável — infraestrutura incompatível"
+        }
       }
     },
     "recentlyReported": "Recém reportado",
@@ -542,14 +725,14 @@
     "lastUpdated": "Última atualização: {date}",
     "lastUpdatedDate": "15 de março de 2026",
     "backToTop": "Voltar ao topo",
-    "introParagraph": "Esta Política de Privacidade descreve como o {companyName}, inscrita no CNPJ sob o nº {tbd}, com sede em {tbd} (\u201c{appName}\u201d, \u201cEmpresa\u201d, \u201cnós\u201d ou \u201cnosso\u201d), trata os dados pessoais dos usuários da plataforma {appName}.",
+    "introParagraph": "Esta Política de Privacidade descreve como o {companyName}, inscrita no CNPJ sob o nº {tbd}, com sede em {tbd} (“{appName}”, “Empresa”, “nós” ou “nosso”), trata os dados pessoais dos usuários da plataforma {appName}.",
     "sections": {
       "0": {
         "title": "1. Introdução",
         "summary": "Esta política explica como tratamos seus dados pessoais.",
         "contentLength": "3",
         "content": {
-          "0": "A sua privacidade é fundamental para o {appName}. Esta Política de Privacidade (\u201cPolítica\u201d) descreve como coletamos, utilizamos, armazenamos, compartilhamos e protegemos suas informações pessoais quando você utiliza nossa plataforma, incluindo o aplicativo móvel e o site (\u201cPlataforma\u201d).",
+          "0": "A sua privacidade é fundamental para o {appName}. Esta Política de Privacidade (“Política”) descreve como coletamos, utilizamos, armazenamos, compartilhamos e protegemos suas informações pessoais quando você utiliza nossa plataforma, incluindo o aplicativo móvel e o site (“Plataforma”).",
           "1": "Esta Política está em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 — LGPD), o Marco Civil da Internet (Lei nº 12.965/2014) e demais normas aplicáveis.",
           "2": "Ao utilizar a Plataforma, você confirma que leu, compreendeu e concorda com as práticas descritas nesta Política."
         }
@@ -738,19 +921,55 @@
     "solutionLabel": "A solução",
     "solutionTitle": "Simples como deveria ser.",
     "solutions": {
-      "0": { "step": "01", "title": "Alguém posta.", "body": "Qualquer morador pode criar um post sobre o que está acontecendo ao redor. Segurança, evento, pedido de ajuda, comércio, infraestrutura — tudo.", "detail": "Sem formulários burocráticos. Sem categorias confusas. Direto ao ponto." },
-      "1": { "step": "02", "title": "A vizinhança vê.", "body": "O post só aparece para quem mora perto. Não é um feed global — é sobre o seu bairro, a sua rua, o que acontece ao seu redor.", "detail": "A área de alcance se adapta ao tipo de post. Alerta de segurança cobre mais. Recomendação de restaurante, menos." },
-      "2": { "step": "03", "title": "A comunidade confirma.", "body": "Vizinhos verificam se é real. Não é um like — é uma confirmação. Quando muitos vizinhos dizem que aquilo é relevante, não é opinião.", "detail": "É evidência." },
-      "3": { "step": "04", "title": "A informação chega.", "body": "Em menos de 5 minutos, quem precisa saber, sabe. Alertas de segurança, oportunidades, pedidos de ajuda — tudo circula rápido.", "detail": "Com credibilidade. Porque foi verificado por quem vive ali." }
+      "0": {
+        "step": "01",
+        "title": "Alguém posta.",
+        "body": "Qualquer morador pode criar um post sobre o que está acontecendo ao redor. Segurança, evento, pedido de ajuda, comércio, infraestrutura — tudo.",
+        "detail": "Sem formulários burocráticos. Sem categorias confusas. Direto ao ponto."
+      },
+      "1": {
+        "step": "02",
+        "title": "A vizinhança vê.",
+        "body": "O post só aparece para quem mora perto. Não é um feed global — é sobre o seu bairro, a sua rua, o que acontece ao seu redor.",
+        "detail": "A área de alcance se adapta ao tipo de post. Alerta de segurança cobre mais. Recomendação de restaurante, menos."
+      },
+      "2": {
+        "step": "03",
+        "title": "A comunidade confirma.",
+        "body": "Vizinhos verificam se é real. Não é um like — é uma confirmação. Quando muitos vizinhos dizem que aquilo é relevante, não é opinião.",
+        "detail": "É evidência."
+      },
+      "3": {
+        "step": "04",
+        "title": "A informação chega.",
+        "body": "Em menos de 5 minutos, quem precisa saber, sabe. Alertas de segurança, oportunidades, pedidos de ajuda — tudo circula rápido.",
+        "detail": "Com credibilidade. Porque foi verificado por quem vive ali."
+      }
     },
     "comparisonLabel": "Antes vs. depois",
     "comparisonTitle": "A diferença é",
     "comparisonTitleAccent": "imediata.",
     "comparisons": {
-      "0": { "before": "Página do Instagram posta o assalto 2 dias depois.", "after": "Alerta verificado em 3 minutos, 40 vizinhos confirmam.", "stat": "3min" },
-      "1": { "before": "Feira no parque — post do Instagram alcança 5% do bairro.", "after": "Todo mundo que mora perto fica sabendo automaticamente.", "stat": "100%" },
-      "2": { "before": "Reclamação no grupo — enterrada em 30 segundos.", "after": "67 confirmações → evidência → prefeitura acionada.", "stat": "67" },
-      "3": { "before": "Comércio local — o algoritmo decide quem vê.", "after": "89 vizinhos que moram perto sabem no primeiro dia.", "stat": "89" }
+      "0": {
+        "before": "Página do Instagram posta o assalto 2 dias depois.",
+        "after": "Alerta verificado em 3 minutos, 40 vizinhos confirmam.",
+        "stat": "3min"
+      },
+      "1": {
+        "before": "Feira no parque — post do Instagram alcança 5% do bairro.",
+        "after": "Todo mundo que mora perto fica sabendo automaticamente.",
+        "stat": "100%"
+      },
+      "2": {
+        "before": "Reclamação no grupo — enterrada em 30 segundos.",
+        "after": "67 confirmações → evidência → prefeitura acionada.",
+        "stat": "67"
+      },
+      "3": {
+        "before": "Comércio local — o algoritmo decide quem vê.",
+        "after": "89 vizinhos que moram perto sabem no primeiro dia.",
+        "stat": "89"
+      }
     },
     "ctaLine1": "Informação certa. Pessoas certas. Tempo certo.",
     "ctaLine2": "Isso é",
@@ -867,30 +1086,90 @@
     "stepsLabel": "Passo a passo",
     "stepsTitle": "Como a verificação funciona.",
     "steps": {
-      "0": { "number": "1", "title": "Alguém reporta", "body": "Um morador vê algo acontecendo no bairro — um assalto, um buraco na rua, uma feira nova, um pedido de ajuda. Ele cria um post em segundos.", "detail": "Sem formulários burocráticos. Sem categorias confusas. Direto ao ponto: o que aconteceu, onde, quando." },
-      "1": { "number": "2", "title": "Vizinhos são notificados", "body": "O post aparece automaticamente para quem mora nas proximidades. Não é um feed global — é hiperlocal. Só vê quem é relevante.", "detail": "A área de alcance depende do tipo de post. Um alerta de segurança cobre mais área. Uma recomendação de restaurante, menos." },
-      "2": { "number": "3", "title": "A comunidade verifica", "body": "Cada vizinho pode confirmar: \"eu também vi\", \"está acontecendo\", \"é real\". Não é um like — é uma declaração de verdade.", "detail": "Cada confirmação carrega o peso de uma pessoa real, com endereço real, que vive ali. Não dá pra criar contas falsas de bairros que você não mora." },
-      "3": { "number": "4", "title": "A confiança cresce", "body": "Com 5 confirmações, o post ganha destaque. Com 20, ele é promovido para bairros adjacentes. Com 40+, ele se torna evidência verificada.", "detail": "A credibilidade não vem de uma empresa — vem da sua comunidade. Quanto mais vizinhos confirmam, mais forte a informação." },
-      "4": { "number": "5", "title": "Ação acontece", "body": "Informação verificada gera ação. Vizinhos se protegem, eventos lotam, comércio local prospera, problemas de infraestrutura ganham evidência para serem resolvidos.", "detail": "Não é uma plataforma de reclamação. É uma plataforma de transformação — movida pela comunidade, para a comunidade." }
+      "0": {
+        "number": "1",
+        "title": "Alguém reporta",
+        "body": "Um morador vê algo acontecendo no bairro — um assalto, um buraco na rua, uma feira nova, um pedido de ajuda. Ele cria um post em segundos.",
+        "detail": "Sem formulários burocráticos. Sem categorias confusas. Direto ao ponto: o que aconteceu, onde, quando."
+      },
+      "1": {
+        "number": "2",
+        "title": "Vizinhos são notificados",
+        "body": "O post aparece automaticamente para quem mora nas proximidades. Não é um feed global — é hiperlocal. Só vê quem é relevante.",
+        "detail": "A área de alcance depende do tipo de post. Um alerta de segurança cobre mais área. Uma recomendação de restaurante, menos."
+      },
+      "2": {
+        "number": "3",
+        "title": "A comunidade verifica",
+        "body": "Cada vizinho pode confirmar: \"eu também vi\", \"está acontecendo\", \"é real\". Não é um like — é uma declaração de verdade.",
+        "detail": "Cada confirmação carrega o peso de uma pessoa real, com endereço real, que vive ali. Não dá pra criar contas falsas de bairros que você não mora."
+      },
+      "3": {
+        "number": "4",
+        "title": "A confiança cresce",
+        "body": "Com 5 confirmações, o post ganha destaque. Com 20, ele é promovido para bairros adjacentes. Com 40+, ele se torna evidência verificada.",
+        "detail": "A credibilidade não vem de uma empresa — vem da sua comunidade. Quanto mais vizinhos confirmam, mais forte a informação."
+      },
+      "4": {
+        "number": "5",
+        "title": "Ação acontece",
+        "body": "Informação verificada gera ação. Vizinhos se protegem, eventos lotam, comércio local prospera, problemas de infraestrutura ganham evidência para serem resolvidos.",
+        "detail": "Não é uma plataforma de reclamação. É uma plataforma de transformação — movida pela comunidade, para a comunidade."
+      }
     },
     "principlesLabel": "Princípios",
     "principlesTitle": "O que nos torna",
     "principlesTitleAccent": "diferente.",
     "principles": {
-      "0": { "icon": "🛡️", "title": "Menos desinformação", "body": "A comunidade verifica. Posts sem confirmação perdem alcance automaticamente. Quanto mais vizinhos validam, mais visível a informação fica.", "detail": "Em redes tradicionais, o algoritmo prioriza engajamento — independente da veracidade. Aqui, alcance é proporcional a verificações reais de pessoas reais." },
-      "1": { "icon": "🎯", "title": "Sem ruído", "body": "Só o que acontece ao seu redor aparece pra você. Sem política nacional, sem celebridades, sem propaganda. Seu feed é o seu bairro.", "detail": "O feed do {appName} é geograficamente limitado por design. Você vê o que importa para quem mora perto de você. Nada mais, nada menos." },
-      "2": { "icon": "👁️", "title": "Sem caixa preta", "body": "Quem postou, quem confirmou, quantas verificações. Tudo visível. Sem algoritmo oculto decidindo o que você vê.", "detail": "Cada post mostra exatamente quantas pessoas confirmaram, de quais bairros, e quando. Transparência total. Você confia porque pode verificar." },
-      "3": { "icon": "📍", "title": "Sem anonimato tóxico", "body": "Cada usuário está vinculado ao seu endereço real. Não dá pra criar contas falsas de bairros que você não mora.", "detail": "Isso não significa que seu nome aparece publicamente. Significa que o sistema sabe que você é real e que mora onde diz morar. Responsabilidade com privacidade." }
+      "0": {
+        "icon": "🛡️",
+        "title": "Menos desinformação",
+        "body": "A comunidade verifica. Posts sem confirmação perdem alcance automaticamente. Quanto mais vizinhos validam, mais visível a informação fica.",
+        "detail": "Em redes tradicionais, o algoritmo prioriza engajamento — independente da veracidade. Aqui, alcance é proporcional a verificações reais de pessoas reais."
+      },
+      "1": {
+        "icon": "🎯",
+        "title": "Sem ruído",
+        "body": "Só o que acontece ao seu redor aparece pra você. Sem política nacional, sem celebridades, sem propaganda. Seu feed é o seu bairro.",
+        "detail": "O feed do {appName} é geograficamente limitado por design. Você vê o que importa para quem mora perto de você. Nada mais, nada menos."
+      },
+      "2": {
+        "icon": "👁️",
+        "title": "Sem caixa preta",
+        "body": "Quem postou, quem confirmou, quantas verificações. Tudo visível. Sem algoritmo oculto decidindo o que você vê.",
+        "detail": "Cada post mostra exatamente quantas pessoas confirmaram, de quais bairros, e quando. Transparência total. Você confia porque pode verificar."
+      },
+      "3": {
+        "icon": "📍",
+        "title": "Sem anonimato tóxico",
+        "body": "Cada usuário está vinculado ao seu endereço real. Não dá pra criar contas falsas de bairros que você não mora.",
+        "detail": "Isso não significa que seu nome aparece publicamente. Significa que o sistema sabe que você é real e que mora onde diz morar. Responsabilidade com privacidade."
+      }
     },
     "comparisonLabel": "Comparação",
     "comparisonTitle": "Redes tradicionais vs. {appName}.",
     "comparisonHeaderThem": "Redes tradicionais",
     "comparisons": {
-      "0": { "them": "Algoritmo decide o que você vê", "us": "Proximidade decide o que você vê" },
-      "1": { "them": "Alcance independe de veracidade", "us": "Alcance proporcional a verificações" },
-      "2": { "them": "Engajamento = likes e comentários", "us": "Engajamento = confirmação de verdade" },
-      "3": { "them": "Feed global, ruído infinito", "us": "Feed local, relevância máxima" },
-      "4": { "them": "Contas anônimas sem consequência", "us": "Identidade vinculada ao endereço" }
+      "0": {
+        "them": "Algoritmo decide o que você vê",
+        "us": "Proximidade decide o que você vê"
+      },
+      "1": {
+        "them": "Alcance independe de veracidade",
+        "us": "Alcance proporcional a verificações"
+      },
+      "2": {
+        "them": "Engajamento = likes e comentários",
+        "us": "Engajamento = confirmação de verdade"
+      },
+      "3": {
+        "them": "Feed global, ruído infinito",
+        "us": "Feed local, relevância máxima"
+      },
+      "4": {
+        "them": "Contas anônimas sem consequência",
+        "us": "Identidade vinculada ao endereço"
+      }
     },
     "trustLine1": "Confiança não se compra.",
     "trustLine2": "Se constrói,",
@@ -943,5 +1222,70 @@
     "autosave": "Suas alterações são salvas automaticamente.",
     "footer": "Saiba como tratamos seus dados na",
     "footerPrivacy": "Política de privacidade"
+  },
+  "statement": {
+    "kicker": "news · local · agora",
+    "line1": "o que acontece",
+    "line2": "perto de você,",
+    "line3": "antes de qualquer",
+    "line4": "outra rede.",
+    "footnote": "um filtro mínimo pra barrar spam e conteúdo impróprio. de resto, quem decide o que chega até você são os próprios vizinhos."
+  },
+  "pillars": {
+    "kicker": "três princípios",
+    "one": {
+      "tag": "01",
+      "title": "hiperlocal",
+      "copy": "nada do outro lado do mundo. só o seu quarteirão, o seu bairro, a sua cidade."
+    },
+    "two": {
+      "tag": "02",
+      "title": "verificado por quem mora",
+      "copy": "não é um algoritmo que decide o que é real. são os vizinhos."
+    },
+    "three": {
+      "tag": "03",
+      "title": "em tempo real",
+      "copy": "zero delay. o que aconteceu há cinco minutos, chega agora."
+    }
+  },
+  "preview": {
+    "kicker": "no seu feed",
+    "title": "assim você fica sabendo.",
+    "subtitle": "um card por evento. quem viu, confirma. quem não viu, aprende.",
+    "cards": [
+      {
+        "tag": "vila madalena · há 2 min",
+        "title": "cachorro perdido na rua Fradique",
+        "body": "pug marrom, coleira vermelha. visto perto da padaria.",
+        "confirmed": "confirmado por 14 vizinhos",
+        "chip1": "perdidos",
+        "chip2": "vizinhança"
+      },
+      {
+        "tag": "pinheiros · há 5 min",
+        "title": "feira na praça benedito calixto",
+        "body": "comidas de rua, música ao vivo e brechó até 22h.",
+        "confirmed": "confirmado por 32 vizinhos",
+        "chip1": "eventos",
+        "chip2": "cultura"
+      },
+      {
+        "tag": "sumaré · há 8 min",
+        "title": "semáforo apagado na cardoso de almeida",
+        "body": "cruzamento perigoso no sentido Sumaré, evitem.",
+        "confirmed": "confirmado por 27 vizinhos",
+        "chip1": "alerta",
+        "chip2": "mobilidade"
+      },
+      {
+        "tag": "perdizes · há 12 min",
+        "title": "doação de agasalhos no mercado",
+        "body": "mercado do pompeia está recebendo roupas de inverno até sexta.",
+        "confirmed": "confirmado por 19 vizinhos",
+        "chip1": "solidariedade",
+        "chip2": "ajuda"
+      }
+    ]
   }
 }

@@ -7,10 +7,10 @@ import { APP_NAME, APP_YEAR } from "@/config/app-config";
 import { ROUTES } from "@/config/routes";
 
 const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 28 },
+  initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-80px" as const },
-  transition: { duration: 0.8, delay, ease: [0.23, 1, 0.32, 1] as const },
+  transition: { duration: 0.7, delay, ease: [0.23, 1, 0.32, 1] as const },
 });
 
 export default function CtaFooter() {
@@ -21,146 +21,95 @@ export default function CtaFooter() {
       className="relative px-6 overflow-hidden"
       style={{ background: "var(--hero-bg)" }}
     >
-      {/* Section transition gradient (from previous section) */}
-      <div
-        className="pointer-events-none absolute top-0 left-0 right-0 h-[200px]"
-        style={{
-          background: `linear-gradient(to bottom, var(--background), var(--hero-bg))`,
-        }}
-      />
-
-      {/* Background atmosphere */}
+      {/* Background blush */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 60% 50% at 50% 60%, rgba(var(--accent-rgb),0.05) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 50% at 50% 55%, rgba(var(--vivid-pink-rgb),0.05) 0%, transparent 70%)",
         }}
       />
 
-      {/* --- The closing narrative --- */}
-      <div className="relative z-10 mx-auto max-w-4xl pt-40 pb-20">
+      {/* --- Closing statement --- */}
+      <div className="relative z-10 mx-auto max-w-5xl pt-32 sm:pt-40 pb-20 sm:pb-28">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="kicker mb-10"
+        >
+          {t("kicker")}
+        </motion.div>
+
         <motion.p
           {...fadeUp(0)}
-          className="text-2xl sm:text-4xl font-medium leading-snug tracking-tight"
-          style={{ color: `rgba(var(--text-rgb),0.3)` }}
+          className="type-display-sm text-3xl sm:text-5xl lg:text-6xl"
+          style={{ color: `rgba(var(--text-rgb),0.32)` }}
         >
           {t("narrative1")}
         </motion.p>
         <motion.p
-          {...fadeUp(0.12)}
-          className="mt-4 text-2xl sm:text-4xl font-medium leading-snug tracking-tight"
-          style={{ color: `rgba(var(--text-rgb),0.3)` }}
-        >
-          {t("narrative2")}{" "}
-          <span className="gradient-text font-bold">{t("narrative2Bold")}</span>
-        </motion.p>
-
-        <motion.div
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="mt-20 h-px origin-left max-w-[120px]"
-          style={{ background: `rgba(var(--accent-rgb),0.3)` }}
-        />
-
-        <motion.p
-          {...fadeUp(0.15)}
-          className="mt-20 text-xl sm:text-2xl font-medium leading-relaxed"
-          style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
-        >
-          {t("narrative3", { appName: APP_NAME })}{" "}
-          <span style={{ color: "var(--foreground)" }}>
-            {t("narrative3Bold")}
-          </span>
-        </motion.p>
-
-        <motion.p
           {...fadeUp(0.1)}
-          className="mt-6 text-xl sm:text-2xl font-medium leading-relaxed"
-          style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
-        >
-          {t("narrative4")}
-        </motion.p>
-
-        <motion.p
-          {...fadeUp(0.1)}
-          className="mt-6 text-xl sm:text-2xl font-bold leading-relaxed"
+          className="mt-3 type-display-sm text-3xl sm:text-5xl lg:text-6xl"
           style={{ color: "var(--foreground)" }}
         >
-          {t("narrative5")}{" "}
-          <span className="gradient-text-accent">
-            {t("narrative5Accent")}
-          </span>
+          {t("narrative2")}{" "}
+          <span className="gradient-text-hero">{t("narrative2Bold")}</span>
         </motion.p>
       </div>
 
-      {/* --- Premium CTA --- */}
-      <div className="relative mx-auto max-w-lg py-24">
+      {/* --- CTA block --- */}
+      <div className="relative mx-auto max-w-xl pb-24">
         <motion.div
-          initial={{ opacity: 0, y: 40, scale: 0.95 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
-          transition={{
-            duration: 1,
-            ease: [0.23, 1, 0.32, 1] as const,
-          }}
+          transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] as const }}
           className="text-center"
         >
-          {/* Glowing accent line */}
-          <div className="flex justify-center mb-10">
-            <div
-              className="h-px w-16"
-              style={{
-                background: `linear-gradient(to right, transparent, var(--accent), transparent)`,
-                boxShadow: `0 0 20px var(--accent-glow)`,
-              }}
-            />
+          <div className="flex justify-center items-center gap-1.5 mb-6" aria-hidden>
+            <span className="h-2 w-2 rounded-full dot-pink" />
+            <span className="h-2 w-2 rounded-full dot-yellow" />
+            <span className="h-2 w-2 rounded-full dot-mint" />
           </div>
 
           <p
-            className="text-[11px] font-bold uppercase tracking-[0.35em]"
-            style={{ color: "var(--text-accent)" }}
-          >
-            {t("ctaLabel")}
-          </p>
-
-          <p
-            className="mt-4 text-2xl sm:text-3xl font-bold tracking-tight"
+            className="type-display-sm text-2xl sm:text-3xl"
             style={{ color: "var(--foreground)" }}
           >
             {t("ctaTitle")}
           </p>
 
           <p
-            className="mt-3 text-[15px] leading-relaxed"
-            style={{ color: `rgba(var(--text-rgb),var(--text-muted))` }}
+            className="mt-4 text-sm font-light"
+            style={{ color: `rgba(var(--text-rgb),var(--text-medium))` }}
           >
             {t("ctaBody")}
           </p>
 
-          {/* Download button */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
+          <div className="mt-8 flex justify-center">
             <motion.a
               href="#"
-              whileHover={{ scale: 1.04 }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
-              className="group relative overflow-hidden rounded-2xl px-8 py-4 text-[15px] font-bold cursor-pointer text-center"
+              className="group inline-flex items-center gap-3 rounded-2xl px-8 py-4 text-sm font-medium tracking-wide cursor-pointer"
               style={{
-                background: "var(--accent)",
-                color: "var(--accent-foreground)",
-                boxShadow: `0 4px 24px var(--accent-glow)`,
+                background: "var(--foreground)",
+                color: "var(--background)",
               }}
             >
-              {t("ctaButton")}
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/5 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+              <span>{t("ctaButton")}</span>
+              <span
+                className="h-1.5 w-1.5 rounded-full transition-transform duration-300 group-hover:scale-150"
+                style={{ background: "var(--vivid-pink)" }}
+              />
             </motion.a>
           </div>
 
           <p
-            className="mt-5 text-[12px]"
-            style={{ color: `rgba(var(--text-rgb),0.15)` }}
+            className="mt-4 text-xs font-light"
+            style={{ color: `rgba(var(--text-rgb),var(--text-faint))` }}
           >
             {t("ctaNote")}
           </p>
@@ -172,13 +121,24 @@ export default function CtaFooter() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="relative mx-auto max-w-4xl py-16 flex flex-col items-center gap-6"
+        transition={{ duration: 0.6 }}
+        className="relative mx-auto max-w-5xl py-10 flex flex-col sm:flex-row items-center justify-between gap-5 border-t"
+        style={{ borderColor: "var(--divider)" }}
       >
-        <div
-          className="h-px w-16"
-          style={{ background: "var(--border-subtle)" }}
-        />
+        <div className="flex items-end gap-0.5">
+          <span
+            className="type-display text-xl lowercase"
+            style={{ color: "var(--foreground)" }}
+          >
+            {APP_NAME.toLowerCase()}
+          </span>
+          <span
+            className="mb-[5px] h-1.5 w-1.5 rounded-full"
+            style={{ background: "var(--vivid-pink)" }}
+            aria-hidden
+          />
+        </div>
+
         <div className="flex items-center gap-6">
           {[
             { label: t("footerTerms"), href: ROUTES.TERMS },
@@ -188,10 +148,10 @@ export default function CtaFooter() {
             <Link
               key={link.label}
               href={link.href as "/terms" | "/privacy" | "/contact"}
-              className="text-[12px] font-medium transition-colors duration-200"
+              className="text-xs font-medium transition-colors lowercase"
               style={{ color: `rgba(var(--text-rgb),var(--text-faint))` }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.color = "var(--accent)";
+                e.currentTarget.style.color = "var(--foreground)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.color = `rgba(var(--text-rgb),var(--text-faint))`;
@@ -201,11 +161,12 @@ export default function CtaFooter() {
             </Link>
           ))}
         </div>
+
         <p
-          className="text-[11px]"
-          style={{ color: `rgba(var(--text-rgb),0.08)` }}
+          className="text-xs font-light"
+          style={{ color: `rgba(var(--text-rgb),var(--text-faint))` }}
         >
-          &copy; {APP_YEAR} {APP_NAME}
+          &copy; {APP_YEAR} {APP_NAME.toLowerCase()}
         </p>
       </motion.div>
     </section>
